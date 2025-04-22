@@ -280,5 +280,4 @@ class SFMFunctionFactory(Factory):
         """
         return self.sfm_function_factory.GetOpeningMgr(i_prt_part.com_object, i_mgr_name)
 
-    def __repr__(self):
-        return f'SFMFunctionFactory(name="{self.name}")'
+

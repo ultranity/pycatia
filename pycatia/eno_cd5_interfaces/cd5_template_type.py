@@ -119,5 +119,4 @@ class CD5TemplateType(AnyObject):
 
         return CD5Templates(self.cd5_template_type.Templates)
 
-    def __repr__(self):
-        return f'CD5TemplateType(name="{self.name}")'
+

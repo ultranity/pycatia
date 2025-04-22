@@ -107,5 +107,4 @@ class Publication(AnyObject):
 
         self.publication.Valuation = value
 
-    def __repr__(self):
-        return f'Publication(name="{ self.name }")'
+

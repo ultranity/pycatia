@@ -363,5 +363,4 @@ class AnalysisManager(AnyObject):
         """
         return self.analysis_manager.ImportFile(i_document_path)
 
-    def __repr__(self):
-        return f'AnalysisManager(name="{self.name}")'
+

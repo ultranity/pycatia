@@ -130,5 +130,3 @@ class FunctActionsGroups(Collection):
         """
         return FunctActionsGroup(self.funct_actions_groups.Elem(i_index))
 
-    def __repr__(self):
-        return f'FunctActionsGroups(name="{self.name}")'

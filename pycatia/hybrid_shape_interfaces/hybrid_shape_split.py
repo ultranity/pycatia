@@ -809,5 +809,4 @@ class HybridShapeSplit(HybridShape):
         """
         return self.hybrid_shape_split.SetOrientation(i_rank, i_orientation)
 
-    def __repr__(self):
-        return f'HybridShapeSplit(name="{self.name}")'
+

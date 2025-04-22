@@ -709,5 +709,4 @@ class AnalysisImage(AnyObject):
         """
         return self.analysis_image.Update()
 
-    def __repr__(self):
-        return f'AnalysisImage(name="{self.name}")'
+

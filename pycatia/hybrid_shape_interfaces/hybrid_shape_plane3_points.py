@@ -143,5 +143,4 @@ class HybridShapePlane3Points(Plane):
 
         self.hybrid_shape_plane3_points.Third = reference_point
 
-    def __repr__(self):
-        return f'HybridShapePlane3Points(name="{self.name}")'
+

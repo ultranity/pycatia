@@ -271,5 +271,4 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
 
         self.abq_fastened_connection_enhancement.SwapMasterSlave = value
 
-    def __repr__(self):
-        return f'ABQFastenedConnectionEnhancement(name="{self.name}")'
+

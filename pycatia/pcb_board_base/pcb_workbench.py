@@ -173,5 +173,4 @@ class PCBWorkbench(Workbench):
         """
         return self.pcb_workbench.GetRootProduct(doc.com_object)
 
-    def __repr__(self):
-        return f'PCBWorkbench(name="{self.name}")'
+

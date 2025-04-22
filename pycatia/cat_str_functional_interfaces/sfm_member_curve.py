@@ -154,5 +154,4 @@ class SFMMemberCurve(SFMMember):
         """
         return self.sfm_member_curve.InvertReferenceSurface()
 
-    def __repr__(self):
-        return f'SFMMemberCurve(name="{self.name}")'
+

@@ -67,5 +67,3 @@ class ABQSolutionSteps(Collection):
         """
         return ABQSolutionStep(self.abq_solution_steps.Item(i_index))
 
-    def __repr__(self):
-        return f'ABQSolutionSteps(name="{self.name}")'

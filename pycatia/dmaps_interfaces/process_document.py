@@ -98,5 +98,4 @@ class ProcessDocument(Document):
         """
         return self.process_document.AddLibrary(i_file_name)
 
-    def __repr__(self):
-        return f'ProcessDocument(name="{self.name}")'
+

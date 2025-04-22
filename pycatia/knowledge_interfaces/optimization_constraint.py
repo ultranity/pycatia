@@ -101,5 +101,4 @@ class OptimizationConstraint(Check):
 
         return self.optimization_constraint.Satisfaction
 
-    def __repr__(self):
-        return f'OptimizationConstraint(name="{self.name}")'
+

@@ -372,5 +372,4 @@ class ABQExplicitDynamicsStep(ABQStep):
 
         self.abq_explicit_dynamics_step.UserDefinedTimeIncrementValue = value
 
-    def __repr__(self):
-        return f'ABQExplicitDynamicsStep(name="{self.name}")'
+

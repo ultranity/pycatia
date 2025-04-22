@@ -58,5 +58,4 @@ class ManufacturingUserRepresentation(AnyObject):
         """
         return self.manufacturing_user_representation.SetRepresentation(i_path_name)
 
-    def __repr__(self):
-        return f'ManufacturingUserRepresentation(name="{ self.name }")'
+

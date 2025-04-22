@@ -81,5 +81,4 @@ class AnalysisSensor(AnalysisEntity):
         """
         return self.analysis_sensor.Update()
 
-    def __repr__(self):
-        return f'AnalysisSensor(name="{self.name}")'
+

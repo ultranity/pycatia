@@ -265,5 +265,4 @@ class HybridShapeBump(HybridShape):
 
         self.hybrid_shape_bump.ProjectionDir = reference_projection_direction.com_object
 
-    def __repr__(self):
-        return f'HybridShapeBump(name="{self.name}")'
+

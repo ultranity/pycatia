@@ -40,5 +40,4 @@ class CurveFastener(Fastener):
         super().__init__(com_object)
         self.curve_fastener = com_object
 
-    def __repr__(self):
-        return f'CurveFastener(name="{self.name}")'
+

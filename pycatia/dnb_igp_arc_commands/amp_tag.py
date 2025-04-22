@@ -853,5 +853,4 @@ class AMPTag(AnyObject):
         """
         return self.amp_tag.SetWeldSpeed(i_speed)
 
-    def __repr__(self):
-        return f'AMPTag(name="{self.name}")'
+

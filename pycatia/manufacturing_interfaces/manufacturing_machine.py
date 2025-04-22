@@ -609,5 +609,4 @@ class ManufacturingMachine(AnyObject):
         """
         return self.manufacturing_machine.set_DefaultValues()
 
-    def __repr__(self):
-        return f'ManufacturingMachine(name="{self.name}")'
+

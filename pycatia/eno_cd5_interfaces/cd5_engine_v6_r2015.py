@@ -346,5 +346,4 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
         """
         return Document(self.cd5_engine_v6_r2015.NewFrom(i_cd5_template.com_object, i_name, i_type))
 
-    def __repr__(self):
-        return f'CD5EngineV6R2015(name="{self.name}")'
+

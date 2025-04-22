@@ -113,5 +113,4 @@ class HybridShapePlaneOffsetPt(Plane):
 
         self.hybrid_shape_plane_offset_pt.Point = reference_point.com_object
 
-    def __repr__(self):
-        return f'HybridShapePlaneOffsetPt(name="{self.name}")'
+

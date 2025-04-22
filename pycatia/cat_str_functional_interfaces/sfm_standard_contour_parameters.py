@@ -99,5 +99,3 @@ class SFMStandardContourParameters(Collection):
         """
         return Parameter(self.sfm_standard_contour_parameters.Item(i_index))
 
-    def __repr__(self):
-        return f'SFMStandardContourParameters(name="{self.name}")'

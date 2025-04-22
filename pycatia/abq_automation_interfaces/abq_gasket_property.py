@@ -205,5 +205,4 @@ class ABQGasketProperty(ABQProperty):
 
         self.abq_gasket_property.SupportProperty = value
 
-    def __repr__(self):
-        return f'ABQGasketProperty(name="{self.name}")'
+

@@ -488,5 +488,4 @@ class ABQFrequencyStep(ABQStep):
         """
         return self.abq_frequency_step.AddResidualModeRegionDOF(i_dof, i_index)
 
-    def __repr__(self):
-        return f'ABQFrequencyStep(name="{self.name}")'
+

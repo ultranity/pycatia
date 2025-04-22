@@ -233,5 +233,4 @@ class FunctActionsGroup(AnyObject):
         """
         return self.funct_actions_group.SetExtremities(i_input_x, i_input_y, i_output_x, i_output_y)
 
-    def __repr__(self):
-        return f'FunctActionsGroup(name="{self.name}")'
+

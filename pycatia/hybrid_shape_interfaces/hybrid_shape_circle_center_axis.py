@@ -239,5 +239,4 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
 
         return Length(self.hybrid_shape_circle_center_axis.Radius)
 
-    def __repr__(self):
-        return f'HybridShapeCircleCenterAxis(name="{self.name}")'
+

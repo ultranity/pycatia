@@ -163,6 +163,10 @@ class Sections(Collection):
         return self.sections.Remove(i_index)
 
     def __getitem__(self, n: int) -> Section:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -172,5 +176,3 @@ class Sections(Collection):
         for i in range(self.count):
             yield self.child_object(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'Sections(name="{self.name}")'

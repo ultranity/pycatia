@@ -64,5 +64,4 @@ class ManufacturingFeature(AnyObject):
         """
         return Parameter(self.manufacturing_feature.GetAGeometricAttribute(i_attribute))
 
-    def __repr__(self):
-        return f'ManufacturingFeature(name="{self.name}")'
+

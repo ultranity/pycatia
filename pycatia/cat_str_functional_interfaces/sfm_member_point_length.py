@@ -200,5 +200,4 @@ class SFMMemberPointLength(SFMMember):
         """
         return self.sfm_member_point_length.InvertDirection()
 
-    def __repr__(self):
-        return f'SFMMemberPointLength(name="{self.name}")'
+

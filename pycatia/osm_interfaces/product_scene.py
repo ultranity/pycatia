@@ -167,5 +167,4 @@ class ProductScene(AnyObject):
         """
         return SceneProductData(self.product_scene.GetSceneProductData(i_product.com_object))
 
-    def __repr__(self):
-        return f'ProductScene(name="{self.name}")'
+

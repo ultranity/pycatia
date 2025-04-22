@@ -82,5 +82,4 @@ class PCBObject(AnyObject):
         """
         return self.pcb_object.RemoveElectronicBehaviour()
 
-    def __repr__(self):
-        return f'PCBObject(name="{self.name}")'
+

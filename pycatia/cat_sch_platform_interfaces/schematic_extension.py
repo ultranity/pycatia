@@ -128,5 +128,4 @@ class SchematicExtension(AnyObject):
         """
         return self.schematic_extension.RemoveExtension(i_app_extended_obj.com_object, i_extension_type)
 
-    def __repr__(self):
-        return f'SchematicExtension(name="{self.name}")'
+

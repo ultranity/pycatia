@@ -136,5 +136,4 @@ class ManufacturingProgram2(AnyObject):
             )
         )
 
-    def __repr__(self):
-        return f'ManufacturingProgram2(name="{self.name}")'
+

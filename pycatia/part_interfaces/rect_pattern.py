@@ -533,5 +533,4 @@ class RectPattern(Pattern):
         """
         return self.rect_pattern.SetUnequalInstanceNumber(i_instance_number, i_direction)
 
-    def __repr__(self):
-        return f'RectPattern(name="{self.name}")'
+

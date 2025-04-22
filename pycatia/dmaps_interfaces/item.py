@@ -37,5 +37,4 @@ class Item(AnyObject):
         super().__init__(com_object)
         self.item = com_object
 
-    def __repr__(self):
-        return f'Item(name="{ self.name }")'
+

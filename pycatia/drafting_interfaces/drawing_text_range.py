@@ -258,6 +258,3 @@ class DrawingTextRange(CATBaseDispatch):
         :return: None
         """
         return self.drawing_text_range.InsertBefore(i_string)
-
-    def __repr__(self):
-        return f'DrawingTextRange()'

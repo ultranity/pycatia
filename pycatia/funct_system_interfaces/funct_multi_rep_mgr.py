@@ -75,5 +75,4 @@ class FunctMultiRepMgr(FunctionalFacet):
 
         self.funct_multi_rep_mgr.CurrentAssoc = value
 
-    def __repr__(self):
-        return f'FunctMultiRepMgr(name="{self.name}")'
+

@@ -64,5 +64,4 @@ class SemanticGDTCommonZone(AnyObject):
 
         return self.semantic_gdt_common_zone.Modifier
 
-    def __repr__(self):
-        return f'SemanticGdtCommonZone(name="{self.name}")'
+

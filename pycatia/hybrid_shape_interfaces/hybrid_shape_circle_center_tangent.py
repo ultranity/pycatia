@@ -444,5 +444,4 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
 
         self.hybrid_shape_circle_center_tangent.TangentOrientation2 = value
 
-    def __repr__(self):
-        return f'HybridShapeCircleCenterTangent(name="{self.name}")'
+

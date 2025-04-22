@@ -6161,5 +6161,4 @@ class HybridShapeFactory(Factory):
         """
         return self.hybrid_shape_factory.GetGeometricalFeatureType(i_elem.com_object)
 
-    def __repr__(self):
-        return f'HybridShapeFactory(name="{self.name}")'
+

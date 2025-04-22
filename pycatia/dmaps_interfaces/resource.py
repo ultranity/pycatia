@@ -156,5 +156,4 @@ class Resource(AnyObject):
         """
         return AnyObject(self.resource.GetObject(i_interface_name))
 
-    def __repr__(self):
-        return f'Resource(name="{self.name}")'
+

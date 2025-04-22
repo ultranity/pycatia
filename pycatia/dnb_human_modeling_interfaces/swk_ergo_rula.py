@@ -244,5 +244,4 @@ class SWKErgoRULA(AnyObject):
 
         return self.swk_ergo_rula.WristTwisted
 
-    def __repr__(self):
-        return f'SWKErgoRula(name="{self.name}")'
+

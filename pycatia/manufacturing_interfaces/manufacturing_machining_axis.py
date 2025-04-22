@@ -383,5 +383,4 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         """
         return self.manufacturing_machining_axis.SetPartAxisSystem(i_pas.com_object, i_product.com_object)
 
-    def __repr__(self):
-        return f'ManufacturingMachiningAxis(name="{self.name}")'
+

@@ -325,5 +325,4 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
         """
         return self.hybrid_shape_circle2_points_rad.UnsetGeometryOnSupport()
 
-    def __repr__(self):
-        return f'HybridShapeCircle2PointsRad(name="{self.name}")'
+

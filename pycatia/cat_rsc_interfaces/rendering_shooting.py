@@ -1309,5 +1309,4 @@ class RenderingShooting(AnyObject):
         """
         return self.rendering_shooting.Render()
 
-    def __repr__(self):
-        return f'RenderingShooting(name="{self.name}")'
+

@@ -408,5 +408,4 @@ class ABQHeatTransferStep(ABQStep):
 
         self.abq_heat_transfer_step.TimePeriod = value
 
-    def __repr__(self):
-        return f'ABQHeatTransferStep(name="{self.name}")'
+

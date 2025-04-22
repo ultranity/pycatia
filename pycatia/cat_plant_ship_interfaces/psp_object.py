@@ -107,5 +107,4 @@ class PSPObject(AnyObject):
 
         return self.psp_object.StartupType
 
-    def __repr__(self):
-        return f'PSPObject(name="{self.name}")'
+

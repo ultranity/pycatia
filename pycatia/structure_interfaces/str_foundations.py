@@ -92,5 +92,3 @@ class StrFoundations(Collection):
         """
         return StrFoundation(self.str_foundations.Item(i_index))
 
-    def __repr__(self):
-        return f'StrFoundations(name="{self.name}")'

@@ -339,5 +339,4 @@ class AutoFillet(DressUpShape):
 
         self.auto_fillet.SupportSurface = reference.com_object
 
-    def __repr__(self):
-        return f'AutoFillet(name="{self.name}")'
+

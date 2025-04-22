@@ -383,5 +383,4 @@ class LanguageSheetSettingAtt(SettingController):
         """
         return self.language_sheet_setting_att.SetReferenceDirectoryForTypesLock(i_locked)
 
-    def __repr__(self):
-        return f'LanguageSheetSettingAtt(name="{self.name}")'
+

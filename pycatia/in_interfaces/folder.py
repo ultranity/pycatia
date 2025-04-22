@@ -88,5 +88,4 @@ class Folder(FileComponent):
         from pycatia.in_interfaces.folders import Folders
         return Folders(self.folder.SubFolders)
 
-    def __repr__(self):
-        return f'Folder(name="{self.name}")'
+

@@ -138,5 +138,4 @@ class AnalysisCase(AnyObject):
         """
         return self.analysis_case.ComputeMeshOnly()
 
-    def __repr__(self):
-        return f'AnalysisCase(name="{self.name}")'
+

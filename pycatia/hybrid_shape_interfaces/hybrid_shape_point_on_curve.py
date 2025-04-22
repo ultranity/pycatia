@@ -368,5 +368,4 @@ class HybridShapePointOnCurve(Point):
 
         return self.hybrid_shape_point_on_curve.Type
 
-    def __repr__(self):
-        return f'HybridShapePointOnCurve(name="{self.name}")'
+

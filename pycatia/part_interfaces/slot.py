@@ -41,5 +41,4 @@ class Slot(Sweep):
         super().__init__(com_object)
         self.slot = com_object
 
-    def __repr__(self):
-        return f'Slot(name="{self.name}")'
+

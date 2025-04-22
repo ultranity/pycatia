@@ -85,5 +85,4 @@ class PSPPhysical(AnyObject):
         """
         return PSPSpatial(self.psp_physical.GetSpatial())
 
-    def __repr__(self):
-        return f'PSPPhysical(name="{self.name}")'
+

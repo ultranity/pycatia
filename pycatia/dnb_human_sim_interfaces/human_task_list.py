@@ -75,5 +75,3 @@ class HumanTaskList(Collection):
         """
         return self.human_task_list.Remove(i_index)
 
-    def __repr__(self):
-        return f'HumanTaskList(name="{self.name}")'

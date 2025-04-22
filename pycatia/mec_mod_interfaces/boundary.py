@@ -98,5 +98,4 @@ class Boundary(Reference):
         super().__init__(com_object)
         self.boundary = com_object
 
-    def __repr__(self):
-        return f'Boundary(name="{self.name}")'
+

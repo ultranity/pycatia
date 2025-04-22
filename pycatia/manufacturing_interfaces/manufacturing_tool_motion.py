@@ -286,5 +286,4 @@ class ManufacturingToolMotion(AnyObject):
         """
         return self.manufacturing_tool_motion.SetPPWord(i_message)
 
-    def __repr__(self):
-        return f'ManufacturingToolMotion(name="{self.name}")'
+

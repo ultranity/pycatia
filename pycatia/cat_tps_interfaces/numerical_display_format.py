@@ -295,5 +295,4 @@ class NumericalDisplayFormat(AnyObject):
 
         self.numerical_display_format.Separator = value
 
-    def __repr__(self):
-        return f'NumericalDisplayFormat(name="{self.name}")'
+

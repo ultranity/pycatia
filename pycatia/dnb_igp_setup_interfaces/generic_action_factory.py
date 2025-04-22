@@ -115,5 +115,4 @@ class GenericActionFactory(AnyObject):
             )
         )
 
-    def __repr__(self):
-        return f'GenericActionFactory(name="{self.name}")'
+

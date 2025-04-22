@@ -67,5 +67,4 @@ class LinearRepartition(Repartition):
 
         return Length(self.linear_repartition.Spacing)
 
-    def __repr__(self):
-        return f'LinearRepartition(name="{ self.name }")'
+

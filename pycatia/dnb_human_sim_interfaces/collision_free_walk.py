@@ -101,5 +101,4 @@ class CollisionFreeWalk(WalkActivity):
 
         self.collision_free_walk.SearchIntensity = value
 
-    def __repr__(self):
-        return f'CollisionFreeWalk(name="{self.name}")'
+

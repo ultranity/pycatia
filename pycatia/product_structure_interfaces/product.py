@@ -1465,5 +1465,4 @@ class Product(AnyObject):
         """
         return self.product.Update()
 
-    def __repr__(self):
-        return f'Product(name="{self.name}")'
+

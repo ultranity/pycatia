@@ -503,5 +503,4 @@ class CircPattern(Pattern):
         """
         return self.circ_pattern.SetUnequalStep(i_instance_number)
 
-    def __repr__(self):
-        return f'CircPattern(name="{self.name}")'
+

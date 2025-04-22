@@ -441,5 +441,4 @@ class HybridShapeDevelop(HybridShape):
         """
         return self.hybrid_shape_develop.SetPlaneAxisSwapAxes(i_idx, i_inversion_value)
 
-    def __repr__(self):
-        return f'HybridShapeDevelop(name="{self.name}")'
+

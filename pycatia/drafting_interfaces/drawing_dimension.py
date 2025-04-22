@@ -950,5 +950,4 @@ class DrawingDimension(AnyObject):
         """
         return self.drawing_dimension.Unclip()
 
-    def __repr__(self):
-        return f'DrawingDimension(name="{self.name}")'
+

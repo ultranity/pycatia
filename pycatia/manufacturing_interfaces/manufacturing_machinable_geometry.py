@@ -773,5 +773,4 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         """
         return self.manufacturing_machinable_geometry.RemovePointedGeometry(i_index)
 
-    def __repr__(self):
-        return f'ManufacturingMachinableGeometry(name="{self.name}")'
+

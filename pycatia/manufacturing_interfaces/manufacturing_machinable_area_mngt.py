@@ -68,5 +68,4 @@ class ManufacturingMachinableAreaMngt(AnyObject):
 
         return self.manufacturing_machinable_area_mngt.GetAllDatas()
 
-    def __repr__(self):
-        return f'ManufacturingMachinableAreaMngt(name="{self.name}")'
+

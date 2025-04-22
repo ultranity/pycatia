@@ -333,5 +333,4 @@ class SchAppConnectable(AnyObject):
         """
         return self.sch_app_connectable.AppSetReferenceName(i_reference_name)
 
-    def __repr__(self):
-        return f'SchAppConnectable(name="{self.name}")'
+

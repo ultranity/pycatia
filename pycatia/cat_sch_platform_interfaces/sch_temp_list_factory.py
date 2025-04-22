@@ -140,5 +140,4 @@ class SchTempListFactory(AnyObject):
         """
         return SchListOfObjects(self.sch_temp_list_factory.CreateListOfObjects())
 
-    def __repr__(self):
-        return f'SchTempListFactory(name="{self.name}")'
+

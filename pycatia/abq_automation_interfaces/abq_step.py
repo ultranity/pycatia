@@ -162,5 +162,4 @@ class ABQStep(AnyObject):
 
         return self.abq_step.Type
 
-    def __repr__(self):
-        return f'ABQStep(name="{self.name}")'
+

@@ -118,5 +118,3 @@ class FunctionalVariants(Collection):
         """
         return FunctionalVariant(self.functional_variants.Elem(i_index))
 
-    def __repr__(self):
-        return f'FunctionalVariants(name="{self.name}")'

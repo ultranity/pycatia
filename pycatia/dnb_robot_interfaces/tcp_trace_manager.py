@@ -315,5 +315,4 @@ class TCPTraceManager(AnyObject):
         """
         return self.tcp_trace_manager.SetAttachedOwner(i_owner.com_object)
 
-    def __repr__(self):
-        return f'TCPTraceManager(name="{self.name}")'
+

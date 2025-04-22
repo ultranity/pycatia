@@ -271,5 +271,4 @@ class Shuttle(AnyObject):
 
         self.shuttle.Vector = value
 
-    def __repr__(self):
-        return f'Shuttle(name="{self.name}")'
+

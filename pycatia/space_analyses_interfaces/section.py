@@ -553,5 +553,4 @@ class Section(AnyObject):
         """
         return self.section.SetPosition(i_components)
 
-    def __repr__(self):
-        return f'Section(name="{self.name}")'
+

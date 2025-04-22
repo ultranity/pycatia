@@ -74,5 +74,4 @@ class SpecsViewer(Viewer2D):
 
         self.specs_viewer.Layout = value
 
-    def __repr__(self):
-        return f'SpecsViewer(name="{self.name}")'
+

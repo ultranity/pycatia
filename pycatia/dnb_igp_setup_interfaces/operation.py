@@ -306,5 +306,4 @@ class Operation(Activity):
         """
         return self.operation.SetViaMode(index)
 
-    def __repr__(self):
-        return f'Operation(name="{self.name}")'
+

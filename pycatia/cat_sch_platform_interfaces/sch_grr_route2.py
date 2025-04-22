@@ -96,5 +96,4 @@ class SchGRRRoute2(AnyObject):
         """
         return self.sch_grr_route2.SetReshapeMode(i_reshape_mode)
 
-    def __repr__(self):
-        return f'SchGRRRoute2(name="{self.name}")'
+

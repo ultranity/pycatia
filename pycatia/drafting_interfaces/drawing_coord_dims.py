@@ -129,5 +129,3 @@ class DrawingCoordDims(Collection):
 
         return self.drawing_coord_dims.Remove(i_index)
 
-    def __repr__(self):
-        return f'DrawingCoordDims(name="{self.name}")'

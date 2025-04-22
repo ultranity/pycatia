@@ -250,5 +250,4 @@ class Behavior(AnyObject):
         """
         return self.behavior.TestOutput(p_name)
 
-    def __repr__(self):
-        return f'Behavior(name="{self.name}")'
+

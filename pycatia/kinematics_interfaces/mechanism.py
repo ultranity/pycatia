@@ -495,5 +495,4 @@ class Mechanism(AnyObject):
         """
         return self.mechanism.Update()
 
-    def __repr__(self):
-        return f'Mechanism(name="{self.name}")'
+

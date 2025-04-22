@@ -337,5 +337,4 @@ class HybridShapeReflectLine(HybridShape):
         """
         return self.hybrid_shape_reflect_line.InvertOrientationSupport()
 
-    def __repr__(self):
-        return f'HybridShapeReflectLine(name="{self.name}")'
+

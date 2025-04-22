@@ -68,5 +68,4 @@ class Viewer2D(Viewer):
 
         self.viewer_2d.Viewpoint2D = value
 
-    def __repr__(self):
-        return f'Viewer2D(name="{self.name}")'
+

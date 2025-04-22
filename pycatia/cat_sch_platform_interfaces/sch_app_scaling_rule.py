@@ -64,5 +64,4 @@ class SchAppScalingRule(AnyObject):
         """
         return self.sch_app_scaling_rule.AppGetScalingPriority(o_priority)
 
-    def __repr__(self):
-        return f'SchAppScalingRule(name="{self.name}")'
+

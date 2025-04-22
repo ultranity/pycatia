@@ -66,5 +66,3 @@ class StrAnchorPoints(Collection):
         """
         return StrAnchorPoint(self.str_anchor_points.Item(i_index))
 
-    def __repr__(self):
-        return f'StrAnchorPoints(name="{self.name}")'

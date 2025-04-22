@@ -413,5 +413,4 @@ class DrawingPicture(AnyObject):
         """
         return self.drawing_picture.GetOriginalWidth()
 
-    def __repr__(self):
-        return f'DrawingPicture(name="{self.name}")'
+

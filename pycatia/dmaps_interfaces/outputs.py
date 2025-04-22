@@ -126,5 +126,3 @@ class Outputs(Collection):
         """
         return Item(self.outputs.Remove(i_output.com_object))
 
-    def __repr__(self):
-        return f'Outputs(name="{self.name}")'

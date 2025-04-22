@@ -34,5 +34,4 @@ class PartComp(AnyObject):
         super().__init__(com_object)
         self.part_comp = com_object
 
-    def __repr__(self):
-        return f'PartComp(name="{self.name}")'
+

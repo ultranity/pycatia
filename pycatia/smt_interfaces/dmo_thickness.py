@@ -36,5 +36,4 @@ class DMOThickness(AnyObject):
         super().__init__(com_object)
         self.dmo_thickness = com_object
 
-    def __repr__(self):
-        return f'DMOThickness(name="{self.name}")'
+

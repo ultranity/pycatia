@@ -198,5 +198,4 @@ class StrSection(AnyObject):
         """
         return self.str_section.GetProperty(i_property, o_value)
 
-    def __repr__(self):
-        return f'StrSection(name="{self.name}")'
+

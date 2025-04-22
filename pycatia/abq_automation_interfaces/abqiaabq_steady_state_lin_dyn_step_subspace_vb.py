@@ -202,5 +202,4 @@ class ABQIAABQSteadyStateLinDynStepSubspaceVB(ABQIAABQSteadyStateLinDynStepBasic
 
         self.abqiaabq_steady_state_lin_dyn_step_subspace_vb.SubspaceResponase = value
 
-    def __repr__(self):
-        return f'ABQIAABQSteadyStateLinDynStepSubspaceVB(name="{self.name}")'
+

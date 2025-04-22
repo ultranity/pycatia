@@ -440,5 +440,4 @@ class DrawingGDT(AnyObject):
 
         return self.drawing_gdt.SetToleranceType(i_row_number, i_gdt_symbol)
 
-    def __repr__(self):
-        return f'DrawingGDT(name="{self.name}")'
+

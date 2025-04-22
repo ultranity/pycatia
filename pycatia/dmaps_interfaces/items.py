@@ -193,5 +193,3 @@ class Items(Collection):
         """
         return Item(self.items_.RemoveByAssignmentType(i_item.com_object, i_assignment_type))
 
-    def __repr__(self):
-        return f'Items(name="{self.name}")'

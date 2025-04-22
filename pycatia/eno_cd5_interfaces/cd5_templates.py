@@ -68,5 +68,3 @@ class CD5Templates(Collection):
         """
         return CD5Template(self.cd5_templates.Item(i_index))
 
-    def __repr__(self):
-        return f'CD5Templates(name="{self.name}")'

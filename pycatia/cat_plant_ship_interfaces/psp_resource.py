@@ -96,5 +96,4 @@ class PSPResource(AnyObject):
         """
         return self.psp_resource.GetResourceValue(i_resource_name)
 
-    def __repr__(self):
-        return f'PSPResource(name="{self.name}")'
+

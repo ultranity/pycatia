@@ -307,5 +307,4 @@ class ABQOutputRequest(AnyObject):
         """
         return self.abq_output_request.SetOutputAtLastIncrement()
 
-    def __repr__(self):
-        return f'ABQOutputRequest(name="{self.name}")'
+

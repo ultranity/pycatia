@@ -212,5 +212,4 @@ class PCBArea(AnyObject):
 
         self.pcb_area.OWNER = value
 
-    def __repr__(self):
-        return f'PCBArea(name="{self.name}")'
+

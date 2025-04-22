@@ -99,5 +99,4 @@ class ManufacturingComputePmaParameters(AnyObject):
 
         return self.manufacturing_compute_pma_parameters.GetParameterDoubleValue(i_name)
 
-    def __repr__(self):
-        return f'ManufacturingComputePmaParameters(name="{self.name}")'
+

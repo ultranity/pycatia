@@ -367,5 +367,4 @@ class MaterialManager(AnyObject):
         """
         self.material_manager.ReplaceMaterialLinks(i_material1, i_material2)
 
-    def __repr__(self):
-        return f'MaterialManager(name="{self.name}")'
+

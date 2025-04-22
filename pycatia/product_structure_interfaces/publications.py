@@ -231,6 +231,10 @@ class Publications(Collection):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __getitem__(self, n: int) -> Publication:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -240,5 +244,3 @@ class Publications(Collection):
         for i in range(self.count):
             yield self.child_object(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'Publications(name="{self.name}")'

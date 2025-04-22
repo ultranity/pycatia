@@ -288,5 +288,4 @@ class HybridShapePointOnPlane(Point):
         """
         return self.hybrid_shape_point_on_plane.SetSecondDirection(i_dir_x, i_dir_y, i_dir_z)
 
-    def __repr__(self):
-        return f'HybridShapePointOnPlane(name="{self.name}")'
+

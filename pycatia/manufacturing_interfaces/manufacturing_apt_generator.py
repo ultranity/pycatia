@@ -37,5 +37,4 @@ class ManufacturingAptGenerator(ManufacturingOutputGenerator):
         super().__init__(com_object)
         self.manufacturing_apt_generator = com_object
 
-    def __repr__(self):
-        return f'ManufacturingAptGenerator(name="{self.name}")'
+

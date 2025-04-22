@@ -439,5 +439,4 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
 
         self.hybrid_shape_circle_bitangent_point.TrimMode = value
 
-    def __repr__(self):
-        return f'HybridShapeCircleBitangentPoint(name="{self.name}")'
+

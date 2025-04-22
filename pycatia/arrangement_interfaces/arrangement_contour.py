@@ -37,5 +37,4 @@ class ArrangementContour(AnyObject):
         super().__init__(com_object)
         self.arrangement_contour = com_object
 
-    def __repr__(self):
-        return f'ArrangementContour(name="{ self.name }")'
+

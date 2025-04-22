@@ -69,5 +69,4 @@ class TPSViewFactory(AnyObject):
         """
         return TPSView(self.tps_view_factory.CreateView(i_plane.com_object, i_view_type))
 
-    def __repr__(self):
-        return f'TpsViewFactory(name="{self.name}")'
+

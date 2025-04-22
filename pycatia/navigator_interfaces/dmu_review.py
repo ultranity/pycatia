@@ -103,5 +103,4 @@ class DMUReview(AnyObject):
         from pycatia.navigator_interfaces.dmu_reviews import DMUReviews
         return DMUReviews(self.dmu_review.DMUReviews)
 
-    def __repr__(self):
-        return f'DmuReview(name="{self.name}")'
+

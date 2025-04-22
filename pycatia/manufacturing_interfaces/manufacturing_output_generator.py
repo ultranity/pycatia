@@ -272,5 +272,4 @@ class ManufacturingOutputGenerator(AnyObject):
         """
         return self.manufacturing_output_generator.SetCurrentObject(i_current_object)
 
-    def __repr__(self):
-        return f'ManufacturingOutputGenerator(name="{self.name}")'
+

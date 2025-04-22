@@ -97,5 +97,4 @@ class PPRActivity(Activity):
 
         return PPRProducts(self.ppr_activity.PPRResources)
 
-    def __repr__(self):
-        return f'PprActivity(name="{self.name}")'
+

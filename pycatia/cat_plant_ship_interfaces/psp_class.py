@@ -105,5 +105,4 @@ class PSPClass(AnyObject):
 
         return PSPListOfBSTRs(self.psp_class.StartUpPhysicals)
 
-    def __repr__(self):
-        return f'PSPClass(name="{self.name}")'
+

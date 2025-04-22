@@ -396,5 +396,4 @@ class Plane(HybridShape):
         """
         return self.plane.SetPosition(i_x, i_y, i_z)
 
-    def __repr__(self):
-        return f'Plane(name="{ self.name }")'
+

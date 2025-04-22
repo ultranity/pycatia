@@ -64,5 +64,4 @@ class SchAppCntrColour(AnyObject):
         """
         return self.sch_app_cntr_colour.AppGetConnectorColorByType(o_colour)
 
-    def __repr__(self):
-        return f'SchAppCntrColour(name="{self.name}")'
+

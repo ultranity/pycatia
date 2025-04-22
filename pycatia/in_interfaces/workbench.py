@@ -39,5 +39,4 @@ class Workbench(AnyObject):
         super().__init__(com_object)
         self.workbench = com_object
 
-    def __repr__(self):
-        return f'Workbench(name="{self.name}")'
+

@@ -112,5 +112,4 @@ class File(FileComponent):
         """
         return TextStream(self.file.OpenAsTextStream(i_mode))
 
-    def __repr__(self):
-        return f'File(name="{ self.name }")'
+

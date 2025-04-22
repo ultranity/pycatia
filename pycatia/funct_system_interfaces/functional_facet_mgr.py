@@ -37,5 +37,4 @@ class FunctionalFacetMgr(AnyObject):
         super().__init__(com_object)
         self.functional_facet_mgr = com_object
 
-    def __repr__(self):
-        return f'FunctionalFacetMgr(name="{ self.name }")'
+

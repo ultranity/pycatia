@@ -120,5 +120,3 @@ class ManufacturingActivities(Collection):
         """
         return ManufacturingActivity(self.mfg_activities.Item(i_index))
 
-    def __repr__(self):
-        return f'MfgActivities(name="{self.name}")'

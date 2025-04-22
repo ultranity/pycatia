@@ -206,5 +206,4 @@ class AnalysisSet(AnyObject):
         """
         return self.analysis_set.Update()
 
-    def __repr__(self):
-        return f'AnalysisSet(name="{self.name}")'
+

@@ -127,5 +127,4 @@ class MountActivity(Activity):
 
         self.mount_activity.ToolProfile = value
 
-    def __repr__(self):
-        return f'MountActivity(name="{self.name}")'
+

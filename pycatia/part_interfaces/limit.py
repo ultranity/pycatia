@@ -108,5 +108,4 @@ class Limit(AnyObject):
 
         self.limit.LimitingElement = value.com_object
 
-    def __repr__(self):
-        return f'Limit(name="{self.name}")'
+

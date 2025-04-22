@@ -107,5 +107,4 @@ class HybridShapePlane1Line1Pt(Plane):
 
         self.hybrid_shape_plane1_line1_pt.Point = reference_point.com_object
 
-    def __repr__(self):
-        return f'HybridShapePlane1Line1Pt(name="{self.name}")'
+

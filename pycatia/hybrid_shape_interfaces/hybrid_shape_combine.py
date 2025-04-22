@@ -271,5 +271,4 @@ class HybridShapeCombine(HybridShape):
 
         self.hybrid_shape_combine.SolutionTypeCombine = value
 
-    def __repr__(self):
-        return f'HybridShapeCombine(name="{self.name}")'
+

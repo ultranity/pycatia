@@ -309,5 +309,4 @@ class ArrangementProduct(AnyObject):
         """
         return self.arrangement_product.SetAutoName()
 
-    def __repr__(self):
-        return f'ArrangementProduct(name="{self.name}")'
+

@@ -59,5 +59,4 @@ class StrObject(Product):
 
         return Parameter(self.str_object.Type)
 
-    def __repr__(self):
-        return f'StrObject(name="{self.name}")'
+

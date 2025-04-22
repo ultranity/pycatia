@@ -172,5 +172,4 @@ class SFMOpeningContoursMgr(AnyObject):
         """
         return SFMStandardContourParameters(self.sfm_opening_contours_mgr.GetStdOpeningContourParams(i_contour_name))
 
-    def __repr__(self):
-        return f'SFMOpeningContoursMgr(name="{self.name}")'
+

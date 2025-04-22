@@ -62,5 +62,3 @@ class FastenerSet(Collection):
         """
         return Fastener(self.fastener_set.GetFastener(index))
 
-    def __repr__(self):
-        return f'FastenerSet(name="{self.name}")'

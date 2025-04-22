@@ -286,5 +286,4 @@ class SWKAnthroVariable(SWKManikinPart):
         """
         return self.swk_anthro_variable.GetCorrelationWith(pi_ref_number_of_other)
 
-    def __repr__(self):
-        return f'SWKAnthroVariable(name="{self.name}")'
+

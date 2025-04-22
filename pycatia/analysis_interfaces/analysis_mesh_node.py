@@ -37,5 +37,4 @@ class AnalysisMeshNode(AnyObject):
         super().__init__(com_object)
         self.analysis_mesh_node = com_object
 
-    def __repr__(self):
-        return f'AnalysisMeshNode(name="{ self.name }")'
+

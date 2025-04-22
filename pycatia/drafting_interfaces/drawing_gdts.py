@@ -196,5 +196,3 @@ class DrawingGDTs(Collection):
 
         return self.drawing_gd_ts.Remove(i_index)
 
-    def __repr__(self):
-        return f'DrawingGDTs(name="{self.name}")'

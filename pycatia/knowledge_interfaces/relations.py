@@ -621,14 +621,10 @@ class Relations(Collection):
         return Relations(self.relations.SubList(i_feature.com_object, i_recursively))
 
     def __getitem__(self, n: int) -> Relation:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return Relation(self.relations.Item(n + 1))
+        return super().__getitem__(n)
 
     def __iter__(self) -> Iterator[Relation]:
-        for i in range(self.count):
-            yield self.child_object(self.com_object.Item(i + 1))
+        return super().__iter__()
 
-    def __repr__(self):
-        return f'Relations(name="{self.name}")'
+    def to_dict(self):
+        return {x.name: x.to_dict() for x in self}

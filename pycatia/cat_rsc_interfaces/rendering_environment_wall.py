@@ -380,5 +380,4 @@ class RenderingEnvironmentWall(AnyObject):
         """
         return self.rendering_environment_wall.FitAllInWall()
 
-    def __repr__(self):
-        return f'RenderingEnvironmentWall(name="{ self.name }")'
+

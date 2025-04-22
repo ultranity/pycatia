@@ -105,5 +105,4 @@ class PositionedMaterial(AnyObject):
 
         return Material(self.positioned_material.Material)
 
-    def __repr__(self):
-        return f'PositionedMaterial(name="{self.name}")'
+

@@ -147,5 +147,4 @@ class PSPListOfBSTRs(AnyObject):
         """
         return self.psp_list_of_bst_rs.RemoveByIndex(i_index)
 
-    def __repr__(self):
-        return f'PSPListOfBstRs(name="{self.name}")'
+

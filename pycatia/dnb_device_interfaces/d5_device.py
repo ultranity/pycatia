@@ -65,5 +65,4 @@ class D5Device(BasicDevice):
         """
         return self.d5_device.GetLinkedDeviceFile()
 
-    def __repr__(self):
-        return f'D5Device(name="{self.name}")'
+

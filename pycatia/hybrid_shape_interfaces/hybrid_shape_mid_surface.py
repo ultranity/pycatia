@@ -148,5 +148,4 @@ class HybridShapeMidSurface(HybridShape):
 
         self.hybrid_shape_mid_surface.Threshold = value
 
-    def __repr__(self):
-        return f'HybridShapeMidSurface(name="{self.name}")'
+

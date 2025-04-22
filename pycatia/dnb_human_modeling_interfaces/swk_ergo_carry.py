@@ -132,5 +132,4 @@ class SWKErgoCarry(AnyObject):
 
         self.swk_ergo_carry.Population = value
 
-    def __repr__(self):
-        return f'SWKErgoCarry(name="{self.name}")'
+

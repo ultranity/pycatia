@@ -149,5 +149,4 @@ class Pattern(TransformationShape):
         """
         return self.pattern.DesactivatePosition(i_pos_u, i_pos_v)
 
-    def __repr__(self):
-        return f'Pattern(name="{ self.name }")'
+

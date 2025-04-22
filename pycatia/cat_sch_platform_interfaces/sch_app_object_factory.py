@@ -282,5 +282,4 @@ class SchAppObjectFactory(AnyObject):
         """
         return self.sch_app_object_factory.AppCreateZone(i_app_zone_class_type, o_app_zone.com_object)
 
-    def __repr__(self):
-        return f'SchAppObjectFactory(name="{self.name}")'
+

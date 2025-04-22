@@ -291,5 +291,4 @@ class HybridShapeDirection(HybridShape):
         """
         return self.hybrid_shape_direction.GetZVal()
 
-    def __repr__(self):
-        return f'HybridShapeDirection(name="{self.name}")'
+

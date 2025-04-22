@@ -104,5 +104,4 @@ class PertNode(AnyObject):
         """
         return self.pert_node.SetLocation(xx, yy)
 
-    def __repr__(self):
-        return f'PertNode(name="{self.name}")'
+

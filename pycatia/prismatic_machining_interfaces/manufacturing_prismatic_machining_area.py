@@ -676,5 +676,4 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         """
         return self.manufacturing_prismatic_machining_area.SetOpenContourSide(i_contour_number, i_point.com_object)
 
-    def __repr__(self):
-        return f'ManufacturingPrismaticMachiningArea(name="{self.name}")'
+

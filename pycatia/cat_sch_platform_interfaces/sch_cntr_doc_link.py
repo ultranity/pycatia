@@ -145,5 +145,4 @@ class SchCntrDocLink(AnyObject):
         """
         return self.sch_cntr_doc_link.UnLink()
 
-    def __repr__(self):
-        return f'SchCntrDocLink(name="{self.name}")'
+

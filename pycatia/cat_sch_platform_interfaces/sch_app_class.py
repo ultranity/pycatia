@@ -183,5 +183,4 @@ class SchAppClass(AnyObject):
         """
         return SchListOfBSTRs(self.sch_app_class.AppListValidRouteTypes())
 
-    def __repr__(self):
-        return f'SchAppClass(name="{self.name}")'
+

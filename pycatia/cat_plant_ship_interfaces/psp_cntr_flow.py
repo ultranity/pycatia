@@ -99,5 +99,4 @@ class PSPCntrFlow(AnyObject):
 
         self.psp_cntr_flow.FlowReality = value
 
-    def __repr__(self):
-        return f'PSPCntrFlow(name="{self.name}")'
+

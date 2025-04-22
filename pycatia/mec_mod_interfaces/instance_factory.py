@@ -363,5 +363,4 @@ class InstanceFactory(Factory):
         """
         return self.instance_factory.PutInputData(i_name, i_input.com_object)
 
-    def __repr__(self):
-        return f'InstanceFactory(name="{self.name}")'
+

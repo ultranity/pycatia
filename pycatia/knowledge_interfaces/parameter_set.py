@@ -93,5 +93,4 @@ class ParameterSet(AnyObject):
         from pycatia.knowledge_interfaces.parameter_sets import ParameterSets
         return ParameterSets(self.parameter_set.ParameterSets)
 
-    def __repr__(self):
-        return f'ParameterSet(name="{self.name}")'
+

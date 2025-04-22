@@ -68,5 +68,4 @@ class SFMSplitPlate(AnyObject):
         """
         return SFMWelds(self.sfm_split_plate.GetWelds(i_operating_ele.com_object))
 
-    def __repr__(self):
-        return f'SFMSplitPlate(name="{self.name}")'
+

@@ -152,5 +152,4 @@ class Printer(AnyObject):
 
         return self.printer.PaperWidth
 
-    def __repr__(self):
-        return f'Printer(name="{self.name}")'
+

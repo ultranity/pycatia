@@ -226,5 +226,4 @@ class HybridBody(AnyObject):
         for shape in shapes:
             self.append_hybrid_shape(shape)
 
-    def __repr__(self):
-        return f'HybridBody(name="{self.name}")'
+

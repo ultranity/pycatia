@@ -1858,5 +1858,4 @@ class ManufacturingOperation(ManufacturingActivity):
         """
         return self.manufacturing_operation.UnlockActivty()
 
-    def __repr__(self):
-        return f'ManufacturingOperation(name="{self.name}")'
+

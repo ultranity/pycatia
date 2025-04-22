@@ -290,15 +290,12 @@ class ShapeFactory(Factory):
                 | 
                 |     Parameters:
                 | 
-                |         iObjectToChamfer
-                |             The first edge or face to chamfer
-                |             The following 
-                | 
-                |         Boundary object is supported: TriDimFeatEdge. 
+                |     iObjectToChamfer
+                |         The first edge or face to chamfer
+                |         The following boundary object is supported: TriDimFeatEdge. 
                 |     iPropagation
                 |         Controls if and how the chamfering operation should propagate beyond
                 |         the first chamfer element iObjectToChamfer, when it is an edge
-                |         
                 |     iMode
                 |         Controls if the chamfer is defined by two lengthes, or by an angle and
                 |         a length
@@ -3418,5 +3415,4 @@ class ShapeFactory(Factory):
                                                   i_parting.com_object, i_dir_x, i_dir_y, i_dir_z, i_mode, i_angle,
                                                   i_multiselection_mode, i_type, i_volume_support.com_object))
 
-    def __repr__(self):
-        return f'ShapeFactory(name="{self.name}")'
+

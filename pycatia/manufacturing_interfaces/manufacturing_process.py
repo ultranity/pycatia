@@ -56,5 +56,4 @@ class ManufacturingProcess(AnyObject):
 
         return ManufacturingActivities(self.manufacturing_process.Setups)
 
-    def __repr__(self):
-        return f'ManufacturingProcess(name="{self.name}")'
+

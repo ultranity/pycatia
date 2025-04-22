@@ -79,5 +79,4 @@ class Affinity(Shape):
 
         return HybridShape(self.affinity.HybridShape)
 
-    def __repr__(self):
-        return f'Affinity(name="{ self.name }")'
+

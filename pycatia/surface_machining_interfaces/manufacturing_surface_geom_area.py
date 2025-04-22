@@ -91,5 +91,4 @@ class ManufacturingSurfaceGeomArea(ManufacturingMachinableArea):
         """
         return self.manufacturing_surface_geom_area.SetGeometry(i_reference.com_object, i_product.com_object)
 
-    def __repr__(self):
-        return f'ManufacturingSurfaceGeomArea(name="{self.name}")'
+

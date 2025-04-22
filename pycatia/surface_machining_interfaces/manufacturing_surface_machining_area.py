@@ -112,5 +112,4 @@ class ManufacturingSurfaceMachiningArea(ManufacturingMachinableArea):
         """
         return self.manufacturing_surface_machining_area.SetNCGeometry(i_geometry_type, i_nc_geometry.com_object)
 
-    def __repr__(self):
-        return f'ManufacturingSurfaceMachiningArea(name="{self.name}")'
+

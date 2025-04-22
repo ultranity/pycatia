@@ -361,5 +361,3 @@ class ThreeDCuts(Collection):
         """
         return self.three_d_cuts.ThreeDCutShapeName(name)
 
-    def __repr__(self):
-        return f'ThreeDCuts(name="{self.name}")'

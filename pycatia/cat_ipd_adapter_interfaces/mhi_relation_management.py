@@ -102,5 +102,4 @@ class MhiRelationManagement(AnyObject):
         """
         return self.mhi_relation_management.GetSupportedRelations()
 
-    def __repr__(self):
-        return f'MhiRelationManagement(name="{self.name}")'
+

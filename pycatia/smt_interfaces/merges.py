@@ -114,5 +114,3 @@ class Merges(Collection):
         """
         return self.merges.MergeShapeName()
 
-    def __repr__(self):
-        return f'Merges(name="{self.name}")'

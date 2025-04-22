@@ -261,5 +261,4 @@ class Replay(AnyObject):
         """
         return self.replay.RemoveSample(i_channel, i_sample)
 
-    def __repr__(self):
-        return f'Replay(name="{self.name}")'
+

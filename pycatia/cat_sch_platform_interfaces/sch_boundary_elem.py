@@ -148,5 +148,4 @@ class SchBoundaryElem(AnyObject):
         """
         return SchListOfObjects(self.sch_boundary_elem.ListGRRZoneOwners())
 
-    def __repr__(self):
-        return f'SchBoundaryElem(name="{self.name}")'
+

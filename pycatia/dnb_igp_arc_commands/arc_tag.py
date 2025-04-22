@@ -716,5 +716,4 @@ class ARCTag(AnyObject):
         """
         return self.arc_tag.TranslateAlongSeam(i_distance)
 
-    def __repr__(self):
-        return f'ARCTag(name="{self.name}")'
+

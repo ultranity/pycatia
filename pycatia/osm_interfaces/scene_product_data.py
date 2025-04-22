@@ -317,5 +317,4 @@ class SceneProductData(AnyObject):
         """
         return self.scene_product_data.SetRealTransparency(i_transparency, i_inheritance)
 
-    def __repr__(self):
-        return f'SceneProductData(name="{self.name}")'
+

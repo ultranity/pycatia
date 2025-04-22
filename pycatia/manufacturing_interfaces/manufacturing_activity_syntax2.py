@@ -51,5 +51,4 @@ class ManufacturingActivitySyntax2(AnyObject):
         """
         return self.manufacturing_activity_syntax2.GetPPWORDSyntax()
 
-    def __repr__(self):
-        return f'ManufacturingActivitySyntax2(name="{self.name}")'
+

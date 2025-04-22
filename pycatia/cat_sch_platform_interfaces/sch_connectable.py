@@ -74,5 +74,4 @@ class SchConnectable(AnyObject):
         """
         return SchListOfObjects(self.sch_connectable.ListConnectors(i_l_cntr_class_filter.com_object, i_grr.com_object))
 
-    def __repr__(self):
-        return f'SchConnectable(name="{self.name}")'
+

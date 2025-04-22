@@ -2042,5 +2042,4 @@ class SectioningSettingAtt(SettingController):
         """
         return self.sectioning_setting_att.SetWindowOpenModeLock(i_locked)
 
-    def __repr__(self):
-        return f'SectioningSettingAtt(name="{self.name}")'
+

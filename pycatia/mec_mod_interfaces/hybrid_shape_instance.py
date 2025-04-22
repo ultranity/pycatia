@@ -419,5 +419,4 @@ class HybridShapeInstance(HybridShape):
         """
         return self.hybrid_shape_instance.PutInputData(i_name, i_input.com_object)
 
-    def __repr__(self):
-        return f'HybridShapeInstance(name="{ self.name }")'
+

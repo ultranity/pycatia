@@ -126,6 +126,10 @@ class LightSources(Collection):
         return self.light_sources.Remove(i_index)
 
     def __getitem__(self, n: int) -> LightSource:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -135,5 +139,3 @@ class LightSources(Collection):
         for i in range(self.count):
             yield self.child_object(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'LightSources(name="{self.name}")'

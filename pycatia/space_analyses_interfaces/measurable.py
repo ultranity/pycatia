@@ -816,6 +816,3 @@ class Measurable(AnyObject):
 
         system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
-
-    def __repr__(self):
-        return f'CATIAMeasurable({self.name})'

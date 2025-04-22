@@ -61,5 +61,4 @@ class PSPGroupable(AnyObject):
 
         return PSPListOfObjects(self.psp_groupable.Groups)
 
-    def __repr__(self):
-        return f'PSPGroupable(name="{self.name}")'
+

@@ -1707,5 +1707,4 @@ class RenderingMaterial(AnyObject):
         """
         return self.rendering_material.PutTransparencyColor(i_transparency_color)
 
-    def __repr__(self):
-        return f'RenderingMaterial(name="{self.name}")'
+

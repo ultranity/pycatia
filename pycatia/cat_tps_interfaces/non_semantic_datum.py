@@ -59,5 +59,4 @@ class NonSemanticDatum(AnyObject):
 
         self.non_semantic_datum.Label = value
 
-    def __repr__(self):
-        return f'NonSemanticDatum(name="{ self.name }")'
+

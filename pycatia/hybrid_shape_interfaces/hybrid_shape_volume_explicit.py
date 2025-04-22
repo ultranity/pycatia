@@ -39,5 +39,4 @@ class HybridShapeVolumeExplicit(HybridShape):
         super().__init__(com_object)
         self.hybrid_shape_volume_explicit = com_object
 
-    def __repr__(self):
-        return f'HybridShapeVolumeExplicit(name="{self.name}")'
+

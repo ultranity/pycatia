@@ -253,5 +253,4 @@ class HybridShapeSweep(HybridShape):
         """
         return self.hybrid_shape_sweep.RemoveAllFillPoints()
 
-    def __repr__(self):
-        return f'HybridShapeSweep(name="{ self.name }")'
+

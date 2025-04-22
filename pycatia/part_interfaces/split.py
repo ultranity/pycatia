@@ -73,5 +73,4 @@ class Split(SurfaceBasedShape):
 
         self.split.SplittingSide = value
 
-    def __repr__(self):
-        return f'Split(name="{self.name}")'
+

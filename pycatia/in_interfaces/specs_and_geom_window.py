@@ -101,5 +101,4 @@ class SpecsAndGeomWindow(Window):
 
         return SpecsViewer(self.specs_and_geom_window.SpecsViewer)
 
-    def __repr__(self):
-        return f'SpecsAndGeomWindow(name="{self.name}")'
+

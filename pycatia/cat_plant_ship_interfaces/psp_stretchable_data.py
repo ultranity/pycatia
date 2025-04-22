@@ -94,5 +94,4 @@ class PSPStretchableData(AnyObject):
         """
         return PSPListOfDoubles(self.psp_stretchable_data.ListDefinitionPoints(i_rel_axis.com_object))
 
-    def __repr__(self):
-        return f'PSPStretchableData(name="{self.name}")'
+

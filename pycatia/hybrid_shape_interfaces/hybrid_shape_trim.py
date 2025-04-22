@@ -1122,5 +1122,4 @@ class HybridShapeTrim(HybridShape):
         """
         return self.hybrid_shape_trim.SetPreviousOrientation(i_rank, i_orientation)
 
-    def __repr__(self):
-        return f'HybridShapeTrim(name="{self.name}")'
+

@@ -31,4 +31,4 @@ class IUnknown:
         pass
 
     def __repr__(self):
-        return f'IUnknown()'
+        return f'{self.__class__.__name__}()'

@@ -237,5 +237,4 @@ class HybridShapeScaling(HybridShape):
 
         self.hybrid_shape_scaling.VolumeResult = value
 
-    def __repr__(self):
-        return f'HybridShapeScaling(name="{self.name}")'
+

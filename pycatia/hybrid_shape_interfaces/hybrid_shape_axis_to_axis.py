@@ -218,5 +218,4 @@ class HybridShapeAxisToAxis(HybridShape):
 
         self.hybrid_shape_axis_to_axis.VolumeResult = value
 
-    def __repr__(self):
-        return f'HybridShapeAxisToAxis(name="{self.name}")'
+

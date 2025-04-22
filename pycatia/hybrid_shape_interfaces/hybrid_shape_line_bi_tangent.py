@@ -355,5 +355,4 @@ class HybridShapeLineBiTangent(Line):
         """
         return self.hybrid_shape_line_bi_tangent.SetLengthType(i_type)
 
-    def __repr__(self):
-        return f'HybridShapeLineBiTangent(name="{self.name}")'
+

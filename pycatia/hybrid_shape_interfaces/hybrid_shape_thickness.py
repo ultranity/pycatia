@@ -183,5 +183,4 @@ class HybridShapeThickness(HybridShape):
 
         return Length(self.hybrid_shape_thickness.Thickness2Value)
 
-    def __repr__(self):
-        return f'HybridShapeThickness(name="{self.name}")'
+

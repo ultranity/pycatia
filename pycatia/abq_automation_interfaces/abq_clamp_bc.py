@@ -38,5 +38,4 @@ class ABQClampBC(ABQBoundaryCondition):
         super().__init__(com_object)
         self.abq_clamp_bc = com_object
 
-    def __repr__(self):
-        return f'ABQClampBC(name="{self.name}")'
+

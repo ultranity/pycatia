@@ -127,5 +127,4 @@ class SchNetworkAnalysis(AnyObject):
         """
         return SchListOfObjects(self.sch_network_analysis.ListNetworkObjects())
 
-    def __repr__(self):
-        return f'SchNetworkAnalysis(name="{self.name}")'
+

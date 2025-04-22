@@ -360,5 +360,4 @@ class Viewer(AnyObject):
         """
         return self.viewer.ZoomOut()
 
-    def __repr__(self):
-        return f'Viewer(name="{self.name}")'
+

@@ -192,5 +192,4 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         """
         return self.hybrid_shape_circle3_points.RemoveSupport()
 
-    def __repr__(self):
-        return f'HybridShapeCircle3Points(name="{self.name}")'
+

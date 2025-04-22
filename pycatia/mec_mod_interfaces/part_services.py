@@ -163,5 +163,4 @@ class PartServices(AnyObject):
 
         return References(self.part_services.GetSubElements(i_object.com_object, i_sub_element_dimension, i_duplicates))
 
-    def __repr__(self):
-        return f'PartServices(name="{self.name}")'
+

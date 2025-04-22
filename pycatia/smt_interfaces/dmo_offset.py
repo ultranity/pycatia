@@ -36,5 +36,4 @@ class DMOOffset(AnyObject):
         super().__init__(com_object)
         self.dmo_offset = com_object
 
-    def __repr__(self):
-        return f'DMOOffset(name="{self.name}")'
+

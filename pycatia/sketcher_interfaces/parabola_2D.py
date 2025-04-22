@@ -162,5 +162,4 @@ class Parabola2D(Curve2D):
         """
         return self.parabola_2d.SetData(i_center_x, i_center_y, i_axis_x, i_axis_y, i_focal_distance)
 
-    def __repr__(self):
-        return f'Parabola2D(name="{self.name}")'
+

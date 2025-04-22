@@ -309,5 +309,4 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
 
         self.errorlog_statistics_setting_att.WKBN = value
 
-    def __repr__(self):
-        return f'ErrorlogStatisticsSettingAtt(name="{ self.name }")'
+

@@ -63,5 +63,4 @@ class Repartition(AnyObject):
 
         return IntParam(self.repartition.InstancesCount)
 
-    def __repr__(self):
-        return f'Repartition(name="{ self.name }")'
+

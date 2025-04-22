@@ -49,5 +49,4 @@ class Angle(Dimension):
         super().__init__(com_object)
         self.angle = com_object
 
-    def __repr__(self):
-        return f'Angle(name="{ self.name }")'
+

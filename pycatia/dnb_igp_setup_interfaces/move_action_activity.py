@@ -156,5 +156,4 @@ class MoveActionActivity(Activity):
 
         return self.move_action_activity.TargetType
 
-    def __repr__(self):
-        return f'MoveActionActivity(name="{self.name}")'
+

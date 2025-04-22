@@ -85,5 +85,4 @@ class WorkerActivity(Activity):
 
         return SWKManikin(self.worker_activity.WorkerResource)
 
-    def __repr__(self):
-        return f'WorkerActivity(name="{self.name}")'
+

@@ -181,5 +181,4 @@ class StrParam(Parameter):
         """
         return self.str_param.SuppressEnumerateValues()
 
-    def __repr__(self):
-        return f'StrParam(name="{ self.name }")'
+

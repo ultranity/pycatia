@@ -217,5 +217,4 @@ class FunctionalAction(FunctionalElement):
         """
         return FunctionalFacet(self.functional_action.SearchFacetByName(i_fm, i_create_if_necessary))
 
-    def __repr__(self):
-        return f'FunctionalAction(name="{self.name}")'
+

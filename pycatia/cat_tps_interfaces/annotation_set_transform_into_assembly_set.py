@@ -60,5 +60,4 @@ class AnnotationSetTransformIntoAssemblySet(AnyObject):
         """
         return self.annotation_set_transform_into_assembly_set.Transform(i_assemblyannotation_set_name)
 
-    def __repr__(self):
-        return f'AnnotationSetTransformIntoAssemblySet(name="{ self.name }")'
+

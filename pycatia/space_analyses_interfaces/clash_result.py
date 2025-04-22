@@ -93,5 +93,4 @@ class ClashResult(AnyObject):
         """
         return self.clash_result.Export(i_type, i_path)
 
-    def __repr__(self):
-        return f'ClashResult(name="{self.name}")'
+

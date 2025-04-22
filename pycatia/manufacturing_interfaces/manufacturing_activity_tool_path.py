@@ -61,5 +61,4 @@ class ManufacturingActivityToolPath(AnyObject):
 
         return self.manufacturing_activity_tool_path.ComputeAndSetToolPath()
 
-    def __repr__(self):
-        return f'ManufacturingActivityToolPath(name="{self.name}")'
+

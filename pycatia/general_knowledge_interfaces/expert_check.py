@@ -141,5 +141,4 @@ class ExpertCheck(ExpertCheckRuntime):
 
         self.expert_check.Variables = value
 
-    def __repr__(self):
-        return f'ExpertCheck(name="{self.name}")'
+

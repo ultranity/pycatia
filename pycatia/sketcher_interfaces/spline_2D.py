@@ -134,5 +134,4 @@ class Spline2D(Curve2D):
         """
         return self.spline_2d.InsertControlPointAfter(i_ctrl_point.com_object, i_position)
 
-    def __repr__(self):
-        return f'Spline2D(name="{self.name}")'
+

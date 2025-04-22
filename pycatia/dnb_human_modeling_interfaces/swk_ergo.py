@@ -113,5 +113,4 @@ class SWKErgo(AnyObject):
 
         return SWKErgoRULA(self.swk_ergo.RULA)
 
-    def __repr__(self):
-        return f'SWKErgo(name="{self.name}")'
+

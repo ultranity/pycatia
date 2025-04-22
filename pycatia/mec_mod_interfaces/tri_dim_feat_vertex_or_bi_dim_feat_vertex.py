@@ -46,5 +46,4 @@ class TriDimFeatVertexOrBiDimFeatVertex(Vertex):
         super().__init__(com_object)
         self.tri_dim_feat_vertex_or_bi_dim_feat_vertex = com_object
 
-    def __repr__(self):
-        return f'TriDimFeatVertexOrBiDimFeatVertex(name="{self.name}")'
+

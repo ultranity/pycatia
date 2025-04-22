@@ -72,5 +72,4 @@ class Layout2DFactory(AnyObject):
         """
         return Layout2DRoot(self.layout_2d_factory.Create2DLayout(i_standard_name))
 
-    def __repr__(self):
-        return f'Layout2DFactory(name="{self.name}")'
+

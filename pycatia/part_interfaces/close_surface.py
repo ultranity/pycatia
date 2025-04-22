@@ -503,5 +503,4 @@ class CloseSurface(Pattern):
         """
         return self.close_surface.SetUnequalStep(i_instance_number)
 
-    def __repr__(self):
-        return f'CloseSurface(name="{self.name}")'
+

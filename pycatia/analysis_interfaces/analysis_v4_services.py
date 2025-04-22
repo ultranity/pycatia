@@ -211,5 +211,4 @@ class AnalysisV4Services(AnyObject):
         """
         return self.analysis_v4_services.PrintSessionInfo(i_session_path, i_print_path)
 
-    def __repr__(self):
-        return f'AnalysisV4Services(name="{self.name}")'
+

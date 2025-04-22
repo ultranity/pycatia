@@ -40,5 +40,4 @@ class ABQFieldOutputRequest(ABQFHOutputRequest):
         super().__init__(com_object)
         self.abq_field_output_request = com_object
 
-    def __repr__(self):
-        return f'ABQFieldOutputRequest(name="{self.name}")'
+

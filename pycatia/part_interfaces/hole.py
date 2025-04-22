@@ -819,5 +819,4 @@ class Hole(SketchBasedShape):
         """
         return self.hole.SetOrigin(i_x, i_y, i_z)
 
-    def __repr__(self):
-        return f'Hole(name="{self.name}")'
+

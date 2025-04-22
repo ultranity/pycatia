@@ -187,5 +187,4 @@ class HybridShape3DCurveOffset(HybridShape):
 
         self.hybrid_shape_3d_curve_offset.OffsetValue = length
 
-    def __repr__(self):
-        return f'HybridShape3DCurveOffset(name="{self.name}")'
+

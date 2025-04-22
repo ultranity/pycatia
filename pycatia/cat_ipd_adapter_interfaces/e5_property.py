@@ -260,5 +260,4 @@ class E5Property(AnyObject):
         """
         return self.e5_property.SetStringAttribute(i_attr_name, i_attr_value)
 
-    def __repr__(self):
-        return f'E5Property(name="{ self.name }")'
+

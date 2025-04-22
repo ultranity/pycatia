@@ -161,5 +161,4 @@ class DeviceJointRelations(AnyObject):
         """
         return self.device_joint_relations.SetUserVariableExpr(user_expr)
 
-    def __repr__(self):
-        return f'DeviceJointRelations(name="{self.name}")'
+

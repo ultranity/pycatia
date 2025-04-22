@@ -161,6 +161,10 @@ class Clashes(Collection):
         return self.clashes.Remove(i_index)
 
     def __getitem__(self, n: int) -> Clash:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -170,5 +174,3 @@ class Clashes(Collection):
         for i in range(self.count):
             yield self.child_object(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'Clashes(name="{self.name}")'

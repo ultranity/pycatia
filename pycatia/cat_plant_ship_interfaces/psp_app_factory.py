@@ -458,5 +458,4 @@ class PSPAppFactory(AnyObject):
         """
         return PSPListOfObjects(self.psp_app_factory.ListPhysicals(i_current_product.com_object, i_domain_id))
 
-    def __repr__(self):
-        return f'PSPAppFactory(name="{self.name}")'
+

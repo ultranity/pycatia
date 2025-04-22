@@ -160,5 +160,4 @@ class ArrWorkbench(Workbench):
         """
         return self.arr_workbench.FindInterface(i_interface_name, i_object.com_object)
 
-    def __repr__(self):
-        return f'ArrWorkbench(name="{self.name}")'
+

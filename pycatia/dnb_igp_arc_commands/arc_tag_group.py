@@ -505,5 +505,4 @@ class ARCTagGroup(AnyObject):
         """
         return self.arc_tag_group.TranslateTagAlongSeam(i_idx, i_distance)
 
-    def __repr__(self):
-        return f'ARCTagGroup(name="{self.name}")'
+

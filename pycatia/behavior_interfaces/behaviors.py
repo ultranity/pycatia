@@ -82,5 +82,3 @@ class Behaviors(Collection):
         """
         return Behavior(self.behaviors.Item(i_index))
 
-    def __repr__(self):
-        return f'Behaviors(name="{self.name}")'

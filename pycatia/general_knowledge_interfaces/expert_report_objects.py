@@ -182,5 +182,3 @@ class ExpertReportObjects(Collection):
         """
         return ExpertReportObject(self.expert_report_objects.SucceedItem(i_index))
 
-    def __repr__(self):
-        return f'ExpertReportObjects(name="{self.name}")'

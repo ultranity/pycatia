@@ -61,5 +61,4 @@ class Tracks(Sampleds):
         """
         return self.tracks.AddFromFile(i_file_name)
 
-    def __repr__(self):
-        return f'Tracks(name="{self.name}")'
+

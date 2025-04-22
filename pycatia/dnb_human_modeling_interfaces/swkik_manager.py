@@ -239,5 +239,4 @@ class SWKIKManager(AnyObject):
         """
         return self.swkik_manager.Resolve()
 
-    def __repr__(self):
-        return f'SWKikManager(name="{self.name}")'
+

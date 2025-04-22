@@ -68,5 +68,4 @@ class Face(Boundary):
         super().__init__(com_object)
         self.face = com_object
 
-    def __repr__(self):
-        return f'Face(name="{self.name}")'
+

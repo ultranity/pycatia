@@ -73,5 +73,4 @@ class Camera2D(Camera):
 
         self.camera_2d.Viewpoint2D = value
 
-    def __repr__(self):
-        return f'Camera2D(name="{self.name}")'
+

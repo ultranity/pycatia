@@ -56,5 +56,4 @@ class MaterialDocument(Document):
         """
         return MaterialFamilies(self.material_document.Families)
 
-    def __repr__(self):
-        return f'MaterialDocument(name="{self.name}")'
+

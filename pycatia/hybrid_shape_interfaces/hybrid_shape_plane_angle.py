@@ -175,5 +175,4 @@ class HybridShapePlaneAngle(Plane):
 
         self.hybrid_shape_plane_angle.RevolAxis = reference_axis.com_object
 
-    def __repr__(self):
-        return f'HybridShapePlaneAngle(name="{self.name}")'
+

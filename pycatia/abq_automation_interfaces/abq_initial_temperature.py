@@ -61,5 +61,4 @@ class ABQInitialTemperature(ABQTemperature):
 
         self.abq_initial_temperature.StepNum = value
 
-    def __repr__(self):
-        return f'ABQInitialTemperature(name="{self.name}")'
+

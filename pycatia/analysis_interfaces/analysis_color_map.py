@@ -407,5 +407,4 @@ class AnalysisColorMap(AnyObject):
         """
         return self.analysis_color_map.Update()
 
-    def __repr__(self):
-        return f'AnalysisColorMap(name="{self.name}")'
+

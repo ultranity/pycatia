@@ -40,5 +40,4 @@ class HybridShapePlaneExplicit(Plane):
         super().__init__(com_object)
         self.hybrid_shape_plane_explicit = com_object
 
-    def __repr__(self):
-        return f'HybridShapePlaneExplicit(name="{self.name}")'
+

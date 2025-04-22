@@ -425,5 +425,4 @@ class PSPAttribute(AnyObject):
         """
         return self.psp_attribute.ResetDerivedAttr(i_attribute_name)
 
-    def __repr__(self):
-        return f'PSPAttribute(name="{self.name}")'
+

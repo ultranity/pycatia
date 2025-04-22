@@ -41,5 +41,4 @@ class Shaft(Revolution):
         super().__init__(com_object)
         self.shaft = com_object
 
-    def __repr__(self):
-        return f'Shaft(name="{self.name}")'
+

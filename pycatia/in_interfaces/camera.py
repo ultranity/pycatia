@@ -66,5 +66,4 @@ class Camera(AnyObject):
 
         return self.camera.Type
 
-    def __repr__(self):
-        return f'Camera(name="{self.name}")'
+

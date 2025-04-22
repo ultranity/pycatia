@@ -1196,5 +1196,4 @@ class HybridShapeConic(HybridShape):
         """
         return self.hybrid_shape_conic.SwitchStartTangentDirection()
 
-    def __repr__(self):
-        return f'HybridShapeConic(name="{self.name}")'
+

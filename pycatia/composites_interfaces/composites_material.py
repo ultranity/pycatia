@@ -256,5 +256,4 @@ class CompositesMaterial(AnyObject):
         """
         return self.composites_material.ExistCompositesData()
 
-    def __repr__(self):
-        return f'CompositesMaterial(name="{self.name}")'
+

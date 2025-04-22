@@ -90,5 +90,4 @@ class FunctionalPosition(FunctionalElement):
         """
         return self.functional_position.SetCoords(i_x, i_y)
 
-    def __repr__(self):
-        return f'FunctionalPosition(name="{self.name}")'
+

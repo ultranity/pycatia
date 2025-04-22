@@ -318,5 +318,4 @@ class SFMSlot(AnyObject):
         """
         return self.sfm_slot.UpdateConnectionsSet()
 
-    def __repr__(self):
-        return f'SFMSlot(name="{self.name}")'
+

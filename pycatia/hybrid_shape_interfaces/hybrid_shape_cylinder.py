@@ -292,5 +292,4 @@ class HybridShapeCylinder(HybridShape):
         """
         return self.hybrid_shape_cylinder.InvertOrientation()
 
-    def __repr__(self):
-        return f'HybridShapeCylinder(name="{self.name}")'
+

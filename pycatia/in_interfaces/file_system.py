@@ -467,5 +467,4 @@ class FileSystem(AnyObject):
         """
         return Folder(self.file_system.GetFolder(i_path))
 
-    def __repr__(self):
-        return f'FileSystem(name="{self.name}")'
+

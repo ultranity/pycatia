@@ -211,5 +211,4 @@ class AutoDraft(DressUpShape):
 
         self.auto_draft.PullingDirection = value.com_object
 
-    def __repr__(self):
-        return f'AutoDraft(name="{self.name}")'
+

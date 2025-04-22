@@ -962,5 +962,4 @@ class HybridShapeCurveSmooth(HybridShape):
         """
         return self.hybrid_shape_curve_smooth.SetTangencyThreshold(i_tangency_threshold)
 
-    def __repr__(self):
-        return f'HybridShapeCurveSmooth(name="{self.name}")'
+

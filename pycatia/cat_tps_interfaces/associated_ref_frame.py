@@ -76,5 +76,4 @@ class AssociatedRefFrame(AnyObject):
         from pycatia.cat_tps_interfaces.annotation_2 import Annotation2
         return Annotation2(self.associated_ref_frame.ReferenceFrame2)
 
-    def __repr__(self):
-        return f'AssociatedRefFrame(name="{self.name}")'
+

@@ -125,5 +125,3 @@ class FunctScripts(Collection):
         """
         return FunctScript(self.funct_scripts.Elem(i_index))
 
-    def __repr__(self):
-        return f'FunctScripts(name="{self.name}")'

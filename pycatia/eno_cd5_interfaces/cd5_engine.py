@@ -518,5 +518,4 @@ class CD5Engine(AnyObject):
         """
         return Document(self.cd5_engine.PartialOpen(i_cd5_structure.com_object))
 
-    def __repr__(self):
-        return f'CD5Engine(name="{self.name}")'
+

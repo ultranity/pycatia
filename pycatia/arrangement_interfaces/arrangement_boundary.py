@@ -247,5 +247,4 @@ class ArrangementBoundary(AnyObject):
         """
         return self.arrangement_boundary.GetTechnologicalObject(i_application_type)
 
-    def __repr__(self):
-        return f'ArrangementBoundary(name="{self.name}")'
+

@@ -55,5 +55,4 @@ class ExpertRuleBase(ExpertRuleBaseRuntime):
         """
         return ExpertRuleBaseRuntime(self.expert_rule_base.VolatileCopy())
 
-    def __repr__(self):
-        return f'ExpertRuleBase(name="{self.name}")'
+

@@ -950,5 +950,4 @@ class HybridShapeFill(HybridShape):
         """
         return self.hybrid_shape_fill.SetBoundaryContinuity(i_continuity, i_pos)
 
-    def __repr__(self):
-        return f'HybridShapeFill(name="{self.name}")'
+

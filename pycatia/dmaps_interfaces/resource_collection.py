@@ -65,5 +65,3 @@ class ResourceCollection(Collection):
         """
         return Resource(self.resource_collection.Item(i_index))
 
-    def __repr__(self):
-        return f'ResourceCollection(name="{self.name}")'

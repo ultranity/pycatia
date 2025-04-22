@@ -100,5 +100,4 @@ class ABQDataOutputRequest(ABQOutputRequest):
         """
         return self.abq_data_output_request.UnsetOutputType(i_dat_output_var_type)
 
-    def __repr__(self):
-        return f'ABQDataOutputRequest(name="{self.name}")'
+

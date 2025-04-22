@@ -66,5 +66,4 @@ class PSPApplication(AnyObject):
         """
         return self.psp_application.Initialization()
 
-    def __repr__(self):
-        return f'PSPApplication(name="{self.name}")'
+

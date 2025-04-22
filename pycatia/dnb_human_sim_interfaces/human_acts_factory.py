@@ -1549,5 +1549,4 @@ class HumanActsFactory(AnyObject):
             )
         )
 
-    def __repr__(self):
-        return f'HumanActsFactory(name="{self.name}")'
+

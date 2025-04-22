@@ -93,6 +93,42 @@ class Constraints(Collection):
 
         return self.constraints.UnUpdatedConstraintsCount
 
+    def add_mono_elt_cst(self, i_cst_type: int, i_elem: Reference) -> Constraint:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func AddMonoEltCst(CatConstraintType iCstType,
+                | Reference iElem) As Constraint
+                | 
+                |     Creates a new constraint applying to a single geometric element and adds it
+                |     to the Constraints collection.
+                |
+                |     Parameters:
+                |
+                |         iCstType
+                |             The constraint type
+                |         iElem
+                |             The constrained geometric element
+                |             The following
+                |
+                |         Boundary object is supported: Boundary.
+                |
+                | Example:
+                |     This example creates the reference constraint NewCst to a part, stating
+                |     that the P1 point should remain fixed with respect to the part's origin
+                |     elements using the value 0 for catCstTypeReference, and adds it to the cstList
+                |     collection.
+                |
+                |      Set NewCst = cstList.AddMonoEltCst(0, P1)
+
+        :param int i_cst_type: enum cat_constraint_type
+        :param Reference i_elem:
+        :rtype: Constraint
+        """
+        return Constraint(self.constraints.AddMonoEltCst(i_cst_type, i_elem.com_object))
+
     def add_bi_elt_cst(self, i_cst_type: int, i_first_elem: Reference, i_second_elem: Reference) -> Constraint:
         """
         .. note::
@@ -132,42 +168,6 @@ class Constraints(Collection):
         :rtype: Constraint
         """
         return Constraint(self.constraints.AddBiEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object))
-
-    def add_mono_elt_cst(self, i_cst_type: int, i_elem: Reference) -> Constraint:
-        """
-        .. note::
-            :class: toggle
-
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func AddMonoEltCst(CatConstraintType iCstType,
-                | Reference iElem) As Constraint
-                | 
-                |     Creates a new constraint applying to a single geometric element and adds it
-                |     to the Constraints collection.
-                |
-                |     Parameters:
-                |
-                |         iCstType
-                |             The constraint type
-                |         iElem
-                |             The constrained geometric element
-                |             The following
-                |
-                |         Boundary object is supported: Boundary.
-                |
-                | Example:
-                |     This example creates the reference constraint NewCst to a part, stating
-                |     that the P1 point should remain fixed with respect to the part's origin
-                |     elements using the value 0 for catCstTypeReference, and adds it to the cstList
-                |     collection.
-                |
-                |      Set NewCst = cstList.AddMonoEltCst(0, P1)
-
-        :param int i_cst_type: enum cat_constraint_type
-        :param Reference i_elem:
-        :rtype: Constraint
-        """
-        return Constraint(self.constraints.AddMonoEltCst(i_cst_type, i_elem.com_object))
 
     def add_tri_elt_cst(self, i_cst_type: int, i_first_elem: Reference, i_second_elem: Reference,
                         i_third_elem: Reference) -> Constraint:
@@ -285,6 +285,10 @@ class Constraints(Collection):
         return self.constraints.Remove(i_index)
 
     def __getitem__(self, n: int) -> Constraint:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -294,5 +298,3 @@ class Constraints(Collection):
         for i in range(self.count):
             yield self.child_object(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'Constraints(name="{self.name}")'

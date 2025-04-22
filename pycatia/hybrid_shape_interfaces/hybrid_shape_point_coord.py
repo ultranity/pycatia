@@ -196,5 +196,4 @@ class HybridShapePointCoord(Point):
 
         return Length(self.hybrid_shape_point_coord.Z)
 
-    def __repr__(self):
-        return f'HybridShapePointCoord(name="{self.name}")'
+

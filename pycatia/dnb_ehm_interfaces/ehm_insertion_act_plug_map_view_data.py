@@ -918,5 +918,4 @@ class EhmInsertionActPlugMapViewData(Activity):
 
         return self.ehm_insertion_act_plug_map_view_data.WireType
 
-    def __repr__(self):
-        return f'EhmInsertionActPlugMapViewData(name="{self.name}")'
+

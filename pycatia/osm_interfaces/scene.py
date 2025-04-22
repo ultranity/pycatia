@@ -416,5 +416,4 @@ class Scene(AnyObject):
         """
         return ProductScene(self.scene.UpgradeToPartial())
 
-    def __repr__(self):
-        return f'Scene(name="{self.name}")'
+

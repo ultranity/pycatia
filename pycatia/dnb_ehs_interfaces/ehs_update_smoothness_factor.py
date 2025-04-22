@@ -68,5 +68,4 @@ class EhsUpdateSmoothnessFactor(AnyObject):
         """
         return self.ehs_update_smoothness_factor.UpdateBundleSmoothness(i_smoothness_factor)
 
-    def __repr__(self):
-        return f'EhsUpdateSmoothnessFactor(name="{self.name}")'
+

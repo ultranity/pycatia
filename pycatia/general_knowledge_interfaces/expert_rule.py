@@ -129,5 +129,4 @@ class ExpertRule(ExpertRuleRuntime):
 
         self.expert_rule.Variables = value
 
-    def __repr__(self):
-        return f'ExpertRule(name="{self.name}")'
+

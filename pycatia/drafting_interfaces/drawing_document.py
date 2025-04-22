@@ -222,5 +222,4 @@ class DrawingDocument(Document):
         """
         return self.drawing_document.Update()
 
-    def __repr__(self):
-        return f'DrawingDocument(name="{self.name}")'
+

@@ -310,5 +310,3 @@ class FreeSpaces(Collection):
         """
         return FreeSpace(self.free_spaces.AddSplitFromFile(i_x, i_y, i_z, i_nx, i_ny, i_nz, i_file_name, i_shape_name))
 
-    def __repr__(self):
-        return f'FreeSpaces(name="{self.name}")'

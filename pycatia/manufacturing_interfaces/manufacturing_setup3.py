@@ -65,5 +65,4 @@ class ManufacturingSetup3(ManufacturingActivity):
         """
         return self.manufacturing_setup3.AddFixture(i_geometry.com_object, i_product.com_object, i_position)
 
-    def __repr__(self):
-        return f'ManufacturingSetup3(name="{self.name}")'
+

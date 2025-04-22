@@ -338,5 +338,4 @@ class Sampled(AnyObject):
         """
         return self.sampled.Split(i_type, i_indice)
 
-    def __repr__(self):
-        return f'Sampled(name="{self.name}")'
+

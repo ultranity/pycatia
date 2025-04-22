@@ -235,5 +235,4 @@ class SPAWorkbench(Workbench):
         return Measurable(
             self.spa_workbench.GetMeasurableInContext(i_measured_item.com_object, i_product_instance.com_object))
 
-    def __repr__(self):
-        return f'SpaWorkbench(name="{self.name}")'
+

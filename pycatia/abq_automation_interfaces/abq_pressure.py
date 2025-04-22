@@ -90,5 +90,4 @@ class ABQPressure(ABQLoad):
 
         self.abq_pressure.Magnitude = value
 
-    def __repr__(self):
-        return f'ABQPressure(name="{self.name}")'
+

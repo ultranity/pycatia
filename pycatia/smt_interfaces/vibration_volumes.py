@@ -279,5 +279,3 @@ class VibrationVolumes(Collection):
         """
         return self.vibration_volumes.VibrationVolumeShapeName()
 
-    def __repr__(self):
-        return f'VibrationVolumes(name="{self.name}")'

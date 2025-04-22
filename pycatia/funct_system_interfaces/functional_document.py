@@ -86,5 +86,4 @@ class FunctionalDocument(Document):
 
         return FunctionalDescription(self.functional_document.OriginalDescription)
 
-    def __repr__(self):
-        return f'FunctionalDocument(name="{self.name}")'
+

@@ -149,5 +149,4 @@ class PSPListOfDoubles(AnyObject):
         """
         return self.psp_list_of_doubles.RemoveByIndex(i_index)
 
-    def __repr__(self):
-        return f'PSPListOfDoubles(name="{self.name}")'
+

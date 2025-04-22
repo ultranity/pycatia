@@ -149,5 +149,4 @@ class PSPListOfLongs(AnyObject):
         """
         return self.psp_list_of_longs.RemoveByIndex(i_index)
 
-    def __repr__(self):
-        return f'PSPListOfLongs(name="{self.name}")'
+

@@ -162,5 +162,4 @@ class PCBHoleAndPattern(AnyObject):
 
         self.pcb_hole_and_pattern.PlatingStyle = value
 
-    def __repr__(self):
-        return f'PCBHoleAndPattern(name="{self.name}")'
+

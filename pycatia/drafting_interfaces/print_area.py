@@ -315,5 +315,4 @@ class PrintArea(AnyObject):
         """
         return self.print_area.SetArea(i_x, i_y, i_width, i_height)
 
-    def __repr__(self):
-        return f'PrintArea(name="{ self.name }")'
+

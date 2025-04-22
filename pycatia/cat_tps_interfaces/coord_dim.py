@@ -60,5 +60,4 @@ class CoordDim(AnyObject):
         )
         return DrawingCoordDim(self.coord_dim.Get2dAnnot())
 
-    def __repr__(self):
-        return f'CoordDim(name="{self.name}")'
+

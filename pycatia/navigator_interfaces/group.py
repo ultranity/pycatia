@@ -396,5 +396,4 @@ class Group(AnyObject):
         """
         return self.group.RemoveExplicit(i_index)
 
-    def __repr__(self):
-        return f'Group(name="{self.name}")'
+

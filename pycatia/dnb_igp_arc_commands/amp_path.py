@@ -369,5 +369,4 @@ class AMPPath(AnyObject):
         """
         return self.amp_path.RemoveFrom(i_index)
 
-    def __repr__(self):
-        return f'AMPPath(name="{self.name}")'
+

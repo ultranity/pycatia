@@ -99,5 +99,4 @@ class SchCatalogComponent(AnyObject):
         """
         return SchCompGroupExt(self.sch_catalog_component.QueryDropCompGroupAbility(o_b_yes))
 
-    def __repr__(self):
-        return f'SchCatalogComponent(name="{self.name}")'
+

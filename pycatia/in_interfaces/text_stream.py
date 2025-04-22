@@ -185,5 +185,4 @@ class TextStream(AnyObject):
         """
         return self.text_stream.Write(i_written_string)
 
-    def __repr__(self):
-        return f'TextStream(name="{ self.name }")'
+

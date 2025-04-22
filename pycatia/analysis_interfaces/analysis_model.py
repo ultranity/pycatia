@@ -167,5 +167,4 @@ class AnalysisModel(AnyObject):
         """
         return self.analysis_model.RunTransition(i_transition_name)
 
-    def __repr__(self):
-        return f'AnalysisModel(name="{self.name}")'
+

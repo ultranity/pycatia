@@ -160,5 +160,4 @@ class SemanticGDTNxDisplay(AnyObject):
 
         return self.semantic_gdt_nx_display.IsASeparate()
 
-    def __repr__(self):
-        return f'SemanticGdtNxDisplay(name="{self.name}")'
+

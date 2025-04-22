@@ -745,5 +745,4 @@ class Annotation2(AnyObject):
         )
         return Weld(self.annotation_2.Weld())
 
-    def __repr__(self):
-        return f'Annotation2(name="{self.name}")'
+

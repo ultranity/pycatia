@@ -74,5 +74,3 @@ class FunctFacetManagers(Collection):
         """
         return FunctionalFacetMgr(self.funct_facet_managers.Elem(i_index))
 
-    def __repr__(self):
-        return f'FunctFacetManagers(name="{self.name}")'

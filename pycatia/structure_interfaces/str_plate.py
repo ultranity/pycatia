@@ -152,5 +152,4 @@ class StrPlate(StrObject):
         """
         return self.str_plate.SetMaterialAndGrade(i_material, i_grade)
 
-    def __repr__(self):
-        return f'StrPlate(name="{self.name}")'
+

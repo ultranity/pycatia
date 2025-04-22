@@ -86,5 +86,3 @@ class CD5Properties(Collection):
         """
         return CD5Property(self.cd5_properties.Item(i_index))
 
-    def __repr__(self):
-        return f'CD5Properties(name="{self.name}")'

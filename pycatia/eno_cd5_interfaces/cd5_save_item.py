@@ -357,5 +357,4 @@ class CD5SaveItem(AnyObject):
 
         self.cd5_save_item.Type = value
 
-    def __repr__(self):
-        return f'CD5SaveItem(name="{self.name}")'
+

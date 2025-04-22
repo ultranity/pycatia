@@ -249,5 +249,4 @@ class AuxDevicesMgt(AnyObject):
         """
         return self.aux_devices_mgt.RemoveAuxDevicesByPosition(i_aux_device_num)
 
-    def __repr__(self):
-        return f'AuxDevicesMgt(name="{self.name}")'
+

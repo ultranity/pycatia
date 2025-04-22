@@ -210,5 +210,4 @@ class SWKErgoPushPull(AnyObject):
 
         self.swk_ergo_push_pull.Population = value
 
-    def __repr__(self):
-        return f'SWKErgoPushPull(name="{self.name}")'
+

@@ -123,5 +123,4 @@ class HumanTask(Activity):
         """
         return self.human_task.set_SpecifiedJointSpeed(speed, i_override_child_joint_speed)
 
-    def __repr__(self):
-        return f'HumanTask(name="{self.name}")'
+

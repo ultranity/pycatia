@@ -342,5 +342,4 @@ class SFMMember2Points(SFMMember):
         """
         return self.sfm_member2_points.InvertStartPointOnCrvOrientation()
 
-    def __repr__(self):
-        return f'SFMMember2Points(name="{self.name}")'
+

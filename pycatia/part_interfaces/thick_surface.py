@@ -133,5 +133,4 @@ class ThickSurface(SurfaceBasedShape):
         """
         return self.thick_surface.swap_OffsetSide()
 
-    def __repr__(self):
-        return f'ThickSurface(name="{ self.name }")'
+

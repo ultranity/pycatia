@@ -70,5 +70,3 @@ class ArrangementNodes(Collection):
         """
         return ArrangementNode(self.arrangement_nodes.Item(i_index))
 
-    def __repr__(self):
-        return f'ArrangementNodes(name="{self.name}")'

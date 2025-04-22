@@ -72,5 +72,4 @@ class AnalysisLocalSensor(AnalysisSensor):
 
         self.analysis_local_sensor.XMLName = value
 
-    def __repr__(self):
-        return f'AnalysisLocalSensor(name="{self.name}")'
+

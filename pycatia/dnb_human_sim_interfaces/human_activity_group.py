@@ -139,5 +139,4 @@ class HumanActivityGroup(WorkerActivity):
 
         self.human_activity_group.UserTime = value
 
-    def __repr__(self):
-        return f'HumanActivityGroup(name="{self.name}")'
+

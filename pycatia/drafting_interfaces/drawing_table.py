@@ -1208,5 +1208,4 @@ class DrawingTable(AnyObject):
         """
         return self.drawing_table.UnMergeCells(i_row, i_col)
 
-    def __repr__(self):
-        return f'DrawingTable(name="{self.name}")'
+

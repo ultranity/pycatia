@@ -1318,5 +1318,4 @@ class Application(AnyObject):
 
         return self.application.StopURConcatenation(i_undo_step_name_bstr)
 
-    def __repr__(self):
-        return f'Application(name="{self.name}")'
+

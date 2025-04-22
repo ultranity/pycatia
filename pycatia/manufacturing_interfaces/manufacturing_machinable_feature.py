@@ -110,5 +110,4 @@ class ManufacturingMachinableFeature(ManufacturingFeature):
 
         self.manufacturing_machinable_feature.FeatType = value
 
-    def __repr__(self):
-        return f'ManufacturingMachinableFeature(name="{self.name}")'
+

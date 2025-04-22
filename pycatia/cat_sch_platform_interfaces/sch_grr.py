@@ -264,5 +264,4 @@ class SchGRR(AnyObject):
         """
         return self.sch_grr.SetGRRName(i_grr_name)
 
-    def __repr__(self):
-        return f'SchGRR(name="{self.name}")'
+

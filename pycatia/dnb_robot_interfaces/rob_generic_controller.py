@@ -1253,5 +1253,4 @@ class RobGenericController(AnyObject):
         """
         return self.rob_generic_controller.SetName(name)
 
-    def __repr__(self):
-        return f'RobGenericController(name="{self.name}")'
+

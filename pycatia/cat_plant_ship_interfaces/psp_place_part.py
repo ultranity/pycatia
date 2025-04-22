@@ -250,5 +250,4 @@ class PSPPlacePart(AnyObject):
             )
         )
 
-    def __repr__(self):
-        return f'PSPPlacePart(name="{self.name}")'
+

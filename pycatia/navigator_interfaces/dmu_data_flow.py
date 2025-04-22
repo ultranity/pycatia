@@ -166,5 +166,4 @@ class DMUDataFlow(AnyObject):
         """
         return self.dmu_data_flow.SaveAsFrozen(i_directory, i_prefix, i_data, i_cache)
 
-    def __repr__(self):
-        return f'DmuDataFlow(name="{self.name}")'
+

@@ -101,5 +101,4 @@ class FunctionalObject(FunctionalPosition):
         """
         return FunctionalFacet(self.functional_object.SearchFacetByName(i_fm, i_create_if_necessary))
 
-    def __repr__(self):
-        return f'FunctionalObject(name="{self.name}")'
+

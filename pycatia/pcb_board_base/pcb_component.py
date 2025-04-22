@@ -307,5 +307,4 @@ class PCBComponent(AnyObject):
 
         self.pcb_component.TOLERANCE = value
 
-    def __repr__(self):
-        return f'PCBComponent(name="{self.name}")'
+

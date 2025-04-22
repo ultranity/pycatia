@@ -40,5 +40,4 @@ class Pad(Prism):
         super().__init__(com_object)
         self.pad = com_object
 
-    def __repr__(self):
-        return f'Pad(name="{self.name}")'
+

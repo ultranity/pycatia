@@ -68,5 +68,3 @@ class BasicComponents(Collection):
         """
         return BasicComponent(self.basic_components.Item(i_variant))
 
-    def __repr__(self):
-        return f'BasicComponents(name="{self.name}")'

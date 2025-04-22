@@ -120,5 +120,4 @@ class UserPattern(Pattern):
         """
         return self.user_pattern.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)
 
-    def __repr__(self):
-        return f'UserPattern(name="{ self.name }")'
+

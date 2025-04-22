@@ -36,5 +36,4 @@ class DefeaturingFilletFilter(DefeaturingFilterWithRange):
         super().__init__(com_object)
         self.defeaturing_fillet_filter = com_object
 
-    def __repr__(self):
-        return f'DefeaturingFilletFilter(name="{self.name}")'
+

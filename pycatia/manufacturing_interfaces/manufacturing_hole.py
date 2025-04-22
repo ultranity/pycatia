@@ -144,5 +144,4 @@ class ManufacturingHole(AnyObject):
         """
         return self.manufacturing_hole.GetOrigin(o_x, o_y, o_z)
 
-    def __repr__(self):
-        return f'ManufacturingHole(name="{ self.name }")'
+

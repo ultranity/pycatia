@@ -109,5 +109,4 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
         """
         return self.expert_rule_set_runtime.Status()
 
-    def __repr__(self):
-        return f'ExpertRuleSetRuntime(name="{self.name}")'
+

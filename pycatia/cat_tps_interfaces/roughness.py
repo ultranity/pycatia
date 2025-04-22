@@ -171,5 +171,4 @@ class Roughness(AnyObject):
         """
         return TPSParallelOnScreen(self.roughness.TPSParallelOnScreen())
 
-    def __repr__(self):
-        return f'Roughness(name="{self.name}")'
+

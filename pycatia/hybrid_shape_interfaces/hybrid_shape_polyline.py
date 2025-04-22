@@ -316,5 +316,4 @@ class HybridShapePolyline(HybridShape):
         """
         return self.hybrid_shape_polyline.SetRadius(i_position, i_radius)
 
-    def __repr__(self):
-        return f'HybridShapePolyline(name="{self.name}")'
+

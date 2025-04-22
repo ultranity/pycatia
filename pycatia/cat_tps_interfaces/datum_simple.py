@@ -81,5 +81,4 @@ class DatumSimple(AnyObject):
         from pycatia.cat_tps_interfaces.annotations import Annotations
         return Annotations(self.datum_simple.Targets)
 
-    def __repr__(self):
-        return f'DatumSimple(name="{self.name}")'
+

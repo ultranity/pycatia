@@ -61,5 +61,4 @@ class SchPostReplace(AnyObject):
         """
         return self.sch_post_replace.PostReplaceText(i_new_sch_object.com_object)
 
-    def __repr__(self):
-        return f'SchPostReplace(name="{self.name}")'
+

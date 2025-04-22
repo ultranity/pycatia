@@ -138,5 +138,4 @@ class HybridShapePlane2Lines(Plane):
 
         self.hybrid_shape_plane2_lines.Second = reference_line.com_object
 
-    def __repr__(self):
-        return f'HybridShapePlane2Lines(name="{self.name}")'
+

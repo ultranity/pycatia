@@ -85,5 +85,3 @@ class PPRProducts(Collection):
         """
         return Product(self.ppr_products.Item(i_index))
 
-    def __repr__(self):
-        return f'PprProducts(name="{self.name}")'

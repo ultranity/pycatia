@@ -628,5 +628,4 @@ class ManufacturingProgram(ManufacturingActivity):
         """
         return self.manufacturing_program.UnlockActivitesWithinProgram()
 
-    def __repr__(self):
-        return f'ManufacturingProgram(name="{self.name}")'
+

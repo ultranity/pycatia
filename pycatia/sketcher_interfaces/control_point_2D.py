@@ -156,5 +156,4 @@ class ControlPoint2D(Point2D):
         """
         return self.control_point_2d.UnsetTangent()
 
-    def __repr__(self):
-        return f'ControlPoint2D(name="{self.name}")'
+

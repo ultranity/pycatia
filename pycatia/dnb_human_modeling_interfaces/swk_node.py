@@ -37,5 +37,4 @@ class SWKNode(AnyObject):
         super().__init__(com_object)
         self.swk_node = com_object
 
-    def __repr__(self):
-        return f'SWKNode(name="{self.name}")'
+

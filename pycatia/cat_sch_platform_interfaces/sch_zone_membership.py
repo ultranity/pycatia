@@ -55,5 +55,4 @@ class SchZoneMembership(AnyObject):
         """
         return self.sch_zone_membership.UpdateZoneMembership()
 
-    def __repr__(self):
-        return f'SchZoneMembership(name="{self.name}")'
+

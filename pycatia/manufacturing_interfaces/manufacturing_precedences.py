@@ -117,5 +117,3 @@ class ManufacturingPrecedences(Collection):
         """
         return self.manufacturing_precedences.RemoveAll()
 
-    def __repr__(self):
-        return f'ManufacturingPrecedences(name="{self.name}")'

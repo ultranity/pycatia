@@ -153,5 +153,4 @@ class ArrBendableString(AnyObject):
         """
         return self.arr_bendable_string.InstanceName()
 
-    def __repr__(self):
-        return f'ArrBendableString(name="{ self.name }")'
+

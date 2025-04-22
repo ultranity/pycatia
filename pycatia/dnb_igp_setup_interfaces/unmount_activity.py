@@ -127,5 +127,4 @@ class UnmountActivity(Activity):
 
         self.unmount_activity.ToolProfile = value
 
-    def __repr__(self):
-        return f'UnmountActivity(name="{self.name}")'
+

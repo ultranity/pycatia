@@ -389,5 +389,4 @@ class Sweep(SketchBasedShape):
         """
         return self.sweep.SetKeepAngleOption()
 
-    def __repr__(self):
-        return f'Sweep(name="{self.name}")'
+

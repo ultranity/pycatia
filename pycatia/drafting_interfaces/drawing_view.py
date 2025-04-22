@@ -1161,5 +1161,4 @@ class DrawingView(AnyObject):
         """
         return self.drawing_view.UnAlignedWithReferenceView()
 
-    def __repr__(self):
-        return f'DrawingView(name="{self.name}")'
+

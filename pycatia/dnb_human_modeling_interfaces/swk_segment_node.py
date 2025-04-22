@@ -166,5 +166,4 @@ class SWKSegmentNode(AnyObject):
         """
         return self.swk_segment_node.SwapPosture()
 
-    def __repr__(self):
-        return f'SWKSegmentNode(name="{self.name}")'
+

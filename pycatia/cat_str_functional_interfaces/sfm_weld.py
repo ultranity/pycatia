@@ -164,5 +164,4 @@ class SFMWeld(AnyObject):
 
         return self.sfm_weld.WeldType
 
-    def __repr__(self):
-        return f'SFMWeld(name="{self.name}")'
+

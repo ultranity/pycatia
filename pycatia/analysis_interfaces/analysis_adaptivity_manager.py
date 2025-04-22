@@ -48,5 +48,4 @@ class AnalysisAdaptivityManager(AnalysisSet):
         """
         return self.analysis_adaptivity_manager.Run()
 
-    def __repr__(self):
-        return f'AnalysisAdaptivityManager(name="{self.name}")'
+

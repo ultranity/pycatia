@@ -71,5 +71,3 @@ class CD5TemplateTypes(Collection):
         """
         return CD5TemplateType(self.cd5_template_types.Item(i_index))
 
-    def __repr__(self):
-        return f'CD5TemplateTypes(name="{self.name}")'

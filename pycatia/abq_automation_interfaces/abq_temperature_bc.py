@@ -93,5 +93,4 @@ class ABQTemperatureBC(ABQBoundaryCondition):
 
         self.abq_temperature_bc.UseAmplitude = value
 
-    def __repr__(self):
-        return f'ABQTemperatureBC(name="{self.name}")'
+

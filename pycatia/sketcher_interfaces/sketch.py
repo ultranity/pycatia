@@ -352,5 +352,4 @@ class Sketch(AnyObject):
         """
         return self.sketch.SetAbsoluteAxisData(i_axis_data)
 
-    def __repr__(self):
-        return f'Sketch(name="{self.name}")'
+

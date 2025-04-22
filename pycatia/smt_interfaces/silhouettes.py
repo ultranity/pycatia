@@ -227,5 +227,3 @@ class Silhouettes(Collection):
         """
         return self.silhouettes.SilhouetteShapeName()
 
-    def __repr__(self):
-        return f'Silhouettes(name="{self.name}")'

@@ -82,5 +82,4 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
         from pycatia.general_knowledge_interfaces.expert_rule import ExpertRule
         return ExpertRule(self.expert_rule_runtime.RuleEdition)
 
-    def __repr__(self):
-        return f'ExpertRuleRuntime(name="{self.name}")'
+

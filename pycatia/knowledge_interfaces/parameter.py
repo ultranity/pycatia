@@ -368,5 +368,3 @@ class Parameter(AnyObject):
         """
         return self.parameter.ValueAsString()
 
-    def __repr__(self):
-        return f'Parameter(name="{self.name}")'

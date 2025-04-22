@@ -87,5 +87,4 @@ class Geometry2D(GeometricElement):
 
         self.geometry_2d.ReportName = value
 
-    def __repr__(self):
-        return f'Geometry2D(name="{self.name}")'
+

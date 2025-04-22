@@ -478,5 +478,4 @@ class SWKVision(SWKManikinPart):
         """
         return self.swk_vision.Reset()
 
-    def __repr__(self):
-        return f'SWKVision(name="{self.name}")'
+

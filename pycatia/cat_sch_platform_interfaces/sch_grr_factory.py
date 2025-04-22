@@ -227,5 +227,4 @@ class SchGRRFactory(AnyObject):
         """
         return SchGRRZone(self.sch_grr_factory.CreateGRRZone(i_l_primitive.com_object))
 
-    def __repr__(self):
-        return f'SchGRRFactory(name="{self.name}")'
+

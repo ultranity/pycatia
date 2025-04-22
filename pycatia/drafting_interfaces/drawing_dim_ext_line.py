@@ -538,5 +538,4 @@ class DrawingDimExtLine(AnyObject):
         """
         return self.drawing_dim_ext_line.SetVisibility(i_index, i_extline_visibility)
 
-    def __repr__(self):
-        return f'DrawingDimExtLine(name="{self.name}")'
+

@@ -90,5 +90,4 @@ class FunctNodeGraphLayout(FunctionalFacet):
         """
         return self.funct_node_graph_layout.SetHeightAndWidth(i_height, i_width)
 
-    def __repr__(self):
-        return f'FunctNodeGraphLayout(name="{self.name}")'
+

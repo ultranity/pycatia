@@ -78,5 +78,4 @@ class SchAppDeleteCheck2(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def __repr__(self):
-        return f'SchAppDeleteCheck2(name="{self.name}")'
+

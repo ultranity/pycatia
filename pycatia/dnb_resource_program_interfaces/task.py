@@ -171,5 +171,4 @@ class Task(Activity):
         """
         return self.task.SetName(i_name)
 
-    def __repr__(self):
-        return f'Task(name="{self.name}")'
+

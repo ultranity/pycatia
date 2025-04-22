@@ -113,5 +113,4 @@ class SchAppReplace(AnyObject):
         """
         return self.sch_app_replace.AppPostReplaceProcess(i_sch_object_to_be_replaced_by_this.com_object)
 
-    def __repr__(self):
-        return f'SchAppReplace(name="{self.name}")'
+

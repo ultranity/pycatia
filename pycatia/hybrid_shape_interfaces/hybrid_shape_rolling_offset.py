@@ -262,5 +262,4 @@ class HybridShapeRollingOffset(HybridShape):
         """
         return self.hybrid_shape_rolling_offset.putOffset(i_offset)
 
-    def __repr__(self):
-        return f'HybridShapeRollingOffset(name="{self.name}")'
+

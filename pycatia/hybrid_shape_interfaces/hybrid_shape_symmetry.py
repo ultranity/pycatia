@@ -188,5 +188,4 @@ class HybridShapeSymmetry(HybridShape):
 
         self.hybrid_shape_symmetry.VolumeResult = value
 
-    def __repr__(self):
-        return f'HybridShapeSymmetry(name="{self.name}")'
+

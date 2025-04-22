@@ -365,5 +365,4 @@ class Thread(DressUpShape):
         """
         return self.thread.SetExplicitPolarity(i_thread_polarity)
 
-    def __repr__(self):
-        return f'Thread(name="{self.name}")'
+

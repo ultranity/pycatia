@@ -39,5 +39,4 @@ class HybridShapeSurfaceExplicit(HybridShape):
         super().__init__(com_object)
         self.hybrid_shape_surface_explicit = com_object
 
-    def __repr__(self):
-        return f'HybridShapeSurfaceExplicit(name="{self.name}")'
+

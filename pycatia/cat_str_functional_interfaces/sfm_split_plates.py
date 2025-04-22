@@ -73,5 +73,3 @@ class SFMSplitPlates(Collection):
         """
         return SFMSplitPlate(self.sfm_split_plates.Item(i_index))
 
-    def __repr__(self):
-        return f'SFMSplitPlates(name="{self.name}")'

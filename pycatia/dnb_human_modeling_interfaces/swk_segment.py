@@ -884,5 +884,4 @@ class SWKSegment(SWKBodyElement):
         """
         return self.swk_segment.SwapPrefAngles(pi_dof_id)
 
-    def __repr__(self):
-        return f'SWKSegment(name="{self.name}")'
+

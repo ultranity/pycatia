@@ -76,5 +76,4 @@ class StrCutback(AssemblyFeature):
 
         return self.str_cutback.Type
 
-    def __repr__(self):
-        return f'StrCutback(name="{self.name}")'
+

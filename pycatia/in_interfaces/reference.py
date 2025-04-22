@@ -94,5 +94,4 @@ class Reference(AnyObject):
         """
         return Reference(self.reference.ComposeWith(i_reference.com_object))
 
-    def __repr__(self):
-        return f'Reference(name="{self.name}")'
+

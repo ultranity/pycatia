@@ -66,5 +66,3 @@ class AnalysisLinkedDocuments(Collection):
         """
         return Document(self.analysis_linked_documents.Item(i_index))
 
-    def __repr__(self):
-        return f'AnalysisLinkedDocuments(name="{self.name}")'

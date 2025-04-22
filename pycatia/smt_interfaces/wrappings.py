@@ -303,5 +303,3 @@ class Wrappings(Collection):
         """
         return self.wrappings.WrappingShapeName()
 
-    def __repr__(self):
-        return f'Wrappings(name="{self.name}")'

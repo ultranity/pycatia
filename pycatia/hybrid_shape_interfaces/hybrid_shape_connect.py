@@ -381,5 +381,4 @@ class HybridShapeConnect(HybridShape):
 
         self.hybrid_shape_connect.Trim = value
 
-    def __repr__(self):
-        return f'HybridShapeConnect(name="{self.name}")'
+

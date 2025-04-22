@@ -297,5 +297,4 @@ class SFMManager(AnyObject):
         """
         return self.sfm_manager.SynchronizePlanes()
 
-    def __repr__(self):
-        return f'SFMManager(name="{self.name}")'
+

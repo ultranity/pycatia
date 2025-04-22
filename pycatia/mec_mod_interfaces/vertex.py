@@ -73,5 +73,4 @@ class Vertex(Boundary):
         super().__init__(com_object)
         self.vertex = com_object
 
-    def __repr__(self):
-        return f'Vertex(name="{self.name}")'
+

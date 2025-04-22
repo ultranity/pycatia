@@ -754,5 +754,4 @@ class HybridShapeExtrapol(HybridShape):
         """
         return self.hybrid_shape_extrapol.SetLimitType(i_pos, i_lim)
 
-    def __repr__(self):
-        return f'HybridShapeExtrapol(name="{self.name}")'
+

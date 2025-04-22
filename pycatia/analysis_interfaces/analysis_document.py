@@ -72,5 +72,4 @@ class AnalysisDocument(Document):
 
         return AnalysisManager(self.analysis_document.Analysis)
 
-    def __repr__(self):
-        return f'AnalysisDocument(name="{self.name}")'
+

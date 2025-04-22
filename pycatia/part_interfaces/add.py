@@ -37,5 +37,4 @@ class Add(BooleanShape):
         super().__init__(com_object)
         self.add = com_object
 
-    def __repr__(self):
-        return f'Add(name="{self.name}")'
+

@@ -90,5 +90,4 @@ class UserRepartition(Repartition):
         """
         return self.user_repartition.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)
 
-    def __repr__(self):
-        return f'UserRepartition(name="{ self.name }")'
+

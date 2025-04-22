@@ -335,5 +335,3 @@ class DMOThicknesses(Collection):
         """
         return self.dmo_thicknesses.ThicknessShapeName()
 
-    def __repr__(self):
-        return f'DMOThicknesses(name="{self.name}")'

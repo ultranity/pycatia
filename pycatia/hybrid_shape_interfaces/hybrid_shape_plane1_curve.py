@@ -76,5 +76,4 @@ class HybridShapePlane1Curve(Plane):
 
         self.hybrid_shape_plane1_curve.Curve = reference_curve.com_object
 
-    def __repr__(self):
-        return f'HybridShapePlane1Curve(name="{self.name}")'
+

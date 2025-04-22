@@ -490,5 +490,4 @@ class DrawingWelding(AnyObject):
         """
         return self.drawing_welding.SetSymbol(i_symbol, i_weld)
 
-    def __repr__(self):
-        return f'DrawingWelding(name="{self.name}")'
+

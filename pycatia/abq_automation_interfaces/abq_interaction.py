@@ -55,5 +55,4 @@ class ABQInteraction(AnyObject):
 
         return self.abq_interaction.Type
 
-    def __repr__(self):
-        return f'ABQInteraction(name="{self.name}")'
+

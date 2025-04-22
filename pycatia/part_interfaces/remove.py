@@ -37,5 +37,4 @@ class Remove(BooleanShape):
         super().__init__(com_object)
         self.remove = com_object
 
-    def __repr__(self):
-        return f'Remove(name="{self.name}")'
+

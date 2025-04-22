@@ -233,5 +233,4 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
         """
         return ExpertRuleSet(self.expert_rule_set.CreateRuleSet(i_name, i_rule_set))
 
-    def __repr__(self):
-        return f'ExpertRuleSet(name="{self.name}")'
+

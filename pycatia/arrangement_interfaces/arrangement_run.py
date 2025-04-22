@@ -274,5 +274,4 @@ class ArrangementRun(AnyObject):
         """
         return self.arrangement_run.GetTechnologicalObject(i_application_type)
 
-    def __repr__(self):
-        return f'ArrangementRun(name="{self.name}")'
+

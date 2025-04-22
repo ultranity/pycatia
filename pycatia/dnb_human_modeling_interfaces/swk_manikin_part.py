@@ -59,5 +59,4 @@ class SWKManikinPart(AnyObject):
 
         self.swk_manikin_part.Memo = value
 
-    def __repr__(self):
-        return f'SWKManikinPart(name="{self.name}")'
+

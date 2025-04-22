@@ -64,5 +64,4 @@ class SchGRRRouteAlternate(AnyObject):
         """
         return self.sch_grr_route_alternate.GetAlternateStyle()
 
-    def __repr__(self):
-        return f'SchGRRRouteAlternate(name="{self.name}")'
+

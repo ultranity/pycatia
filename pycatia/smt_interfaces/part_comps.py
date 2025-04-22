@@ -172,5 +172,3 @@ class PartComps(Collection):
             )
         )
 
-    def __repr__(self):
-        return f'PartComps(name="{self.name}")'

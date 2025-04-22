@@ -274,5 +274,4 @@ class DesignTable(Relation):
         """
         return self.design_table.Synchronize()
 
-    def __repr__(self):
-        return f'DesignTable(name="{self.name}")'
+

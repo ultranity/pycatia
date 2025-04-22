@@ -138,5 +138,4 @@ class Line2D(Curve2D):
         """
         return self.line_2d.SetData(i_x, i_y, i_x_direction, i_y_direction)
 
-    def __repr__(self):
-        return f'Line2D(name="{self.name}")'
+

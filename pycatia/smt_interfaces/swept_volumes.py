@@ -674,5 +674,3 @@ class SweptVolumes(Collection):
         """
         return self.swept_volumes.SetSpatialSplit(on_off)
 
-    def __repr__(self):
-        return f'SweptVolumes(name="{self.name}")'

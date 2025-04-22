@@ -469,5 +469,4 @@ class ABQDisplacementBC(ABQBoundaryCondition):
         """
         return self.abq_displacement_bc.SetUseCoordinateSystemType(i_csystem_type)
 
-    def __repr__(self):
-        return f'ABQDisplacementBC(name="{self.name}")'
+

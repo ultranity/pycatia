@@ -688,5 +688,4 @@ class SFMSuperPlate(SFMObject):
             i_grade_name
         )
 
-    def __repr__(self):
-        return f'SFMSuperPlate(name="{self.name}")'
+

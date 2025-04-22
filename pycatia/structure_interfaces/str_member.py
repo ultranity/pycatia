@@ -346,5 +346,4 @@ class StrMember(StrObject):
         """
         return self.str_member.Rotate(i_angle)
 
-    def __repr__(self):
-        return f'StrMember(name="{self.name}")'
+

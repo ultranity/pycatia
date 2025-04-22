@@ -379,5 +379,4 @@ class SendToService(AnyObject):
         """
         return self.send_to_service.SetRenameFile(i_oldname, i_new_name)
 
-    def __repr__(self):
-        return f'SendToService(name="{self.name}")'
+

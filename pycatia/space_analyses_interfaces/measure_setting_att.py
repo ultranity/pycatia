@@ -724,5 +724,4 @@ class MeasureSettingAtt(SettingController):
         """
         return self.measure_setting_att.SetTildeDisplayLock(i_locked)
 
-    def __repr__(self):
-        return f'MeasureSettingAtt(name="{self.name}")'
+

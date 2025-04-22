@@ -185,5 +185,4 @@ class SFMMemberPointUpToLimit(SFMMember):
         """
         return self.sfm_member_point_up_to_limit.InvertDirection()
 
-    def __repr__(self):
-        return f'SFMMemberPointUpToLimit(name="{self.name}")'
+

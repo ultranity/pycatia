@@ -74,5 +74,4 @@ class ArrNomenclatureTree(AnyObject):
         """
         return ArrNomenclature(self.arr_nomenclature_tree.GetNomenclature(i_type_name))
 
-    def __repr__(self):
-        return f'ArrNomenclatureTree(name="{self.name}")'
+

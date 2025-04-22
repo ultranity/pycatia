@@ -203,5 +203,4 @@ class ManufacturingParameter(AnyObject):
 
         return self.manufacturing_parameter.GetValue(i_name, o_value.com_object)
 
-    def __repr__(self):
-        return f'ManufacturingParameter(name="{self.name}")'
+

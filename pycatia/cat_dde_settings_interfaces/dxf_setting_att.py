@@ -2651,5 +2651,4 @@ class DxfSettingAtt(SettingController):
         """
         return self.dxf_setting_att.set_ImportUnit(i_unit)
 
-    def __repr__(self):
-        return f'DxfSettingAtt(name="{self.name}")'
+

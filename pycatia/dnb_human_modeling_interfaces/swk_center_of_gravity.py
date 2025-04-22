@@ -35,5 +35,4 @@ class SWKCenterOfGravity(SWKBodyElement):
         super().__init__(com_object)
         self.swk_center_of_gravity = com_object
 
-    def __repr__(self):
-        return f'SWKCenterOfGravity(name="{self.name}")'
+

@@ -58,5 +58,4 @@ class ManufacturingFactories(AnyObject):
         """
         return AnyObject(self.manufacturing_factories.GetManufacturingResourceFactory())
 
-    def __repr__(self):
-        return f'ManufacturingFactories(name="{ self.name }")'
+

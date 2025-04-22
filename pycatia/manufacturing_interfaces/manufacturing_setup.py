@@ -1151,5 +1151,4 @@ class ManufacturingSetup(ManufacturingActivity):
         """
         return self.manufacturing_setup.StockGeometriesCount()
 
-    def __repr__(self):
-        return f'ManufacturingSetup(name="{self.name}")'
+

@@ -824,5 +824,4 @@ class SWKBody(SWKBodyElement):
         """
         return self.swk_body.SwapPrefAngles(pi_dof_id)
 
-    def __repr__(self):
-        return f'SWKBody(name="{self.name}")'
+

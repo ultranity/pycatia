@@ -334,5 +334,4 @@ class Noa(AnyObject):
         """
         return self.noa.URL(i_index)
 
-    def __repr__(self):
-        return f'Noa(name="{self.name}")'
+

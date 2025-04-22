@@ -316,5 +316,4 @@ class ABQFHOutputRequest(ABQOutputRequest):
         """
         return self.abqfh_output_request.SetOutputAtAllModes()
 
-    def __repr__(self):
-        return f'ABQFHOutputRequest(name="{self.name}")'
+

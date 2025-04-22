@@ -55,5 +55,4 @@ class ABQProperty(AnyObject):
 
         return self.abq_property.Type
 
-    def __repr__(self):
-        return f'ABQProperty(name="{self.name}")'
+

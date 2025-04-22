@@ -76,5 +76,4 @@ class SFDProduct(AnyObject):
         """
         return Part(self.sfd_product.CreateFunctionalSystem())
 
-    def __repr__(self):
-        return f'SFDProduct(name="{self.name}")'
+

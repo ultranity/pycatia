@@ -136,5 +136,3 @@ class Materials(Collection):
         """
         return Material(self.materials.SortedItem(i_index, i_mode))
 
-    def __repr__(self):
-        return f'Materials(name="{self.name}")'

@@ -44,5 +44,4 @@ class AccesslogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
         super().__init__(com_object)
         self.accesslog_statistics_setting_att = com_object
 
-    def __repr__(self):
-        return f'AccesslogStatisticsSettingAtt(name="{ self.name }")'
+

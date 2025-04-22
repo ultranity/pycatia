@@ -137,5 +137,3 @@ class RenderingEnvironments(Collection):
         """
         return self.rendering_environments.RemoveAll()
 
-    def __repr__(self):
-        return f'RenderingEnvironments(name="{self.name}")'

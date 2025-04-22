@@ -51,5 +51,4 @@ class Length(Dimension):
         super().__init__(com_object)
         self.length = com_object
 
-    def __repr__(self):
-        return f'Length(name="{ self.name }")'
+

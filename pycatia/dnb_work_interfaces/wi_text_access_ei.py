@@ -85,5 +85,4 @@ class WITextAccessEi(AnyObject):
             io_point_geom.com_object
         )
 
-    def __repr__(self):
-        return f'WITextAccessEi(name="{self.name}")'
+

@@ -88,5 +88,4 @@ class AnalysisGlobalSensor(AnalysisSensor):
         """
         return self.analysis_global_sensor.SetIdentifier(i_type_bstr, i_sub_type_bstr)
 
-    def __repr__(self):
-        return f'AnalysisGlobalSensor(name="{self.name}")'
+

@@ -71,5 +71,4 @@ class Edge(Boundary):
         super().__init__(com_object)
         self.edge = com_object
 
-    def __repr__(self):
-        return f'Edge(name="{self.name}")'
+

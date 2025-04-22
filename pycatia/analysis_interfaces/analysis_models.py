@@ -80,5 +80,3 @@ class AnalysisModels(Collection):
         """
         return AnalysisModel(self.analysis_models.Item(i_index))
 
-    def __repr__(self):
-        return f'AnalysisModels(name="{self.name}")'

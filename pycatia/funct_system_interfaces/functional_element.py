@@ -71,5 +71,4 @@ class FunctionalElement(AnyObject):
 
         return Parameters(self.functional_element.Parameters)
 
-    def __repr__(self):
-        return f'FunctionalElement(name="{self.name}")'
+

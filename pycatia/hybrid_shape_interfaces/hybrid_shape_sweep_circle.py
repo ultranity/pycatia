@@ -1310,5 +1310,4 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.SetTangencyChoiceNo(i_shell_ori, i_guide_ori, i_no)
 
-    def __repr__(self):
-        return f'HybridShapeSweepCircle(name="{self.name}")'
+

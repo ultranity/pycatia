@@ -906,5 +906,4 @@ class Layout2DView(AnyObject):
         """
         return self.layout_2d_view.UnAlignedWithReferenceView()
 
-    def __repr__(self):
-        return f'Layout2DView(name="{self.name}")'
+

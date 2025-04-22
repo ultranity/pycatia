@@ -366,5 +366,4 @@ class FastenerGroup(AnyObject):
         """
         return self.fastener_group.Show()
 
-    def __repr__(self):
-        return f'FastenerGroup(name="{self.name}")'
+

@@ -270,5 +270,4 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
             i_distance_along_z
         )
 
-    def __repr__(self):
-        return f'ManufacturingCopyTransformation(name="{self.name}")'
+

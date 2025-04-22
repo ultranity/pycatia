@@ -177,5 +177,4 @@ class HybridShapeTransfer(HybridShape):
 
         self.hybrid_shape_transfer.UnfoldedSurface = reference_surface.com_object
 
-    def __repr__(self):
-        return f'HybridShapeTransfer(name="{self.name}")'
+

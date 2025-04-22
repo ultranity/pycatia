@@ -278,5 +278,4 @@ class SFMStiffener(SFMProfile):
         """
         return self.sfm_stiffener.IsAngleModeValid(i_angle_mode)
 
-    def __repr__(self):
-        return f'SFMStiffener(name="{self.name}")'
+

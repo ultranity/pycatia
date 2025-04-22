@@ -134,5 +134,4 @@ class SWKLineOfSightNode(AnyObject):
         """
         return self.swk_line_of_sight_node.SetPercentage(pi_percentage, pi_dof_id)
 
-    def __repr__(self):
-        return f'SWKLineOfSightNode(name="{self.name}")'
+

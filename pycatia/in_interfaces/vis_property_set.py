@@ -1030,5 +1030,4 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.SetSymbolType(i_symbol_type)
 
-    def __repr__(self):
-        return f'VisPropertySet(name="{self.name}")'
+

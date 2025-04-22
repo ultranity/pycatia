@@ -234,5 +234,4 @@ class GenericObjFrameProfile(AnyObject):
         """
         return self.generic_obj_frame_profile.SetObjectFrame(x, y, z, roll, pitch, yaw)
 
-    def __repr__(self):
-        return f'GenericObjFrameProfile(name="{self.name}")'
+

@@ -63,5 +63,4 @@ class KinematicsWorkbench(Workbench):
 
         return Mechanisms(self.kinematics_workbench.Mechanisms)
 
-    def __repr__(self):
-        return f'KinematicsWorkbench(name="{self.name}")'
+

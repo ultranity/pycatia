@@ -38,6 +38,7 @@ class Collection(PyCATIA):
                 | object.
 
     """
+    #_inner_class = AnyObject TODO: can use Generic after py312
 
     def __init__(self, com_object, child_object=AnyObject):
         super().__init__()
@@ -217,18 +218,21 @@ class Collection(PyCATIA):
         return items_list
 
     def __len__(self):
-
         return self.count
 
     def __getitem__(self, n: int) -> AnyObject:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
-        return AnyObject(self.com_object.Item(n + 1))
+        return self.child_object(self.com_object.Item(n + 1))
 
     def __iter__(self) -> Iterator[AnyObject]:
         for i in range(self.count):
             yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
-        return f'Collection(name="{self.name}")'
+        return f'{self.__class__.__name__}(name="{self.name}", n={self.count})'

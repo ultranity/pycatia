@@ -176,5 +176,4 @@ class HybridShapePointOnSurface(Point):
 
         self.hybrid_shape_point_on_surface.Surface = reference_surface.com_object
 
-    def __repr__(self):
-        return f'HybridShapePointOnSurface(name="{self.name}")'
+

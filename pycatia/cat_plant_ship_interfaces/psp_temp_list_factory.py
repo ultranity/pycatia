@@ -143,5 +143,4 @@ class PSPTempListFactory(AnyObject):
         """
         return PSPListOfObjects(self.psp_temp_list_factory.CreateListOfObjects())
 
-    def __repr__(self):
-        return f'PSPTempListFactory(name="{self.name}")'
+

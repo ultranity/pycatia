@@ -76,5 +76,4 @@ class BoolParam(EnumParam):
 
         self.bool_param.Value = value
 
-    def __repr__(self):
-        return f'BoolParam(name="{self.name}")'
+

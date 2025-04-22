@@ -368,5 +368,4 @@ class Capture(AnyObject):
         """
         return TPSParallelOnScreen(self.capture.TPSParallelOnScreen())
 
-    def __repr__(self):
-        return f'Capture(name="{self.name}")'
+

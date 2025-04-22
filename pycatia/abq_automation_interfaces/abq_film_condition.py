@@ -340,5 +340,4 @@ class ABQFilmCondition(ABQLoad):
         """
         return self.abq_film_condition.SetNamedSinkAmplitude(isink_amplitude)
 
-    def __repr__(self):
-        return f'ABQFilmCondition(name="{self.name}")'
+

@@ -111,5 +111,4 @@ class PPRDocument(Document):
 
         return PPRProducts(self.ppr_document.Resources)
 
-    def __repr__(self):
-        return f'PprDocument(name="{self.name}")'
+

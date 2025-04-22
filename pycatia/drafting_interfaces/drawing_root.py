@@ -101,5 +101,4 @@ class DrawingRoot(DrawingDocument):
         sheets = [x.com_object for x in i_ordered_sheets]
         return self.drawing_root_com.reorder_Sheets(sheets)
 
-    def __repr__(self):
-        return f'DrawingRoot(name="{self.name}")'
+

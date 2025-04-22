@@ -604,5 +604,4 @@ class MHILoadParameters(AnyObject):
         """
         return self.mhi_load_parameters.SetSelectedObjectID(i_selected_object_id)
 
-    def __repr__(self):
-        return f'MHILoadParameters(name="{self.name}")'
+

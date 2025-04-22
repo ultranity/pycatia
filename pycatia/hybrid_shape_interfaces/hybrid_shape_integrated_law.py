@@ -471,5 +471,4 @@ class HybridShapeIntegratedLaw(HybridShape):
         """
         return self.hybrid_shape_integrated_law.SetStartParam(i_start_param)
 
-    def __repr__(self):
-        return f'HybridShapeIntegratedLaw(name="{self.name}")'
+

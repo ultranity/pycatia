@@ -241,5 +241,4 @@ class DrawingCoordDim(AnyObject):
 
         return self.drawing_coord_dim.GetCoordValues(o_type, o_x, o_y, o_z)
 
-    def __repr__(self):
-        return f'DrawingCoordDim(name="{self.name}")'
+

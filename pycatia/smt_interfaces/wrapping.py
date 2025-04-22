@@ -37,5 +37,4 @@ class Wrapping(AnyObject):
         super().__init__(com_object)
         self.wrapping = com_object
 
-    def __repr__(self):
-        return f'Wrapping(name="{ self.name }")'
+

@@ -589,5 +589,4 @@ class Marker3D(AnyObject):
         """
         return self.marker_3d.Update()
 
-    def __repr__(self):
-        return f'Marker3D(name="{self.name}")'
+

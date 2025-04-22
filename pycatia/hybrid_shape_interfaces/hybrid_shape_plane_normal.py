@@ -113,5 +113,4 @@ class HybridShapePlaneNormal(Plane):
 
         self.hybrid_shape_plane_normal.Point = reference_point.com_object
 
-    def __repr__(self):
-        return f'HybridShapePlaneNormal(name="{self.name}")'
+

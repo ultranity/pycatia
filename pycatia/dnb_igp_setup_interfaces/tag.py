@@ -394,5 +394,4 @@ class Tag(AnyObject):
         """
         return self.tag.SetYPR(i_y, i_p, i_r)
 
-    def __repr__(self):
-        return f'Tag(name="{ self.name }")'
+

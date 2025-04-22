@@ -71,5 +71,4 @@ class HumanProgram(AnyObject):
         """
         return HumanTask(self.human_program.CreateHumanTask())
 
-    def __repr__(self):
-        return f'HumanProgram(name="{self.name}")'
+

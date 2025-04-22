@@ -129,5 +129,4 @@ class SFMMember(SFMProfile):
         """
         return self.sfm_member.IsFlip()
 
-    def __repr__(self):
-        return f'SFMMember(name="{self.name}")'
+

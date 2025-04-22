@@ -67,5 +67,4 @@ class ManufacturingSetup2(ManufacturingActivity):
             )
         )
 
-    def __repr__(self):
-        return f'ManufacturingSetup2(name="{self.name}")'
+

@@ -142,5 +142,3 @@ class Resources(Collection):
         """
         return Resource(self.resources.RemoveByAssignmentType(i_resource.com_object, i_assignment_type))
 
-    def __repr__(self):
-        return f'Resources(name="{self.name}")'

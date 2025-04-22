@@ -380,5 +380,4 @@ class HybridShapeSpiral(HybridShape):
         """
         return self.hybrid_shape_spiral.SetRadiusPitchParam(i_end_radius, i_pitch)
 
-    def __repr__(self):
-        return f'HybridShapeSpiral(name="{self.name}")'
+

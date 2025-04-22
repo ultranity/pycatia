@@ -68,5 +68,4 @@ class BiDimFeatEdge(Edge):
         super().__init__(com_object)
         self.bi_dim_feat_edge = com_object
 
-    def __repr__(self):
-        return f'BiDimFeatEdge(name="{self.name}")'
+

@@ -180,5 +180,4 @@ class ArrangementArea(AnyObject):
         """
         return self.arrangement_area.GetTechnologicalObject(i_application_type)
 
-    def __repr__(self):
-        return f'ArrangementArea(name="{self.name}")'
+

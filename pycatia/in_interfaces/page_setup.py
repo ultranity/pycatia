@@ -39,5 +39,4 @@ class PageSetup(AnyObject):
         super().__init__(com_object)
         self.page_setup = com_object
 
-    def __repr__(self):
-        return f'PageSetup(name="{ self.name }")'
+

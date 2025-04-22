@@ -278,5 +278,4 @@ class SystemService(AnyObject):
         """
         return self.system_service.Print(i_string)
 
-    def __repr__(self):
-        return f'SystemService(name="{self.name}")'
+

@@ -286,5 +286,4 @@ class SFMOpening(AnyObject):
         """
         return self.sfm_opening.SetMasterMode()
 
-    def __repr__(self):
-        return f'SFMOpening(name="{self.name}")'
+

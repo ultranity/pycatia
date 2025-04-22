@@ -503,5 +503,4 @@ class SWKDOF(SWKManikinPart):
         """
         return self.swkdof.SetLimitsToMatchBestPrefAngle()
 
-    def __repr__(self):
-        return f'SWKdof(name="{self.name}")'
+

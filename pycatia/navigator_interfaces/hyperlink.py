@@ -153,5 +153,4 @@ class Hyperlink(AnyObject):
         """
         return self.hyperlink.RemoveObject(i_index)
 
-    def __repr__(self):
-        return f'Hyperlink(name="{self.name}")'
+

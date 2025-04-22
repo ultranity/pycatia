@@ -374,5 +374,3 @@ class DMOOffsets(Collection):
         """
         return self.dmo_offsets.OffsetShapeName()
 
-    def __repr__(self):
-        return f'DmoOffsets(name="{self.name}")'

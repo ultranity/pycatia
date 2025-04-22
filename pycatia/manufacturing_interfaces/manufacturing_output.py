@@ -238,5 +238,4 @@ class ManufacturingOutput(AnyObject):
         """
         return self.manufacturing_output.write_Long(i_val)
 
-    def __repr__(self):
-        return f'ManufacturingOutput(name="{ self.name }")'
+

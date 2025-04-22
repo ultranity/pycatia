@@ -53,5 +53,4 @@ class AsySimActivity(AnyObject):
         """
         return self.asy_sim_activity.Synchronize()
 
-    def __repr__(self):
-        return f'AsySimActivity(name="{self.name}")'
+

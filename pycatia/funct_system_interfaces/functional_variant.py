@@ -54,5 +54,4 @@ class FunctionalVariant(FunctionalDescription):
 
         return FunctionalDescription(self.functional_variant.OriginalDescription)
 
-    def __repr__(self):
-        return f'FunctionalVariant(name="{self.name}")'
+

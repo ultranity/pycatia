@@ -127,5 +127,3 @@ class RenderingShootings(Collection):
         """
         return self.rendering_shootings.RemoveAll()
 
-    def __repr__(self):
-        return f'RenderingShootings(name="{self.name}")'

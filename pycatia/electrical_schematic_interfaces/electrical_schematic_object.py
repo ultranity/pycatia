@@ -157,5 +157,4 @@ class ElectricalSchematicObject(Product):
         """
         return self.elec_schematic_object.GetPinAttribute(i_connected_object.com_object, i_attr_name)
 
-    def __repr__(self):
-        return f'ElectricalSchematicObject(name="{self.name}")'
+

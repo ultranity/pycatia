@@ -134,5 +134,3 @@ class MaterialFamilies(Collection):
         """
         self.material_families.Remove(i_index)
 
-    def __repr__(self):
-        return f'MaterialFamilies(name="{self.name}")'

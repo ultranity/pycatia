@@ -35,5 +35,4 @@ class SFMObjectExt(AnyObject):
         super().__init__(com_object)
         self.sfm_object_ext = com_object
 
-    def __repr__(self):
-        return f'SFMObjectExt(name="{self.name}")'
+

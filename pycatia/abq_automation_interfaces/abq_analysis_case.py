@@ -181,5 +181,4 @@ class ABQAnalysisCase(AnyObject):
 
         return ABQSteps(self.abq_analysis_case.Steps)
 
-    def __repr__(self):
-        return f'ABQAnalysisCase(name="{self.name}")'
+

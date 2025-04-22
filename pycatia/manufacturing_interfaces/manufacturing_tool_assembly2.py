@@ -94,5 +94,4 @@ class ManufacturingToolAssembly2(AnyObject):
 
         self.manufacturing_tool_assembly2.Tool = value.com_object
 
-    def __repr__(self):
-        return f'ManufacturingToolAssembly2(name="{self.name}")'
+

@@ -457,5 +457,4 @@ class SchematicRoot(AnyObject):
         """
         return self.schematic_root.SetDrawingStandard(i_drw_std)
 
-    def __repr__(self):
-        return f'SchematicRoot(name="{self.name}")'
+

@@ -125,5 +125,4 @@ class SFMObject(AnyObject):
 
         self.sfm_object.Material = value
 
-    def __repr__(self):
-        return f'SFMObject(name="{self.name}")'
+

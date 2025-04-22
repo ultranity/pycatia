@@ -286,5 +286,4 @@ class SWKAnthro(SWKManikinPart):
         """
         return self.swk_anthro.Reset()
 
-    def __repr__(self):
-        return f'SWKAnthro(name="{self.name}")'
+

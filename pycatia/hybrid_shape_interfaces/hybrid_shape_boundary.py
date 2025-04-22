@@ -242,5 +242,4 @@ class HybridShapeBoundary(HybridShape):
 
         self.hybrid_shape_boundary.ToOrientation = value
 
-    def __repr__(self):
-        return f'HybridShapeBoundary(name="{self.name}")'
+

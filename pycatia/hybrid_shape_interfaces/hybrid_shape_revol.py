@@ -472,5 +472,4 @@ class HybridShapeRevol(HybridShape):
 
         self.hybrid_shape_revol.SecondUptoElement = reference_element.com_object
 
-    def __repr__(self):
-        return f'HybridShapeRevol(name="{self.name}")'
+

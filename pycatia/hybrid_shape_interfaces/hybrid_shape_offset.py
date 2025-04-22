@@ -227,5 +227,4 @@ class HybridShapeOffset(HybridShape):
         """
         return self.hybrid_shape_offset.SetOffsetValue(i_offset)
 
-    def __repr__(self):
-        return f'HybridShapeOffset(name="{self.name}")'
+

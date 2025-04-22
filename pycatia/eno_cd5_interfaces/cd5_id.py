@@ -68,5 +68,4 @@ class CD5ID(AnyObject):
         """
         return self.cd5_id.GetID()
 
-    def __repr__(self):
-        return f'CD5ID(name="{self.name}")'
+

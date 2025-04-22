@@ -114,5 +114,4 @@ class NonSemanticDimension(AnyObject):
         )
         return self.non_semantic_dimension.HasDimensionLimit()
 
-    def __repr__(self):
-        return f'NonSemanticDimension(name="{self.name}")'
+

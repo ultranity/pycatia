@@ -245,5 +245,4 @@ class SWKManikin(SWKManikinPart):
 
         return SWKVision(self.swk_manikin.Vision)
 
-    def __repr__(self):
-        return f'SWKManikin(name="{self.name}")'
+

@@ -73,5 +73,3 @@ class SFMWelds(Collection):
         """
         return SFMWeld(self.sfm_welds.Item(i_index))
 
-    def __repr__(self):
-        return f'SFMWelds(name="{self.name}")'

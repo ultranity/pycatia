@@ -515,5 +515,4 @@ class DrawingLeader(AnyObject):
         """
         return self.drawing_leader.RemovePoint(i_num)
 
-    def __repr__(self):
-        return f'DrawingLeader(name="{self.name}")'
+

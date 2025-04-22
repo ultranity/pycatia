@@ -97,5 +97,4 @@ class Check(Relation):
 
         self.check.Severity = value
 
-    def __repr__(self):
-        return f'Check(name="{ self.name }")'
+

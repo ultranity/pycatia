@@ -41,5 +41,4 @@ class DressUpShape(Shape):
         super().__init__(com_object)
         self.dress_up_shape = com_object
 
-    def __repr__(self):
-        return f'DressUpShape(name="{self.name}")'
+

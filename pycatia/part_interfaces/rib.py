@@ -40,5 +40,4 @@ class Rib(Sweep):
         super().__init__(com_object)
         self.rib = com_object
 
-    def __repr__(self):
-        return f'Rib(name="{self.name}")'
+

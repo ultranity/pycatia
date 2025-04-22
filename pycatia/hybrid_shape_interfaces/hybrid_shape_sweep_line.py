@@ -2046,5 +2046,4 @@ class HybridShapeSweepLine(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_line.SetSmoothAngleThreshold(i_angle)
 
-    def __repr__(self):
-        return f'HybridShapeSweepLine(name="{self.name}")'
+

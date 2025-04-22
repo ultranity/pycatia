@@ -175,5 +175,4 @@ class ABQTemperatureHistory(ABQTemperature):
 
         self.abq_temperature_history.UseAmplitude = value
 
-    def __repr__(self):
-        return f'ABQTemperatureHistory(name="{self.name}")'
+

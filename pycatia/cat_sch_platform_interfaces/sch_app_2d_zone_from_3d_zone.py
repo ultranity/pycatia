@@ -65,5 +65,4 @@ class SchApp2DZoneFrom3DZone(AnyObject):
         """
         return AnyObject(self.sch_app_2d_zone_from_3d_zone.Create2DAppZone())
 
-    def __repr__(self):
-        return f'SchApp2DZoneFrom3DZone(name="{self.name}")'
+

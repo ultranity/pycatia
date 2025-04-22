@@ -83,5 +83,4 @@ class BehaviorExtension(Behavior):
         """
         return Behavior(self.behavior_extension.SelectBehavior(behavior_name))
 
-    def __repr__(self):
-        return f'BehaviorExtension(name="{self.name}")'
+

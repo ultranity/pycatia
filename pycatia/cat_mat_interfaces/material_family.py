@@ -54,5 +54,4 @@ class MaterialFamily(AnyObject):
 
         return Materials(self.material_family.Materials)
 
-    def __repr__(self):
-        return f'MaterialFamily(name="{self.name}")'
+

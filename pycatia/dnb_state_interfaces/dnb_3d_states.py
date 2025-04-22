@@ -93,5 +93,3 @@ class DNB3DStates(Collection):
         """
         return DNB3DState(self.dnb3_d_states.Item(i_index))
 
-    def __repr__(self):
-        return f'DNB3DStates(name="{self.name}")'

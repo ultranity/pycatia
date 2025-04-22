@@ -50,5 +50,4 @@ class Intersect(BooleanShape):
         super().__init__(com_object)
         self.intersect = com_object
 
-    def __repr__(self):
-        return f'Intersect(name="{self.name}")'
+

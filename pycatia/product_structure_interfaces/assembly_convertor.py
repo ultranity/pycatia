@@ -124,5 +124,4 @@ class AssemblyConvertor(AnyObject):
         """
         return self.assembly_convertor.SetSecondaryFormat(ilist_props)
 
-    def __repr__(self):
-        return f'AssemblyConvertor(name="{self.name}")'
+

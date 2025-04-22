@@ -631,5 +631,4 @@ class HybridShapeCorner(HybridShape):
         """
         return self.hybrid_shape_corner.InvertSecondOrientation()
 
-    def __repr__(self):
-        return f'HybridShapeCorner(name="{ self.name }")'
+

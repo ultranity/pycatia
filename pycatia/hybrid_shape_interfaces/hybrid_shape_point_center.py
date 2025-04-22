@@ -78,5 +78,4 @@ class HybridShapePointCenter(Point):
 
         self.hybrid_shape_point_center.Element = reference_element.com_object
 
-    def __repr__(self):
-        return f'HybridShapePointCenter(name="{self.name}")'
+

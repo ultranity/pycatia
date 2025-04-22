@@ -690,5 +690,4 @@ class CalibOffsets(AnyObject):
         """
         return self.calib_offsets.SetReferenceBasePosition(x, y, z, roll, pitch, yaw)
 
-    def __repr__(self):
-        return f'CalibOffsets(name="{self.name}")'
+

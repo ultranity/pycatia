@@ -100,5 +100,4 @@ class HybridShapeInverse(HybridShape):
 
         self.hybrid_shape_inverse.Orientation = value
 
-    def __repr__(self):
-        return f'HybridShapeInverse(name="{self.name}")'
+

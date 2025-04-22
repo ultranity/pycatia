@@ -185,6 +185,10 @@ class UserSurfaces(Collection):
         return UserSurface(self.user_surfaces.MakeUserSurfaceNode2(i_list_of_user_surfaces))
 
     def __getitem__(self, n: int) -> UserSurface:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -194,5 +198,3 @@ class UserSurfaces(Collection):
         for i in range(self.count):
             yield self.child_object(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'UserSurfaces(name="{self.name}")'

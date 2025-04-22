@@ -416,5 +416,4 @@ class GenericMotionProfile(AnyObject):
         """
         return self.generic_motion_profile.SetSpeedValue(value)
 
-    def __repr__(self):
-        return f'GenericMotionProfile(name="{self.name}")'
+

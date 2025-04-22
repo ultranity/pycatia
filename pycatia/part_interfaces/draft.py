@@ -129,5 +129,4 @@ class Draft(DressUpShape):
 
         self.draft.PartingElement = value.com_object
 
-    def __repr__(self):
-        return f'Draft(name="{self.name}")'
+

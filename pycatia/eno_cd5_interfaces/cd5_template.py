@@ -134,5 +134,4 @@ class CD5Template(AnyObject):
         """
         return self.cd5_template.DownloadFile(i_target_folder)
 
-    def __repr__(self):
-        return f'CD5Template(name="{self.name}")'
+

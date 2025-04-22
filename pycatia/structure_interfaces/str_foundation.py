@@ -37,5 +37,4 @@ class StrFoundation(AnyObject):
         super().__init__(com_object)
         self.str_foundation = com_object
 
-    def __repr__(self):
-        return f'StrFoundation(name="{ self.name }")'
+

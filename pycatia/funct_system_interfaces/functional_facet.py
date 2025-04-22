@@ -79,5 +79,4 @@ class FunctionalFacet(AnyObject):
         """
         return self.functional_facet.Init()
 
-    def __repr__(self):
-        return f'FunctionalFacet(name="{self.name}")'
+

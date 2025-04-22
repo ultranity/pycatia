@@ -202,5 +202,4 @@ class TPSView(AnyObject):
 
         return self.tps_view.ViewType
 
-    def __repr__(self):
-        return f'TpsView(name="{self.name}")'
+

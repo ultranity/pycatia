@@ -46,5 +46,4 @@ class MonoDimFeatEdge(Edge):
         super().__init__(com_object)
         self.mono_dim_feat_edge = com_object
 
-    def __repr__(self):
-        return f'MonoDimFeatEdge(name="{self.name}")'
+

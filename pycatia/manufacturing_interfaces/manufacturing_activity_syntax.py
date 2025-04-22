@@ -73,5 +73,4 @@ class ManufacturingActivitySyntax(AnyObject):
         """
         return self.manufacturing_activity_syntax.SetPPWORDSyntax(i_ppwords)
 
-    def __repr__(self):
-        return f'ManufacturingActivitySyntax(name="{self.name}")'
+

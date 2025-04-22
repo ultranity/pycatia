@@ -186,5 +186,4 @@ class SFMEndcut(AnyObject):
         """
         return self.sfm_endcut.UpdateConnectionsSet()
 
-    def __repr__(self):
-        return f'SFMEndcut(name="{self.name}")'
+

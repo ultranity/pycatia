@@ -101,5 +101,4 @@ class DefaultAnnotation(AnyObject):
         """
         return self.default_annotation.IsInAutomaticSearchMode()
 
-    def __repr__(self):
-        return f'DefaultAnnotation(name="{ self.name }")'
+

@@ -76,5 +76,4 @@ class FunctGenScriptMgr(FunctionalFacet):
 
         return FunctScripts(self.funct_gen_script_mgr.Scripts)
 
-    def __repr__(self):
-        return f'FunctGenScriptMgr(name="{self.name}")'
+

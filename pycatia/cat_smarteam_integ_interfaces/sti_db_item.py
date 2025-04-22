@@ -206,5 +206,4 @@ class StiDBItem(AnyObject):
         """
         return self.sti_db_item.IsRoot()
 
-    def __repr__(self):
-        return f'StiDBItem(name="{self.name}")'
+

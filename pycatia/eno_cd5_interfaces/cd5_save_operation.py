@@ -249,5 +249,4 @@ class CD5SaveOperation(AnyObject):
         """
         return self.cd5_save_operation.ShowPanel()
 
-    def __repr__(self):
-        return f'CD5SaveOperation(name="{self.name}")'
+

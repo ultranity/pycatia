@@ -152,5 +152,4 @@ class SchListOfLongs(AnyObject):
         """
         return self.sch_list_of_longs.RemoveByIndex(i_index)
 
-    def __repr__(self):
-        return f'SchListOfLongs(name="{self.name}")'
+

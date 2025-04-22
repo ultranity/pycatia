@@ -124,5 +124,4 @@ class CompositesServices(AnyObject):
 
         return self.composites_services.GetCompositesType(i_object.com_object, i_composites_type)
 
-    def __repr__(self):
-        return f'CompositesServices(name="{self.name}")'
+

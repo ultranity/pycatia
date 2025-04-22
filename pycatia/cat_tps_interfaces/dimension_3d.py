@@ -309,5 +309,4 @@ class Dimension3D(AnyObject):
         """
         return self.dimension_3d.MoveValue(x, y, sub_part, dim_angle_behavior)
 
-    def __repr__(self):
-        return f'Dimension3D(name="{self.name}")'
+

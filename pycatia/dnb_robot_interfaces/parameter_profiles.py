@@ -229,5 +229,4 @@ class ParameterProfiles(AnyObject):
         """
         return self.parameter_profiles.SetName(i_new_instance_name)
 
-    def __repr__(self):
-        return f'ParameterProfiles(name="{self.name}")'
+

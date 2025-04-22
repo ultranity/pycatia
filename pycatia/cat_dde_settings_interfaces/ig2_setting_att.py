@@ -1168,5 +1168,4 @@ class Ig2SettingAtt(SettingController):
         """
         return self.ig2_setting_att.set_ImportUnit(i_unit)
 
-    def __repr__(self):
-        return f'Ig2SettingAtt(name="{self.name}")'
+

@@ -361,5 +361,4 @@ class StrFeatureFactory(AnyObject):
         """
         return StrNibblingFeature(self.str_feature_factory.AddNibbling(i_list_of_limiting_elements, i_nibbling_type))
 
-    def __repr__(self):
-        return f'StrFeatureFactory(name="{self.name}")'
+

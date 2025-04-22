@@ -460,5 +460,4 @@ class Window(AnyObject):
         """
         return self.window.PrintToFile(file_name)
 
-    def __repr__(self):
-        return f'Window(name="{self.name}")'
+

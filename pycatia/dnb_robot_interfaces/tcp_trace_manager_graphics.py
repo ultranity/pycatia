@@ -189,5 +189,4 @@ class TCPTraceManagerGraphics(AnyObject):
         """
         return self.tcp_trace_manager_graphics.SetTraceNextColor(i_rep, i_r, i_g, i_b, i_a)
 
-    def __repr__(self):
-        return f'TCPTraceManagerGraphics(name="{self.name}")'
+

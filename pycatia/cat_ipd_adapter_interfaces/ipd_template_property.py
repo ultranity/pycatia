@@ -145,5 +145,4 @@ class IpdTemplateProperty(AnyObject):
         """
         return self.ipd_template_property.GetTemplateStringAttribute(i_attr_name)
 
-    def __repr__(self):
-        return f'IpdTemplateProperty(name="{ self.name }")'
+

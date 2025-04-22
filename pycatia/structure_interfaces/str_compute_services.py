@@ -206,5 +206,4 @@ class StrComputeServices(AnyObject):
         """
         return self.str_compute_services.GetWetArea(i_product.com_object)
 
-    def __repr__(self):
-        return f'StrComputeServices(name="{self.name}")'
+

@@ -275,5 +275,4 @@ class ArrangementPathway(AnyObject):
         """
         return self.arrangement_pathway.GetTechnologicalObject(i_application_type)
 
-    def __repr__(self):
-        return f'ArrangementPathway(name="{self.name}")'
+

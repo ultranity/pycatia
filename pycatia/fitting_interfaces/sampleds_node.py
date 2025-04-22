@@ -68,5 +68,4 @@ class SampledsNode(AnyObject):
         """
         return self.sampleds_node.GetSampleds(i_collection_name)
 
-    def __repr__(self):
-        return f'SampledsNode(name="{ self.name }")'
+

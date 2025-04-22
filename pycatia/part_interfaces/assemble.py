@@ -39,5 +39,4 @@ class Assemble(BooleanShape):
         super().__init__(com_object)
         self.assemble = com_object
 
-    def __repr__(self):
-        return f'Assemble(name="{self.name}")'
+

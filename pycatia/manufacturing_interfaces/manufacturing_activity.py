@@ -570,5 +570,4 @@ class ManufacturingActivity(Activity):
         """
         return self.manufacturing_activity.SetToolAxis(i_x_axis, i_y_axis, i_z_axis)
 
-    def __repr__(self):
-        return f'ManufacturingActivity(name="{self.name}")'
+

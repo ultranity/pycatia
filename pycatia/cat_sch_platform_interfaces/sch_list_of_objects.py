@@ -150,5 +150,4 @@ class SchListOfObjects(AnyObject):
         """
         return self.sch_list_of_objects.RemoveByIndex(i_index)
 
-    def __repr__(self):
-        return f'SchListOfObjects(name="{self.name}")'
+

@@ -309,5 +309,4 @@ class IntParam(Parameter):
         """
         return self.int_param.SuppressEnumerateValues()
 
-    def __repr__(self):
-        return f'IntParam(name="{ self.name }")'
+

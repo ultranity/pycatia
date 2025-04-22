@@ -116,5 +116,4 @@ class FunctAssociation(AnyObject):
         """
         return AnyObject(self.funct_association.RetrieveLinked(i_index))
 
-    def __repr__(self):
-        return f'FunctAssociation(name="{self.name}")'
+

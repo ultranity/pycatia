@@ -65,5 +65,3 @@ class ABQDisplayGroups(Collection):
         """
         return ABQDisplayGroup(self.abq_display_groups.Item(i_index))
 
-    def __repr__(self):
-        return f'ABQDisplayGroups(name="{self.name}")'

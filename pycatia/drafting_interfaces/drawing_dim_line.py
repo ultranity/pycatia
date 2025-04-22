@@ -469,5 +469,4 @@ class DrawingDimLine(AnyObject):
         """
         return self.drawing_dim_line.SetSymbType(index, i_symb_type)
 
-    def __repr__(self):
-        return f'DrawingDimLine(name="{self.name}")'
+

@@ -204,5 +204,4 @@ class HybridShapePointBetween(Point):
 
         self.hybrid_shape_point_between.Support = reference_support.com_object
 
-    def __repr__(self):
-        return f'HybridShapePointBetween(name="{self.name}")'
+

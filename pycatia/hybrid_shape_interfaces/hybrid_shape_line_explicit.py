@@ -40,5 +40,4 @@ class HybridShapeLineExplicit(Line):
         super().__init__(com_object)
         self.hybrid_shape_line_explicit = com_object
 
-    def __repr__(self):
-        return f'HybridShapeLineExplicit(name="{self.name}")'
+

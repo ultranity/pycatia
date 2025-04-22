@@ -301,5 +301,4 @@ class DatumTarget(AnyObject):
         """
         return self.datum_target.SetRectangularAreaSize(i_length, i_width)
 
-    def __repr__(self):
-        return f'DatumTarget(name="{self.name}")'
+

@@ -92,5 +92,4 @@ class ABQAnalysisModel(AnyObject):
 
         return ABQProperties(self.abq_analysis_model.Properties)
 
-    def __repr__(self):
-        return f'ABQAnalysisModel(name="{self.name}")'
+

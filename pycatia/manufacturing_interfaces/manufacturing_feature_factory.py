@@ -72,5 +72,4 @@ class ManufacturingFeatureFactory(AnyObject):
 
         return AnyObject(self.manufacturing_feature_factory.CreateMachiningFeature(i_type))
 
-    def __repr__(self):
-        return f'ManufacturingFeatureFactory(name="{self.name}")'
+

@@ -85,5 +85,4 @@ class AnalysisMaterial(AnyObject):
         """
         return self.analysis_material.PutValue(i_label, i_value)
 
-    def __repr__(self):
-        return f'AnalysisMaterial(name="{self.name}")'
+

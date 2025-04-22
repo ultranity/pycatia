@@ -395,5 +395,4 @@ class HybridShapeSphere(HybridShape):
         """
         return self.hybrid_shape_sphere.SetRadius(i_radius)
 
-    def __repr__(self):
-        return f'HybridShapeSphere(name="{self.name}")'
+

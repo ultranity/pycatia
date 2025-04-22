@@ -196,5 +196,4 @@ class ArrNomenclature(AnyObject):
         """
         return self.arr_nomenclature.IsSystemNomenclature()
 
-    def __repr__(self):
-        return f'ArrNomenclature(name="{self.name}")'
+

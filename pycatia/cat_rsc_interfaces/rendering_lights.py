@@ -126,5 +126,3 @@ class RenderingLights(Collection):
         """
         return self.rendering_lights.RemoveAll()
 
-    def __repr__(self):
-        return f'RenderingLights(name="{self.name}")'

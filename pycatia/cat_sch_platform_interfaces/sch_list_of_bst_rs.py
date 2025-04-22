@@ -148,5 +148,4 @@ class SchListOfBSTRs(AnyObject):
         """
         return self.sch_list_of_bst_rs.RemoveByIndex(i_index)
 
-    def __repr__(self):
-        return f'SchListOfBSTRs(name="{self.name}")'
+

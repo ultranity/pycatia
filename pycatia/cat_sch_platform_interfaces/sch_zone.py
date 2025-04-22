@@ -60,5 +60,4 @@ class SchZone(AnyObject):
         """
         return self.sch_zone.UpdateBoundedElements()
 
-    def __repr__(self):
-        return f'SchZone(name="{self.name}")'
+

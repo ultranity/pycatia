@@ -202,5 +202,4 @@ class SchRouteSymbol(AnyObject):
         """
         return self.sch_route_symbol.SetPosition(i_seg_num, i_seg_parm)
 
-    def __repr__(self):
-        return f'SchRouteSymbol(name="{self.name}")'
+

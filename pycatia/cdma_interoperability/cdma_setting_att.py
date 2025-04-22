@@ -1871,5 +1871,4 @@ class CDMASettingAtt(SettingController):
 
         return self.cdma_setting_att.SetWorkWithVPMCacheLock(i_locked)
 
-    def __repr__(self):
-        return f'CdmaSettingAtt(name="{self.name}")'
+

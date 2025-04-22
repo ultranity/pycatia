@@ -94,5 +94,4 @@ class FileComponent(AnyObject):
 
         return self.file_component.Path
 
-    def __repr__(self):
-        return f'FileComponent(name="{self.name}")'
+

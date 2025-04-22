@@ -78,5 +78,4 @@ class SchWorkbench(Workbench):
         """
         return self.sch_workbench.FindInterface(i_interface_name, i_object.com_object)
 
-    def __repr__(self):
-        return f'SchWorkbench(name="{self.name}")'
+

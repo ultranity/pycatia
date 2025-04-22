@@ -123,5 +123,3 @@ class FunctionalActions(Collection):
         """
         return FunctionalAction(self.functional_actions.Elem(i_index))
 
-    def __repr__(self):
-        return f'FunctionalActions(name="{self.name}")'

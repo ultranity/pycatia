@@ -299,5 +299,4 @@ class MoveHomeAct(Activity):
 
         self.move_home_act.SpeedPercent = value
 
-    def __repr__(self):
-        return f'MoveHomeAct(name="{self.name}")'
+

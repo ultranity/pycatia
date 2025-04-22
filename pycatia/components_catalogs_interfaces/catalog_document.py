@@ -184,5 +184,4 @@ class CatalogDocument(Document):
         """
         return self.catalog_document.CreateChapterFromDesignTable(i_chapter_name, i_document_containing_dt)
 
-    def __repr__(self):
-        return f'CatalogDocument(name="{ self.name }")'
+

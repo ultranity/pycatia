@@ -1085,5 +1085,4 @@ class ABQJob(AnyObject):
         """
         return self.abq_job.WriteInputFile()
 
-    def __repr__(self):
-        return f'ABQJob(name="{self.name}")'
+

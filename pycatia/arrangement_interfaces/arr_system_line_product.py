@@ -70,5 +70,4 @@ class ArrSystemLineProduct(AnyObject):
         """
         return self.arr_system_line_product.GetSubProductsCount(i_intf_id)
 
-    def __repr__(self):
-        return f'ArrSystemLineProduct(name="{ self.name }")'
+

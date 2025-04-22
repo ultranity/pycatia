@@ -642,5 +642,3 @@ class Constraint(AnyObject):
         """
         return self.constraint.SetConstraintVisuLocation(i_new_x, i_new_y, i_new_z)
 
-    def __repr__(self):
-        return f'Constraint(name="{self.name}")'

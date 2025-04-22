@@ -166,5 +166,4 @@ class PSPWorkbench(AnyObject):
         """
         return AnyObject(self.psp_workbench.GetInterface(i_interface_name, i_object.com_object))
 
-    def __repr__(self):
-        return f'PSPWorkbench(name="{self.name}")'
+

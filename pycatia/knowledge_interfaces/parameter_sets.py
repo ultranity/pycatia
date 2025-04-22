@@ -106,6 +106,10 @@ class ParameterSets(Collection):
         return ParameterSet(self.parameter_sets.Item(i_index))
 
     def __getitem__(self, n: int) -> ParameterSet:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -115,5 +119,3 @@ class ParameterSets(Collection):
         for i in range(self.count):
             yield self.child_object(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'ParameterSets(name="{self.name}")'

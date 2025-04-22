@@ -106,5 +106,3 @@ class SFMConnectionParameters(Collection):
         """
         return Parameter(self.sfm_connection_parameters.Item(i_index))
 
-    def __repr__(self):
-        return f'SFMConnectionParameters(name="{self.name}")'

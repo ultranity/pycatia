@@ -117,5 +117,4 @@ class HybridShapePointTangent(Point):
 
         self.hybrid_shape_point_tangent.Direction = direction.com_object
 
-    def __repr__(self):
-        return f'HybridShapePointTangent(name="{self.name}")'
+

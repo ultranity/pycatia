@@ -340,5 +340,4 @@ class HybridShapeAffinity(HybridShape):
 
         return RealParam(self.hybrid_shape_affinity.ZRatios)
 
-    def __repr__(self):
-        return f'HybridShapeAffinity(name="{self.name}")'
+

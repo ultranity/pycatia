@@ -50,5 +50,4 @@ class ElectricalSchematicWire(AnyObject):
 
         return self.elec_sch_wire.Color
 
-    def __repr__(self):
-        return f'ElectricalSchematicWire(name="{self.name}")'
+

@@ -193,6 +193,123 @@ class Parameters(Collection):
         """
         return BoolParam(self.parameters.CreateBoolean(i_name, i_value))
 
+    def create_integer(self, i_name: str, i_value: int) -> IntParam:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func CreateInteger(CATBSTR iName,
+                | long iValue) As IntParam
+                | 
+                |     Creates an integer parameter and adds it to the part's collection of
+                |     parameters.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The parameter name 
+                |         iValue
+                |             The parameter value 
+                | 
+                |     Example:
+                |         This example creates the RevisionNumber integer parameter and adds it
+                |         to the newly created part:
+                | 
+                |         Dim CATDocs As Documents
+                |          Set CATDocs = CATIA.Documents
+                |          Dim part1 As Document
+                |          Set part1   = CATDocs.Add("CATPart")
+                |          Dim revision As IntParam
+                |           Set revision = part1.Part.Parameters.CreateInteger ("RevisionRumber", 17)
+
+        :param str i_name:
+        :param int i_value:
+        :rtype: IntParam
+        """
+        return IntParam(self.parameters.CreateInteger(i_name, i_value))
+
+    def create_real(self, i_name: str, i_value: float) -> RealParam:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func CreateReal(CATBSTR iName,
+                | double iValue) As RealParam
+                | 
+                |     Creates a real parameter and adds it to the part's collection of
+                |     parameters.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The parameter name 
+                |         iValue
+                |             The parameter value 
+                | 
+                |     Example:
+                |         This example creates the ReliabilityRate real parameter and adds it to
+                |         the newly created part:
+                | 
+                |         Dim CATDocs As Documents
+                |          Set CATDocs = CATIA.Documents
+                |          Dim part1 As Document
+                |          Set part1   = CATDocs.Add("CATPart")
+                |          Dim rate As RealParam
+                |           Set rate = part1.Part.Parameters.CreateReal ("ReliabilityRate", 2.5 )
+
+        :param str i_name:
+        :param float i_value:
+        :rtype: RealParam
+        """
+        return RealParam(self.parameters.CreateReal(i_name, i_value))
+
+    def create_string(self, i_name: str, i_value: str) -> StrParam:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func CreateString(CATBSTR iName,
+                | CATBSTR iValue) As StrParam
+                | 
+                |     Creates a string parameter and adds it to the part's collection of
+                |     parameters.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The parameter name 
+                |         iValue
+                |             The parameter value 
+                | 
+                |     Example:
+                |         This example creates the responsible string parameter and adds it to
+                |         the newly created part:
+                | 
+                |           Set CATDocs = CATIA.Documents
+                |           Set part1   = CATDocs.Add("CATPart")
+                |           Set density = part1.Part.Parameters.CreateString ("responsible", "The Boss")
+
+        :param str i_name:
+        :param str i_value:
+        :rtype: StrParam
+        """
+        return StrParam(self.parameters.CreateString(i_name, i_value))
+
+    def create(self, i_name: str, i_value: int|float|str|bool) -> any_parameter:
+        """ Helper function to create a parameter based on the type of the value."""
+        match i_value:
+            case int():
+                return self.create_integer(i_name, i_value)
+            case float():
+                return self.create_real(i_name, i_value)
+            case str():
+                return self.create_string(i_name, i_value)
+            case bool():
+                return self.create_boolean(i_name, i_value)
+
     def create_dimension(self, i_name: str, i_magnitude: str, i_value: float) -> Dimension:
         """
         .. note::
@@ -250,42 +367,6 @@ class Parameters(Collection):
             return Length(com_object)
         return Dimension(com_object)
 
-    def create_integer(self, i_name: str, i_value: int) -> IntParam:
-        """
-        .. note::
-            :class: toggle
-
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateInteger(CATBSTR iName,
-                | long iValue) As IntParam
-                | 
-                |     Creates an integer parameter and adds it to the part's collection of
-                |     parameters.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The parameter name 
-                |         iValue
-                |             The parameter value 
-                | 
-                |     Example:
-                |         This example creates the RevisionNumber integer parameter and adds it
-                |         to the newly created part:
-                | 
-                |         Dim CATDocs As Documents
-                |          Set CATDocs = CATIA.Documents
-                |          Dim part1 As Document
-                |          Set part1   = CATDocs.Add("CATPart")
-                |          Dim revision As IntParam
-                |           Set revision = part1.Part.Parameters.CreateInteger ("RevisionRumber", 17)
-
-        :param str i_name:
-        :param int i_value:
-        :rtype: IntParam
-        """
-        return IntParam(self.parameters.CreateInteger(i_name, i_value))
-
     def create_list(self, i_name: str) -> ListParameter:
         """
         .. note::
@@ -315,42 +396,6 @@ class Parameters(Collection):
         """
         return ListParameter(self.parameters.CreateList(i_name))
 
-    def create_real(self, i_name: str, i_value: float) -> RealParam:
-        """
-        .. note::
-            :class: toggle
-
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateReal(CATBSTR iName,
-                | double iValue) As RealParam
-                | 
-                |     Creates a real parameter and adds it to the part's collection of
-                |     parameters.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The parameter name 
-                |         iValue
-                |             The parameter value 
-                | 
-                |     Example:
-                |         This example creates the ReliabilityRate real parameter and adds it to
-                |         the newly created part:
-                | 
-                |         Dim CATDocs As Documents
-                |          Set CATDocs = CATIA.Documents
-                |          Dim part1 As Document
-                |          Set part1   = CATDocs.Add("CATPart")
-                |          Dim rate As RealParam
-                |           Set rate = part1.Part.Parameters.CreateReal ("ReliabilityRate", 2.5 )
-
-        :param str i_name:
-        :param float i_value:
-        :rtype: RealParam
-        """
-        return RealParam(self.parameters.CreateReal(i_name, i_value))
-
     def create_set_of_parameters(self, i_father: AnyObject) -> None:
         """
         .. note::
@@ -365,39 +410,6 @@ class Parameters(Collection):
         :rtype: None
         """
         return self.parameters.CreateSetOfParameters(i_father.com_object)
-
-    def create_string(self, i_name: str, i_value: str) -> StrParam:
-        """
-        .. note::
-            :class: toggle
-
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateString(CATBSTR iName,
-                | CATBSTR iValue) As StrParam
-                | 
-                |     Creates a string parameter and adds it to the part's collection of
-                |     parameters.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The parameter name 
-                |         iValue
-                |             The parameter value 
-                | 
-                |     Example:
-                |         This example creates the responsible string parameter and adds it to
-                |         the newly created part:
-                | 
-                |           Set CATDocs = CATIA.Documents
-                |           Set part1   = CATDocs.Add("CATPart")
-                |           Set density = part1.Part.Parameters.CreateString ("responsible", "The Boss")
-
-        :param str i_name:
-        :param str i_value:
-        :rtype: StrParam
-        """
-        return StrParam(self.parameters.CreateString(i_name, i_value))
 
     def get_name_to_use_in_relation(self, i_object: AnyObject) -> str:
         """
@@ -560,6 +572,10 @@ class Parameters(Collection):
         return Parameters(self.parameters.SubList(i_object.com_object, i_recursively))
 
     def __getitem__(self, n: int) -> Parameter:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -569,5 +585,3 @@ class Parameters(Collection):
         for i in range(self.count):
             yield parse_to_parameter_subtype(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'Parameters(name="{self.name}")'

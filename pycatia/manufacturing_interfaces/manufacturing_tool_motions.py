@@ -95,5 +95,3 @@ class MFGToolMotions(Collection):
         """
         return ManufacturingToolMotion(self.mfg_tool_motions.GetElement(i_index))
 
-    def __repr__(self):
-        return f'MfgToolMotions(name="{self.name}")'

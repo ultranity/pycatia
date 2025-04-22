@@ -829,5 +829,4 @@ class HybridShapeHealing(HybridShape):
         """
         return self.hybrid_shape_healing.SetTangencyObjective(i_tangency_objective)
 
-    def __repr__(self):
-        return f'HybridShapeHealing(name="{ self.name }")'
+

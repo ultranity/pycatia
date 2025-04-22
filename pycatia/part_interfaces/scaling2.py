@@ -132,5 +132,4 @@ class Scaling2(Shape):
 
         self.scaling2.RatioValue = value
 
-    def __repr__(self):
-        return f'Scaling2(name="{ self.name }")'
+

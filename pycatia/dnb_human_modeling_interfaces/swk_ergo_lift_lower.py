@@ -794,5 +794,4 @@ class SWKErgoLiftLower(AnyObject):
         """
         return self.swk_ergo_lift_lower.SaveInitialPosture()
 
-    def __repr__(self):
-        return f'SWKErgoLiftLower(name="{self.name}")'
+

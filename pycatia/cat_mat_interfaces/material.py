@@ -182,5 +182,4 @@ class Material(AnyObject):
         """
         return self.material.PutIcon(i_path)
 
-    def __repr__(self):
-        return f'Material(name="{self.name}")'
+

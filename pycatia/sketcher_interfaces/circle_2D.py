@@ -153,5 +153,4 @@ class Circle2D(Curve2D):
         """
         return self.circle_2d.SetData(i_center_x, i_center_y, i_radius)
 
-    def __repr__(self):
-        return f'Circle2D(name="{self.name}")'
+

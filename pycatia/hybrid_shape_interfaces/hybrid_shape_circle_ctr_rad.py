@@ -347,5 +347,4 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         """
         return self.hybrid_shape_circle_ctr_rad.UnsetGeometryOnSupport()
 
-    def __repr__(self):
-        return f'HybridShapeCircleCtrRad(name="{ self.name }")'
+

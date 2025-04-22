@@ -298,5 +298,4 @@ class MoveJointsAct(Activity):
 
         self.move_joints_act.SpeedPercent = value
 
-    def __repr__(self):
-        return f'MoveJointsAct(name="{self.name}")'
+

@@ -106,5 +106,3 @@ class ArrNomenclatures(Collection):
         """
         return ArrNomenclature(self.arr_nomenclatures.Item(i_index))
 
-    def __repr__(self):
-        return f'ArrNomenclatures(name="{self.name}")'

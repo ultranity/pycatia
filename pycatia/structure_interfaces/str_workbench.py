@@ -61,5 +61,4 @@ class StrWorkbench(Workbench):
 
         return StrComputeServices(self.str_workbench.StrComputeServices)
 
-    def __repr__(self):
-        return f'StrWorkbench(name="{self.name}")'
+

@@ -207,5 +207,4 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         """
         return self.expert_rule_base_component_runtime.SetUseOnly()
 
-    def __repr__(self):
-        return f'ExpertRuleBaseComponentRuntime(name="{self.name}")'
+

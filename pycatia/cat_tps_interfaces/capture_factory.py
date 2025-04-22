@@ -57,5 +57,4 @@ class CaptureFactory(Factory):
         """
         return Capture(self.capture_factory.CreateCapture())
 
-    def __repr__(self):
-        return f'CaptureFactory(name="{self.name}")'
+

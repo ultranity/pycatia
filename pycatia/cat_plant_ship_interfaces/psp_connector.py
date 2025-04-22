@@ -242,5 +242,4 @@ class PSPConnector(AnyObject):
         """
         return self.psp_connector.IsCntrConnected()
 
-    def __repr__(self):
-        return f'PSPConnector(name="{self.name}")'
+

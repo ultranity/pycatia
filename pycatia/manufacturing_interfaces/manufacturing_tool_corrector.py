@@ -186,5 +186,4 @@ class ManufacturingToolCorrector(AnyObject):
             o_diameter
         )
 
-    def __repr__(self):
-        return f'ManufacturingToolCorrector(name="{self.name}")'
+

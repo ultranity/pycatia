@@ -52,5 +52,4 @@ class AnalysisMeshManager(AnalysisSet):
 
         return AnalysisMeshParts(self.analysis_mesh_manager.AnalysisMeshParts)
 
-    def __repr__(self):
-        return f'AnalysisMeshManager(name="{self.name}")'
+

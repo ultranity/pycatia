@@ -189,5 +189,4 @@ class BehaviorVBScript(Behavior):
         """
         return self.behavior_vb_script.TestInternal(p_name)
 
-    def __repr__(self):
-        return f'BehaviorVBScript(name="{self.name}")'
+

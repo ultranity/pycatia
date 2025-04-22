@@ -275,5 +275,4 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
         """
         return self.abqiaabq_steady_state_lin_dyn_step_basic_vb.AddGlobalDamping(i_alpha, i_beta, i_structural)
 
-    def __repr__(self):
-        return f'ABQIAABQSteadyStateLinDynStepBasicVB(name="{self.name}")'
+

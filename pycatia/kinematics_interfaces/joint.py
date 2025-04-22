@@ -134,5 +134,4 @@ class Joint(AnyObject):
         """
         return self.joint.UnsetUpperLimit2()
 
-    def __repr__(self):
-        return f'Joint(name="{ self.name }")'
+

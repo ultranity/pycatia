@@ -934,5 +934,4 @@ class Part(AnyObject):
         """
         return self.part.UpdateObject(i_object.com_object)
 
-    def __repr__(self):
-        return f'Part(name="{self.name}")'
+

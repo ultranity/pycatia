@@ -97,5 +97,4 @@ class PSPAttributeReport(AnyObject):
         """
         return self.psp_attribute_report.GenerateReport(i_input_format_file, i_outputfile)
 
-    def __repr__(self):
-        return f'PSPAttributeReport(name="{self.name}")'
+

@@ -239,5 +239,4 @@ class SWKBodyElement(AnyObject):
         """
         return self.swk_body_element.Refresh3D()
 
-    def __repr__(self):
-        return f'SWKBodyElement(name="{self.name}")'
+

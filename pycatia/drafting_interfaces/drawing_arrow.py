@@ -496,5 +496,4 @@ class DrawingArrow(AnyObject):
         """
         return self.drawing_arrow.RemovePoint(i_num)
 
-    def __repr__(self):
-        return f'DrawingArrow(name="{self.name}")'
+

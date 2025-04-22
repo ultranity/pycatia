@@ -532,5 +532,4 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
         """
         return self.abq_surface_to_surface_contact.RemoveInterferenceFit()
 
-    def __repr__(self):
-        return f'ABQSurfaceToSurfaceContact(name="{self.name}")'
+

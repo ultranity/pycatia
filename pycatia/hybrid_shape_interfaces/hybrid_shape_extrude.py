@@ -430,5 +430,4 @@ class HybridShapeExtrude(HybridShape):
 
         self.hybrid_shape_extrude.SymmetricalExtension = value
 
-    def __repr__(self):
-        return f'HybridShapeExtrude(name="{self.name}")'
+

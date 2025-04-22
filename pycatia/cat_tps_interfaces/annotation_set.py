@@ -552,5 +552,4 @@ class AnnotationSet(AnyObject):
 
         return self.annotation_set.ReadISODefaultProperties(o_iso_defaults)
 
-    def __repr__(self):
-        return f'AnnotationSet(name="{self.name}")'
+

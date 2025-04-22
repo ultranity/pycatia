@@ -681,5 +681,4 @@ class ExpertRuleBaseRuntime(Relation):
         """
         return self.expert_rule_base_runtime.SynchronizeStatus()
 
-    def __repr__(self):
-        return f'ExpertRuleBaseRuntime(name="{self.name}")'
+

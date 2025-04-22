@@ -131,5 +131,4 @@ class MHISaveAccess(AnyObject):
         """
         return self.mhi_save_access.SaveToPPRHub(i_detailing_name, i_overwrite_detailing)
 
-    def __repr__(self):
-        return f'MHISaveAccess(name="{self.name}")'
+

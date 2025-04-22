@@ -41,5 +41,4 @@ class Groove(Revolution):
         super().__init__(com_object)
         self.groove = com_object
 
-    def __repr__(self):
-        return f'Groove(name="{self.name}")'
+

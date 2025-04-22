@@ -78,5 +78,4 @@ class SchReplace(AnyObject):
             )
         )
 
-    def __repr__(self):
-        return f'SchReplace(name="{self.name}")'
+

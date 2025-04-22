@@ -70,5 +70,4 @@ class ManufacturingPrecedence(AnyObject):
 
         return ManufacturingActivity(self.manufacturing_precedence.TargetOperation)
 
-    def __repr__(self):
-        return f'ManufacturingPrecedence(name="{self.name}")'
+

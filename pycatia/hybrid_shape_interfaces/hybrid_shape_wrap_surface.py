@@ -176,5 +176,4 @@ class HybridShapeWrapSurface(HybridShape):
 
         self.hybrid_shape_wrap_surface.TargetSurface = reference_surface.com_object
 
-    def __repr__(self):
-        return f'HybridShapeWrapSurface(name="{self.name}")'
+

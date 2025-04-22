@@ -920,5 +920,4 @@ class SFMFactory(Factory):
         """
         return SFMManager(self.sfm_factory.GetManager())
 
-    def __repr__(self):
-        return f'SFMFactory(name="{self.name}")'
+

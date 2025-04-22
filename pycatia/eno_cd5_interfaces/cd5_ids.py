@@ -71,5 +71,3 @@ class CD5IDs(Collection):
         """
         return CD5ID(self.cd5_i_ds.Item(i_index))
 
-    def __repr__(self):
-        return f'CD5IDs(name="{self.name}")'

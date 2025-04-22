@@ -167,5 +167,3 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
         """
         return self.drawing_view_generative_links.RemoveAllLinks()
 
-    def __repr__(self):
-        return f'DrawingViewGenerativeLinks()'

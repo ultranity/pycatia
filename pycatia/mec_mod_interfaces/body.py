@@ -96,7 +96,8 @@ class Body(AnyObject):
 
         :rtype: HybridShapes
         """
-
+        if self.body.HybridShapes is None:
+            return []
         return HybridShapes(self.body.HybridShapes)
 
     @property
@@ -238,5 +239,4 @@ class Body(AnyObject):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def __repr__(self):
-        return f'Body(name="{self.name}")'
+

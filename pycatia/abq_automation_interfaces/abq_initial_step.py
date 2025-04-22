@@ -87,5 +87,4 @@ class ABQInitialStep(ABQStep):
 
         return ABQMassScalings(self.abq_initial_step.MassScalings)
 
-    def __repr__(self):
-        return f'ABQInitialStep(name="{self.name}")'
+

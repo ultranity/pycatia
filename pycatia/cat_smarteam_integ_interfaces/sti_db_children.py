@@ -230,5 +230,4 @@ class StiDBChildren(AnyObject):
         """
         return self.sti_db_children.LinkType(i_index)
 
-    def __repr__(self):
-        return f'StiDBChildren(name="{self.name}")'
+

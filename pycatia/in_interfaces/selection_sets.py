@@ -217,5 +217,4 @@ class SelectionSets(AnyObject):
         """
         return self.selection_sets.RenameSelectionSet(i_old_sel_set_name, i_new_sel_set_name)
 
-    def __repr__(self):
-        return f'SelectionSets(name="{ self.name }")'
+

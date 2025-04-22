@@ -358,5 +358,4 @@ class Clash(AnyObject):
         """
         return self.clash.Export(i_type, i_path)
 
-    def __repr__(self):
-        return f'Clash(name="{self.name}")'
+

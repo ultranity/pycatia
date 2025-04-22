@@ -113,5 +113,4 @@ class HybridShapePlaneTangent(Plane):
 
         self.hybrid_shape_plane_tangent.Surface = reference_surface.com_object
 
-    def __repr__(self):
-        return f'HybridShapePlaneTangent(name="{self.name}")'
+

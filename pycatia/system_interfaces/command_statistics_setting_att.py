@@ -44,5 +44,4 @@ class CommandStatisticsSettingAtt(GeneralStatisticsSettingAtt):
         super().__init__(com_object)
         self.command_statistics_setting_att = com_object
 
-    def __repr__(self):
-        return f'CommandStatisticsSettingAtt(name="{ self.name }")'
+

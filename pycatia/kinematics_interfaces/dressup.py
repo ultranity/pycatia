@@ -225,5 +225,4 @@ class Dressup(AnyObject):
         """
         return self.dressup.ListAttached(i_link.com_object)
 
-    def __repr__(self):
-        return f'Dressup(name="{self.name}")'
+

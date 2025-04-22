@@ -511,5 +511,4 @@ class HybridShapeHelix(HybridShape):
         """
         return self.hybrid_shape_helix.SetTaperAngle(i_taper_angle)
 
-    def __repr__(self):
-        return f'HybridShapeHelix(name="{ self.name }")'
+

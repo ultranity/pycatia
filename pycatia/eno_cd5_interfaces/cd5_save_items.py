@@ -74,5 +74,3 @@ class CD5SaveItems(Collection):
         """
         return CD5SaveItem(self.cd5_save_items.Item(i_index).com_object)
 
-    def __repr__(self):
-        return f'CD5SaveItems(name="{self.name}")'

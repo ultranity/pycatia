@@ -185,5 +185,4 @@ class SFMMemberPlane2Curves(SFMMember):
 
         self.sfm_member_plane2_curves.SecondMember = value.com_object
 
-    def __repr__(self):
-        return f'SFMMemberPlane2Curves(name="{self.name}")'
+

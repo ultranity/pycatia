@@ -199,5 +199,4 @@ class Stiffener(SketchBasedShape):
         """
         return self.stiffener.ReverseThickness()
 
-    def __repr__(self):
-        return f'Stiffener(name="{ self.name }")'
+

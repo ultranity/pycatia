@@ -143,5 +143,4 @@ class StrNibblingFeature(AnyObject):
         """
         return self.str_nibbling_feature.GetOffsetForExtrapolate(i_offset_for_extrapolate)
 
-    def __repr__(self):
-        return f'StrNibblingFeature(name="{ self.name }")'
+

@@ -70,5 +70,4 @@ class EnumParam(Parameter):
 
         self.enum_param.ValueEnum = value
 
-    def __repr__(self):
-        return f'EnumParam(name="{ self.name }")'
+

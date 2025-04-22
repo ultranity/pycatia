@@ -513,5 +513,4 @@ class Factory2D(AnyObject):
         """
         return Spline2D(self.factory_2d.CreateSpline(tuple(p2d.com_object for p2d in i_poles)))
 
-    def __repr__(self):
-        return f'Factory2D(name="{self.name}")'
+

@@ -62,5 +62,4 @@ class SceneWorkbench(Workbench):
 
         return Scenes(self.scene_workbench.WorkScenes)
 
-    def __repr__(self):
-        return f'SceneWorkbench(name="{self.name}")'
+

@@ -255,5 +255,4 @@ class Ellipse2D(Curve2D):
         """
         return self.ellipse_2d.SetData(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius)
 
-    def __repr__(self):
-        return f'Ellipse2D(name="{self.name}")'
+

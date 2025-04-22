@@ -77,5 +77,4 @@ class HybridShapeSection(HybridShape):
 
         self.hybrid_shape_section.SectionPlane = reference_plane.com_object
 
-    def __repr__(self):
-        return f'HybridShapeSection(name="{self.name}")'
+

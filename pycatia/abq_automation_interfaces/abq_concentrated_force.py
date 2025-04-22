@@ -564,5 +564,4 @@ class ABQConcentratedForce(ABQLoad):
         """
         return self.abq_concentrated_force.SetUseCoordinateSystemType(i_csystem_type)
 
-    def __repr__(self):
-        return f'ABQConcentratedForce(name="{self.name}")'
+

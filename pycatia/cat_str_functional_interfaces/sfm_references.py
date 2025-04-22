@@ -142,5 +142,3 @@ class SFMReferences(Collection):
         """
         return Reference(self.sfm_references.Item(i_index))
 
-    def __repr__(self):
-        return f'SFMReferences(name="{self.name}")'

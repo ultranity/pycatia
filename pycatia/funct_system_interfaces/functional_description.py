@@ -210,5 +210,4 @@ class FunctionalDescription(FunctionalElement):
         """
         return self.functional_description.Unlock()
 
-    def __repr__(self):
-        return f'FunctionalDescription(name="{self.name}")'
+

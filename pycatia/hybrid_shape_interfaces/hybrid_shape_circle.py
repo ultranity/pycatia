@@ -371,5 +371,4 @@ class HybridShapeCircle(HybridShape):
         """
         return self.hybrid_shape_circle.SetLimitation(i_limitation)
 
-    def __repr__(self):
-        return f'HybridShapeCircle(name="{self.name}")'
+

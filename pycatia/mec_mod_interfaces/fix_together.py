@@ -298,5 +298,4 @@ class FixTogether(AnyObject):
         """
         return self.fix_together.RemoveProduct(i_index)
 
-    def __repr__(self):
-        return f'FixTogether(name="{self.name}")'
+

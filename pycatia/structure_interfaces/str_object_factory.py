@@ -1681,5 +1681,4 @@ class StrObjectFactory(AnyObject):
         """
         return StrFoundation(self.str_object_factory.ExtendProductAsFoundation(i_class))
 
-    def __repr__(self):
-        return f'StrObjectFactory(name="{self.name}")'
+

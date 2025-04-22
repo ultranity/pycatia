@@ -435,5 +435,4 @@ class SchBaseFactory(AnyObject):
         """
         return self.sch_base_factory.DeleteObject(i_object.com_object)
 
-    def __repr__(self):
-        return f'SchBaseFactory(name="{self.name}")'
+

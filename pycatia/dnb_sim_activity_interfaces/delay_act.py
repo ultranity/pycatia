@@ -78,5 +78,4 @@ class DelayAct(Activity):
 
         self.delay_act.Delay = value
 
-    def __repr__(self):
-        return f'DelayAct(name="{self.name}")'
+

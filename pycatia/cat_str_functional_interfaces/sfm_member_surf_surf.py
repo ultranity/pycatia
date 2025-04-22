@@ -257,5 +257,4 @@ class SFMMemberSurfSurf(SFMMember):
 
         self.sfm_member_surf_surf.SecondSurfaceOrientation = value
 
-    def __repr__(self):
-        return f'SFMMemberSurfSurf(name="{self.name}")'
+

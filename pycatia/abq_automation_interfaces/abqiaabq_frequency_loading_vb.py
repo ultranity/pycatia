@@ -175,5 +175,4 @@ class ABQIAABQFrequencyLoadingVB(ABQLoad):
 
         self.abqiaabq_frequency_loading_vb.Scale = value
 
-    def __repr__(self):
-        return f'ABQIAABQFrequencyLoadingVB(name="{self.name}")'
+

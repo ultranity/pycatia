@@ -133,5 +133,4 @@ class ArrangementRectangle(AnyObject):
         """
         return self.arrangement_rectangle.GetTechnologicalObject(i_application_type)
 
-    def __repr__(self):
-        return f'ArrangementRectangle(name="{ self.name }")'
+

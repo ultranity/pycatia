@@ -512,5 +512,4 @@ class ManufacturingPattern(ManufacturingFeature):
         """
         return self.manufacturing_pattern.StartPoint(i_point_number)
 
-    def __repr__(self):
-        return f'ManufacturingPattern(name="{self.name}")'
+

@@ -35,5 +35,4 @@ class Factory(AnyObject):
         super().__init__(com_object)
         self.factory = com_object
 
-    def __repr__(self):
-        return f'Factory(name="{self.name}")'
+

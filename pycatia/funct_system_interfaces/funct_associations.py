@@ -126,5 +126,3 @@ class FunctAssociations(Collection):
         """
         return FunctAssociation(self.funct_associations.Elem(i_index))
 
-    def __repr__(self):
-        return f'FunctAssociations(name="{self.name}")'

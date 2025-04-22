@@ -252,5 +252,4 @@ class SettingController(AnyObject):
         """
         return self.setting_controller.SaveRepository()
 
-    def __repr__(self):
-        return f'SettingController(name="{self.name}")'
+

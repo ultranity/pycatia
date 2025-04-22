@@ -187,5 +187,4 @@ class Hyperbola2D(Curve2D):
         """
         return self.hyperbola_2d.SetData(i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius)
 
-    def __repr__(self):
-        return f'Hyperbola2D(name="{self.name}")'
+

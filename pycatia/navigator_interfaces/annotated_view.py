@@ -435,5 +435,4 @@ class AnnotatedView(AnyObject):
         """
         return self.annotated_view.Update()
 
-    def __repr__(self):
-        return f'AnnotatedView(name="{self.name}")'
+

@@ -351,5 +351,4 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         """
         return self.defeaturing_filter_with_range.setMinimumValue(i_range_id, i_value)
 
-    def __repr__(self):
-        return f'DefeaturingFilterWithRange(name="{ self.name }")'
+

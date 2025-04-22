@@ -461,5 +461,4 @@ class ABQGeneralStaticStep(ABQStep):
 
         self.abq_general_static_step.TimePeriod = value
 
-    def __repr__(self):
-        return f'ABQGeneralStaticStep(name="{self.name}")'
+

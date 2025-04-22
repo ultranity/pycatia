@@ -313,5 +313,4 @@ class HybridShapeFilletTriTangent(HybridShape):
         """
         return self.hybrid_shape_fillet_tri_tangent.InvertSecondOrientation()
 
-    def __repr__(self):
-        return f'HybridShapeFilletTriTangent(name="{ self.name }")'
+

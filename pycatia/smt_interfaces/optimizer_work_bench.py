@@ -209,5 +209,4 @@ class OptimizerWorkBench(Workbench):
         """
         return self.optimizer_work_bench.QueryNeighbours(i_accuracy, i_clearance, i_reference_selection, i_type_query)
 
-    def __repr__(self):
-        return f'OptimizerWorkBench(name="{self.name}")'
+

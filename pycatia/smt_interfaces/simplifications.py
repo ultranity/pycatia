@@ -124,5 +124,3 @@ class Simplifications(Collection):
         """
         return self.simplifications.SimplificationShapeName()
 
-    def __repr__(self):
-        return f'Simplifications(name="{self.name}")'

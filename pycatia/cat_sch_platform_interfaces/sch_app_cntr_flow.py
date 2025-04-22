@@ -156,5 +156,4 @@ class SchAppCntrFlow(AnyObject):
         """
         return self.sch_app_cntr_flow.AppSetFlowReality(i_e_flow_reality)
 
-    def __repr__(self):
-        return f'SchAppCntrFlow(name="{self.name}")'
+

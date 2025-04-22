@@ -242,5 +242,4 @@ class StrCutoutFeature(AnyObject):
         """
         return Product(self.str_cutout_feature.GetObject())
 
-    def __repr__(self):
-        return f'StrCutoutFeature(name="{self.name}")'
+

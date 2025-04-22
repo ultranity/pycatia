@@ -325,5 +325,4 @@ class GenericAccuracyProfile(AnyObject):
         """
         return self.generic_accuracy_profile.SetName(i_name)
 
-    def __repr__(self):
-        return f'GenericAccuracyProfile(name="{self.name}")'
+

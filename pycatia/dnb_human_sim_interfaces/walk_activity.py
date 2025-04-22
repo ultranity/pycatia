@@ -318,5 +318,4 @@ class WalkActivity(WorkerActivity):
         """
         return self.walk_activity.Update()
 
-    def __repr__(self):
-        return f'WalkActivity(name="{self.name}")'
+

@@ -1333,5 +1333,4 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.UnsetSupport(i_blend_limit)
 
-    def __repr__(self):
-        return f'HybridShapeBlend(name="{self.name}")'
+

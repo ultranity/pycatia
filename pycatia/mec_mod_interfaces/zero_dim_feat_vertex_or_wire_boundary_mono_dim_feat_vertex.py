@@ -46,5 +46,4 @@ class ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex(Vertex):
         super().__init__(com_object)
         self.zero_dim_feat_vertex_or_wire_boundary_mono_dim_feat_vertex = com_object
 
-    def __repr__(self):
-        return f'ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex(name="{self.name}")'
+

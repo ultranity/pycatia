@@ -147,5 +147,4 @@ class SchListOfDoubles(AnyObject):
         """
         return self.sch_list_of_doubles.RemoveByIndex(i_index)
 
-    def __repr__(self):
-        return f'SchListOfDoubles(name="{self.name}")'
+

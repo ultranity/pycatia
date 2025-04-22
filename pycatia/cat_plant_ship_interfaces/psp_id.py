@@ -215,5 +215,4 @@ class PSPId(AnyObject):
         """
         return self.psp_id.SetID(i_id)
 
-    def __repr__(self):
-        return f'PSPId(name="{self.name}")'
+

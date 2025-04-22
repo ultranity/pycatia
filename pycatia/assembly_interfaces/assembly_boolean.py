@@ -83,5 +83,4 @@ class AssemblyBoolean(AssemblyFeature):
 
         return Product(self.assembly_boolean.BodyComponent)
 
-    def __repr__(self):
-        return f'AssemblyBoolean(name="{self.name}")'
+

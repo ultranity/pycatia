@@ -163,5 +163,4 @@ class CD5EngineV6R2014x(CD5Engine):
         """
         return self.cd5_engine_v6_r2014x.GetAutonameSeries(i_type)
 
-    def __repr__(self):
-        return f'CD5EngineV6R2014x(name="{self.name}")'
+

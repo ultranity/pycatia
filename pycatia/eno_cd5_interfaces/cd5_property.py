@@ -106,5 +106,4 @@ class CD5Property(AnyObject):
 
         return self.cd5_property.PropertyValue
 
-    def __repr__(self):
-        return f'CD5Property(name="{self.name}")'
+

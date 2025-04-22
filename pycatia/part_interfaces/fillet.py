@@ -111,5 +111,4 @@ class Fillet(DressUpShape):
 
         self.fillet.FilletTrimSupport = value
 
-    def __repr__(self):
-        return f'Fillet(name="{self.name}")'
+

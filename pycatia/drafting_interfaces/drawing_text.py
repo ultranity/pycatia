@@ -800,5 +800,4 @@ class DrawingText(AnyObject):
         """
         return self.drawing_text.SetParameterOnSubString(i_param, i_first, inb_character, i_val)
 
-    def __repr__(self):
-        return f'DrawingText(name="{self.name}")'
+

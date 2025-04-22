@@ -65,5 +65,3 @@ class AnalysisSupports(Collection):
         """
         return self.analysis_supports.Item(i_index, o_positionning.com_object, o_pointed.com_object)
 
-    def __repr__(self):
-        return f'AnalysisSupports(name="{self.name}")'

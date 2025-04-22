@@ -348,5 +348,4 @@ class HybridShapeProject(HybridShape):
 
         self.hybrid_shape_project.p3DSmoothing = value
 
-    def __repr__(self):
-        return f'HybridShapeProject(name="{self.name}")'
+

@@ -40,5 +40,4 @@ class ABQHistoryOutputRequest(ABQFHOutputRequest):
         super().__init__(com_object)
         self.abq_history_output_request = com_object
 
-    def __repr__(self):
-        return f'ABQHistoryOutputRequest(name="{self.name}")'
+

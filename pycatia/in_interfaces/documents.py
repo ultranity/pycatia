@@ -336,6 +336,10 @@ class Documents(Collection):
                 'Check file type and ensure the version of CATIA it was created with is compatible.')
 
     def __getitem__(self, n: int) -> Document:
+        if n <0:
+            n += self.count
+            if n < 0:
+                raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
@@ -345,5 +349,3 @@ class Documents(Collection):
         for i in range(self.count):
             yield get_document_object(self.com_object.Item(i + 1))
 
-    def __repr__(self):
-        return f'Documents(name="{self.name}")'

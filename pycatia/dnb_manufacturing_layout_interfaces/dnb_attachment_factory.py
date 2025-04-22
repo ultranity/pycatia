@@ -95,5 +95,4 @@ class DnbAttachmentFactory(AnyObject):
         """
         return self.dnb_attachment_factory.Remove(i_attachment.com_object)
 
-    def __repr__(self):
-        return f'DnbAttachmentFactory(name="{self.name}")'
+
