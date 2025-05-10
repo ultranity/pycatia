@@ -2,20 +2,27 @@
 
 import setuptools
 
-from pycatia import __author__, __author_email, __description__, __name__, __version__, __url__
+from pycatia import (
+    __author__,
+    __author_email,
+    __description__,
+    __name__,
+    __url__,
+    __version__,
+)
 
 exclude_files = [
-    '__reference_scripts__',
-    '__pycache__',
+    "__reference_scripts__",
+    "__pycache__",
 ]
 
 requires = [
-    'pywin32>=224',
+    "pywin32>=224",
 ]
 
 test_requirements = [
-    'pytest>=5.4.2',
-    'pytest-cov>=2.8.1',
+    "pytest>=5.4.2",
+    "pytest-cov>=2.8.1",
 ]
 
 with open("README.rst", "r") as fh:
@@ -33,8 +40,8 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     python_requires=">=3.9",
     classifiers=[
-        'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "License :: OSI Approved :: MIT License",
         "Operating System :: Microsoft :: Windows",
     ],

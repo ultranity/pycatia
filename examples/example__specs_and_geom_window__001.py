@@ -2,17 +2,17 @@
 
 """
 
-    Example - Specs And Geometry Window - 001
+Example - Specs And Geometry Window - 001
 
-    Description:
-        Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
-        END VIEW and ISO PNGs for each part.
-        The tree is turned off and the background turned white for the screen
-        capture and then turned back on.
+Description:
+    Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
+    END VIEW and ISO PNGs for each part.
+    The tree is turned off and the background turned white for the screen
+    capture and then turned back on.
 
-    Requirements:
-        - CATIA running.
-        - Tests already setup.
+Requirements:
+    - CATIA running.
+    - Tests already setup.
 
 """
 
@@ -28,8 +28,10 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 from pathlib import Path
 
 from pycatia import CATIADocHandler
-from pycatia.enumeration.enumeration_types import cat_capture_format
-from pycatia.enumeration.enumeration_types import cat_specs_and_geom_window_layout
+from pycatia.enumeration.enumeration_types import (
+    cat_capture_format,
+    cat_specs_and_geom_window_layout,
+)
 from pycatia.in_interfaces.specs_and_geom_window import SpecsAndGeomWindow
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
@@ -55,7 +57,9 @@ def save_file_path(prod_part_number, prod_revision, view_type):
     :return: Path
     """
 
-    file_name = Path(Path.home(), "Pictures", f"{prod_part_number}-{prod_revision}-{view_type}.jpg")
+    file_name = Path(
+        Path.home(), "Pictures", f"{prod_part_number}-{prod_revision}-{view_type}.jpg"
+    )
 
     return file_name
 
@@ -77,7 +81,9 @@ for cat_part in source_files:
 
         # lets turn off the specification tree.
         specs_and_geom = SpecsAndGeomWindow(active_window.com_object)
-        specs_and_geom.layout = cat_specs_and_geom_window_layout.index("catWindowGeomOnly")
+        specs_and_geom.layout = cat_specs_and_geom_window_layout.index(
+            "catWindowGeomOnly"
+        )
 
         view_point_3D = active_viewer.create_viewer_3d().viewpoint_3d
 
@@ -89,9 +95,13 @@ for cat_part in source_files:
             active_viewer.reframe()
             active_viewer.zoom_in()
             file_name = save_file_path(product.part_number, product.revision, view)
-            active_viewer.capture_to_file(cat_capture_format.index("catCaptureFormatJPEG"), str(file_name))
+            active_viewer.capture_to_file(
+                cat_capture_format.index("catCaptureFormatJPEG"), str(file_name)
+            )
 
         # reset background colour.
         active_viewer.put_background_color(background_colour)  # type: ignore
         # bring back the specification tree.
-        specs_and_geom.layout = cat_specs_and_geom_window_layout.index("catWindowSpecsAndGeom")
+        specs_and_geom.layout = cat_specs_and_geom_window_layout.index(
+            "catWindowSpecsAndGeom"
+        )

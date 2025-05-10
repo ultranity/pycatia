@@ -2,18 +2,18 @@
 
 """
 
-    Example - Space Analysis - 003
+Example - Space Analysis - 003
 
-    Description:
-        Find all points in the CATPart and print to console -> and export to csv.
+Description:
+    Find all points in the CATPart and print to console -> and export to csv.
 
-    Requirements:
-        - CATIA running.
-        - Tests already setup.
-    
-    Warnings:
-        - This will only work if you have language set to English. Further reading:
-          https://github.com/evereux/pycatia/issues/93
+Requirements:
+    - CATIA running.
+    - Tests already setup.
+
+Warnings:
+    - This will only work if you have language set to English. Further reading:
+      https://github.com/evereux/pycatia/issues/93
 
 """
 
@@ -33,7 +33,9 @@ from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 caa = catia()
 documents = caa.documents
-part_document: PartDocument = documents.open(Path(os.getcwd(), r"tests/cat_files/part_measurable.CATPart"))
+part_document: PartDocument = documents.open(
+    Path(os.getcwd(), r"tests/cat_files/part_measurable.CATPart")
+)
 part = part_document.part
 
 spa_workbench = part_document.spa_workbench()

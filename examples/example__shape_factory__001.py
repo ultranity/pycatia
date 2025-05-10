@@ -2,15 +2,15 @@
 
 """
 
-    Example - Shape Factory - 001
+Example - Shape Factory - 001
 
-    Description:
-        Add new bodies to part.
-        Create a cylinder in an added body.
-        Do Intersection operations between two bodies.
+Description:
+    Add new bodies to part.
+    Create a cylinder in an added body.
+    Do Intersection operations between two bodies.
 
-    Requirements:
-        - CATIA running.
+Requirements:
+    - CATIA running.
 
 """
 
@@ -24,6 +24,7 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces import cylindrical_face
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
@@ -90,6 +91,58 @@ body_cylinder_2 = Body(body_cylinder_2_item.com_object)
 part.in_work_object = body_cylinder_1
 
 # intersect body_cylinder_1 with body_cylinder_2
-shape_factory.add_new_intersect(body_cylinder_2)
-
+intersect = shape_factory.add_new_intersect(body_cylinder_2)
 part.update()
+
+
+# add chamfer
+# intersect_ref = part.create_reference_from_object(body_cylinder_1.shapes.items()[1])#body_cylinder_1.hybrid_shapes[0])
+# chamfer=shape_factory.add_new_chamfer(part.create_reference_from_b_rep_name("RSur:(Face:(Brp:((Brp:(Pad.2;2);Brp:(Pad.1;2)));None:();Cf12:());WithTemporaryBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR29)", intersect), 0, 0, 0, 0.5, 0.5)
+
+# from selected: AnyObject(name="Selection_REdge:(Edge:(Face:(Brp:(Pad.1;0:(Brp:(Sketch.1;1)));None:();Cf12:());Face:(Brp:((Brp:(Pad.2;2);Brp:(Pad.1;2)));None:();Cf12:());None:(Limits1:();Limits2:());Cf12:());Intersect.1_ResultOUT;Z0;G9922)")
+chamfer = shape_factory.add_new_chamfer(
+    part.create_reference_from_b_rep_name(
+        "REdge:(Edge:(Face:(Brp:(Pad.1;0:(Brp:(Sketch.1;1)));None:();Cf12:());Face:(Brp:((Brp:(Pad.2;2);Brp:(Pad.1;2)));None:();Cf12:());None:(Limits1:();Limits2:());Cf12:());WithTemporaryBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR29)",
+        intersect,
+    ),
+    0,
+    0,
+    0,
+    0.5,
+    0.5,
+)
+part.update()
+
+
+shell = shape_factory.add_new_shell(
+    part.create_reference_from_b_rep_name(
+        "RSur:(Face:(Brp:((Brp:(Pad.2;2);Brp:(Pad.1;2)));None:();Cf12:());WithTemporaryBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR29)",
+        intersect,
+    ),
+    1.0,
+    0.0,
+)
+part.update()
+
+selection = caa.active_document.selection
+selection.add(part)
+selection.search("Topology.Face,sel")
+surface_types = [x.type for x in selection.items()]
+surfaces = [x.value for x in selection.items()]
+surface_cylindrical = []
+print(selection.count, surface_types)
+names = [x.value.name for x in selection.items()]
+breps = [";".join(x.lstrip("Selection_").split(";")[:-3]) for x in names]
+selection.clear()
+selection.add(part.create_reference_from_b_rep_name(surfaces))
+for i in range(1, selection.count + 1):
+    if selection.item(i).type == "CylindricalFace":
+        Sel_object = selection.item(i).value
+        sel_Com_object = cylindrical_face.CylindricalFace(Sel_object.com_object)
+        surface_cylindrical.append(sel_Com_object)
+
+selection.clear()
+for item in surface_cylindrical:
+    C_Face = item.cylindrical_face
+    list_O = item.get_origin()
+    print(list_O)

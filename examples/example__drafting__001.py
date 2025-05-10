@@ -1,14 +1,14 @@
 #! /usr/bin/python3.9
 
 """
-    
-    Example - Drafting - 001
 
-    Description:
-        Drafting: Create a border template in the background view of the currently opened A0 landscape CATDrawing.
+Example - Drafting - 001
 
-    Requirements:
-        - An open empty drafting document (landscape, A0).
+Description:
+    Drafting: Create a border template in the background view of the currently opened A0 landscape CATDrawing.
+
+Requirements:
+    - An open empty drafting document (landscape, A0).
 
 """
 
@@ -21,13 +21,14 @@ import sys
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
-from pycatia import catia
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 from pycatia.drafting_interfaces.drawing_view import DrawingView
-from pycatia.enumeration.enumeration_types import cat_paper_orientation
-from pycatia.enumeration.enumeration_types import cat_paper_size
-from pycatia.enumeration.enumeration_types import cat_text_anchor_position
+from pycatia.enumeration.enumeration_types import (
+    cat_paper_orientation,
+    cat_paper_size,
+    cat_text_anchor_position,
+)
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -35,7 +36,7 @@ from pycatia.system_interfaces.any_object import AnyObject
 a0_x = 1189
 a0_y = 841
 
-caa = catia()
+caa = caa()
 # if the active document is a CATDrawing this will return a DrawingDocument
 drawing_document: DrawingDocument = caa.active_document
 drawing = DrawingRoot(drawing_document.drawing_root.com_object)

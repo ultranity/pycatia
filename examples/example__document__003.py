@@ -2,14 +2,14 @@
 
 """
 
-    Example - Document - 003
+Example - Document - 003
 
-    Description:
-        Opens a CATIA fila and exports it as STEP. Then closes the file.
+Description:
+    Opens a CATIA fila and exports it as STEP. Then closes the file.
 
-    Requirements:
-        - CATIA running.
-        - Tests already setup.
+Requirements:
+    - CATIA running.
+    - Tests already setup.
 
 """
 

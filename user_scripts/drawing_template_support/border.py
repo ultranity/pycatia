@@ -4,15 +4,14 @@ from pycatia.drafting_interfaces.drawing_sheet import DrawingSheet
 from pycatia.enumeration.enumeration_types import cat_text_anchor_position
 
 from .background_view import get_background_view_and_factory
-from .settings import border_offset
-from .settings import sheet_sizes
+from .settings import border_offset, sheet_sizes
 from .text_properties import set_text_properties
 
 
 def create_border(sheet: DrawingSheet, size_info: dict):
-    legible_paper_size = size_info['legible_paper_size']
-    sheet_x = size_info['sheet_x']
-    sheet_y = size_info['sheet_y']
+    legible_paper_size = size_info["legible_paper_size"]
+    sheet_x = size_info["sheet_x"]
+    sheet_y = size_info["sheet_y"]
 
     sheet_x_splits = sheet_sizes[legible_paper_size][1][0]
     sheet_y_splits = sheet_sizes[legible_paper_size][1][1]
@@ -52,7 +51,7 @@ def create_border(sheet: DrawingSheet, size_info: dict):
         factory_2d.create_line(sheet_x, y_offset * i, sheet_x - offset, y_offset * i)
 
     # add text for grid references
-    anchor_position = cat_text_anchor_position.index('catMiddleCenter')
+    anchor_position = cat_text_anchor_position.index("catMiddleCenter")
     texts = background_view.texts
 
     # horizontal numerical texts
@@ -77,7 +76,7 @@ def create_border(sheet: DrawingSheet, size_info: dict):
         set_text_properties(text_top)
 
     # vertical character texts
-    start_char = 'A'
+    start_char = "A"
     for i in range(sheet_y_splits):
         if i == 0:
             char = start_char

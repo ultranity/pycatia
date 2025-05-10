@@ -2,14 +2,14 @@
 
 """
 
-    Example - Product - 005
+Example - Product - 005
 
-    Description:
-        Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
+Description:
+    Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
 
-    Requirements:
-        - CATIA running.
-        - Tests already setup.
+Requirements:
+    - CATIA running.
+    - Tests already setup.
 
 """
 
@@ -29,7 +29,9 @@ from pycatia.product_structure_interfaces.product_document import ProductDocumen
 
 caa = catia()
 documents = caa.documents
-product_document: ProductDocument = documents.open(Path(os.getcwd(), r"tests/cat_files/product_top.CATProduct"))
+product_document: ProductDocument = documents.open(
+    Path(os.getcwd(), r"tests/cat_files/product_top.CATProduct")
+)
 product = product_document.product
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise

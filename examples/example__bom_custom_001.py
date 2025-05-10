@@ -2,13 +2,13 @@
 
 """
 
-    Example - BOM CUSTOM - 001
+Example - BOM CUSTOM - 001
 
-    Description:
-        Create a custom formatted html of the product tree.
+Description:
+    Create a custom formatted html of the product tree.
 
-    Requirements:
-        - An open product document with parts inside.
+Requirements:
+    - An open product document with parts inside.
 
 """
 

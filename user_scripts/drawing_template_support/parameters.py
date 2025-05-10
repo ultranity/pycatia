@@ -23,7 +23,7 @@ def create_parameters(drawing: DrawingDocument) -> Parameters:
         # if the method get_item fails, capture the exception and add the parameter.
         try:
             # see if the parameter already exists
-            if drawing_parameters.get_item(f'Drawing\{param}'):
+            if drawing_parameters.get_item(rf"Drawing\{param}"):
                 pass
                 # print(f'Parameter {param} already exists.')
         except com_error:

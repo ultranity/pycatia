@@ -2,14 +2,14 @@
 
 """
 
-    Example - Document - 001
+Example - Document - 001
 
-    Description:
-        Use the context manager to open CATIA documents and close
+Description:
+    Use the context manager to open CATIA documents and close
 
-    Requirements:
-        - CATIA running.
-        - Tests already setup.
+Requirements:
+    - CATIA running.
+    - Tests already setup.
 
 """
 
@@ -23,8 +23,8 @@ from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
-from pathlib import Path
 import time
+from pathlib import Path
 
 from pycatia import CATIADocHandler
 

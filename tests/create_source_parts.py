@@ -1,13 +1,14 @@
 import os
 from pathlib import Path
 
-from pycatia.enumeration.enumeration_types import cat_constraint_mode
-from pycatia.enumeration.enumeration_types import cat_constraint_type
+from pycatia.enumeration.enumeration_types import (
+    cat_constraint_mode,
+    cat_constraint_type,
+)
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
-from tests.common_vars import caa
-from tests.common_vars import test_files
+from tests.common_vars import caa, test_files
 
 source_cat_part_measurable = Path(os.getcwd(), test_files, "part_measurable.CATPart")
 
@@ -52,7 +53,9 @@ def create_cat_part_measurable(file_name):
 
     part_parameters.create_boolean("Activate", True)
     dim_pad_width = part_parameters.create_dimension("pad_width", "LENGTH", pad_width)
-    dim_pad_height = part_parameters.create_dimension("pad_height", "LENGTH", pad_height)
+    dim_pad_height = part_parameters.create_dimension(
+        "pad_height", "LENGTH", pad_height
+    )
     dim_pad_depth = part_parameters.create_dimension("pad_depth", "LENGTH", pad_depth)
 
     main_body = part.main_body
@@ -232,7 +235,9 @@ def create_cat_part_measurable(file_name):
     # ################ #
     # create a circle  #
     # ################ #
-    circle = hybrid_shape_factory.add_new_circle_ctr_rad(ref_point_4, ref_xy_plane, True, 25)
+    circle = hybrid_shape_factory.add_new_circle_ctr_rad(
+        ref_point_4, ref_xy_plane, True, 25
+    )
     hybrid_body_arcs.append_hybrid_shape(circle)
 
     part.update()

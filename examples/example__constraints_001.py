@@ -2,14 +2,14 @@
 
 """
 
-    Example - Constraints - 001
+Example - Constraints - 001
 
-    Description:
-        Fix the first Sub Product in Product using constraints.
-        The Sketch examples also show further usage of constraints.
+Description:
+    Fix the first Sub Product in Product using constraints.
+    The Sketch examples also show further usage of constraints.
 
-    Requirements:
-        - An open product document with at least two parts inside.
+Requirements:
+    - An open product document with at least two parts inside.
 
 """
 
@@ -39,4 +39,6 @@ ref_sub_prod_1 = sub_prod_1.reference_product
 sub_prod_1_name = f"{product.name}/{sub_prod_1.name}/!{product.name}/{sub_prod_1.name}/"
 reference = product.create_reference_from_name(sub_prod_1_name)
 
-constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeReference"), reference)
+constraints.add_mono_elt_cst(
+    cat_constraint_type.index("catCstTypeReference"), reference
+)

@@ -1,9 +1,9 @@
 #! /usr/bin/python3.8
- 
+
 from pycatia import catia
+from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 from pycatia.in_interfaces.application import Application
 from pycatia.in_interfaces.documents import Documents
-from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 
 
 def get_caa() -> Application:

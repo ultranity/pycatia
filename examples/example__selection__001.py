@@ -2,18 +2,18 @@
 
 """
 
-    Example - Selection - 001
+Example - Selection - 001
 
-    Description:
-        Prompt the user to select a product and get it's bounding box parameters
+Description:
+    Prompt the user to select a product and get it's bounding box parameters
 
-    Requirements:
-        - An open product document with selectable children.        
+Requirements:
+    - An open product document with selectable children.
 
-    Warnings:
-        Currently there must be NO other existing Measure Inertias saved
-        ANYWHERE in your product tree as these may be returned and not
-        product you have selected.
+Warnings:
+    Currently there must be NO other existing Measure Inertias saved
+    ANYWHERE in your product tree as these may be returned and not
+    product you have selected.
 
 """
 
@@ -30,7 +30,6 @@ import win32con
 import win32gui
 
 from pycatia import catia
-from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 # Keep in mind, that almost all CATIA commands and windows are dependent on the UI language.

@@ -15,16 +15,18 @@ def get_sheet_size_info(sheet: DrawingSheet) -> dict:
 
     paper_size = sheet.paper_size
     enum_paper_size = cat_paper_size[paper_size]
-    legible_paper_size = enum_paper_size.strip('catPaper')
+    legible_paper_size = enum_paper_size.strip("catPaper")
 
     if legible_paper_size not in sheet_sizes:
-        raise ValueError('Failed to reconcile paper size')
+        raise ValueError("Failed to reconcile paper size")
 
     sheet_x = sheet_sizes[legible_paper_size][0][0]
     sheet_y = sheet_sizes[legible_paper_size][0][1]
 
-    return {"paper_size": paper_size,
-            "enum_paper_size": enum_paper_size,
-            "legible_paper_size": legible_paper_size,
-            "sheet_x": sheet_x,
-            "sheet_y": sheet_y}
+    return {
+        "paper_size": paper_size,
+        "enum_paper_size": enum_paper_size,
+        "legible_paper_size": legible_paper_size,
+        "sheet_x": sheet_x,
+        "sheet_y": sheet_y,
+    }
