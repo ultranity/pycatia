@@ -1,12 +1,12 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
@@ -14,29 +14,31 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 class AuxDevicesMgt(AnyObject):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AuxDevicesMgt
-                | 
-                | INTERFACE : DNBIAAuxDevicesMgt
-                | DESCRIPTION This allows add/remove and get/set of aux devices for a
-                | robot
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     AuxDevicesMgt
+            |
+            | INTERFACE : DNBIAAuxDevicesMgt
+            | DESCRIPTION This allows add/remove and get/set of aux devices for a
+            | robot
+
     """
 
     def __init__(self, com_object):
         super().__init__(com_object)
         self.aux_devices_mgt = com_object
 
-    def define_aux_devices(self, i_aux_device_obj: AnyObject, i_aux_device_type: int) -> None:
+    def define_aux_devices(
+        self, i_aux_device_obj: AnyObject, i_aux_device_type: int
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -44,21 +46,21 @@ class AuxDevicesMgt(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub DefineAuxDevices(AnyObject iAuxDeviceObj,
                 | DNBAuxilliaryDeviceType iAuxDeviceType)
-                | 
+                |
                 |     Add a aux device to the robot.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAuxDeviceObj
                 |             This parameter should be the device to add as aux device.
-                |             
+                |
                 |         iAuxDeviceType
-                |             This parameter should be the type of aux device. 
-                | 
+                |             This parameter should be the type of aux device.
+                |
                 |     Returns:
                 |         an HRESULT value.
                 |         Legal values:
-                | 
+                |
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
@@ -66,7 +68,9 @@ class AuxDevicesMgt(AnyObject):
         :param int i_aux_device_type: enum dnb_auxilliary_device_type
         :rtype: None
         """
-        return self.aux_devices_mgt.DefineAuxDevices(i_aux_device_obj.com_object, i_aux_device_type)
+        return self.aux_devices_mgt.DefineAuxDevices(
+            i_aux_device_obj.com_object, i_aux_device_type
+        )
 
     def get_all_aux_devices(self, o_aux_device_list: tuple) -> None:
         """
@@ -75,18 +79,18 @@ class AuxDevicesMgt(AnyObject):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub GetAllAuxDevices(CATSafeArrayVariant oAuxDeviceList)
-                | 
+                |
                 |     Get all aux devices defined for the robot.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oAuxDeviceList
                 |             This outer parameter contains list of aux devices.
                 |
                 |     Returns:
                 |         an HRESULT value.
                 |         Legal values:
-                | 
+                |
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
@@ -94,7 +98,7 @@ class AuxDevicesMgt(AnyObject):
         :rtype: None
         """
         return self.aux_devices_mgt.GetAllAuxDevices(o_aux_device_list)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -117,29 +121,29 @@ class AuxDevicesMgt(AnyObject):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAuxDevices(long iAuxDeviceNum) As AnyObject
-                | 
+                |
                 |     Get the aux device given the the index.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAuxDeviceNum
                 |             This parameter should be the index of the aux device. Valid values
-                |             are from 1 to nbAuxDevices. 
+                |             are from 1 to nbAuxDevices.
                 |         oAuxDevice
                 |             This outer parameter contains aux device at the given index
-                |             iAuxDeviceNum. 
-                | 
+                |             iAuxDeviceNum.
+                |
                 |     Returns:
                 |         an HRESULT value.
                 |         Legal values:
-                | 
+                |
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
         :param int i_aux_device_num:
         :rtype: AnyObject
         """
-        return AnyObject(self.aux_devices_mgt.GetAuxDevices(i_aux_device_num))
+        return AnyObject.new(self.aux_devices_mgt.GetAuxDevices(i_aux_device_num))
 
     def get_aux_devices_type(self, i_aux_device_num: int) -> int:
         """
@@ -149,22 +153,22 @@ class AuxDevicesMgt(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAuxDevicesType(long iAuxDeviceNum) As
                 | DNBAuxilliaryDeviceType
-                | 
+                |
                 |     Get the aux device given the the index.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAuxDeviceNum
                 |             This parameter should be the index of the aux device. Valid values
-                |             are from 1 to nbAuxDevices. 
+                |             are from 1 to nbAuxDevices.
                 |         oAuxDeviceType
                 |             This outer parameter contains aux device type for the aux device at
-                |             the given index iAuxDeviceNum. 
-                | 
+                |             the given index iAuxDeviceNum.
+                |
                 |     Returns:
                 |         an HRESULT value.
                 |         Legal values:
-                | 
+                |
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
@@ -181,18 +185,18 @@ class AuxDevicesMgt(AnyObject):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetNbAuxDevices() As long
-                | 
+                |
                 |     Get the number of aux devices for the robot.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         nbAuxDevices
                 |             This outer parameter contains the number of aux devices.
                 |
                 |     Returns:
                 |         an HRESULT value.
                 |         Legal values:
-                | 
+                |
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
@@ -207,13 +211,13 @@ class AuxDevicesMgt(AnyObject):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub RemoveAll()
-                | 
+                |
                 |     Remove all the aux devices defined for the robot.
-                | 
+                |
                 |     Returns:
                 |         an HRESULT value.
                 |         Legal values:
-                | 
+                |
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
@@ -228,19 +232,19 @@ class AuxDevicesMgt(AnyObject):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub RemoveAuxDevicesByPosition(long iAuxDeviceNum)
-                | 
+                |
                 |     Remove the aux device at the given index.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAuxDeviceNum
                 |             This parameter should be the index of the aux device to be removed.
-                |             Valid values are from 1 to nbAuxDevices. 
-                | 
+                |             Valid values are from 1 to nbAuxDevices.
+                |
                 |     Returns:
                 |         an HRESULT value.
                 |         Legal values:
-                | 
+                |
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
@@ -248,5 +252,3 @@ class AuxDevicesMgt(AnyObject):
         :rtype: None
         """
         return self.aux_devices_mgt.RemoveAuxDevicesByPosition(i_aux_device_num)
-
-

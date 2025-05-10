@@ -30,7 +30,17 @@ class PyCATIA:
         :param str name:
         """
         if current < required:
-            self.logger.info(f'"{name}" was introduced in R{required}. You are running R{current}.')
+            self.logger.info(
+                f'"{name}" was introduced in R{required}. You are running R{current}.'
+            )
 
     def __repr__(self):
-        return 'PyCATIA()'
+        return "PyCATIA()"
+
+    def __getattr__(self, name):
+        # convert to snake case if name is UpperCamelCase
+        if name[0].isupper():
+            name = "".join(
+                ["_" + i.lower() if i.isupper() else i for i in name]
+            ).lstrip("_")
+        return self.__getattribute__(name)
