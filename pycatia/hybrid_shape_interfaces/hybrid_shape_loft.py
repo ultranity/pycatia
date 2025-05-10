@@ -1,12 +1,12 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
 
 from typing import Union
@@ -19,42 +19,42 @@ from pycatia.scripts.vba import VBANothing, vba_nothing
 
 class HybridShapeLoft(HybridShape):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+        CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MecModInterfaces.HybridShape
-                |                         HybridShapeLoft
-                | 
-                | Represents the hybrid shape loft surface feature object.
-                | Role: To access the data of the hybrid shape loft surface feature
-                | object.
-                | This data includes:
-                | 
-                |     The spine
-                |     The tangent surfaces to the start and end sections
-                |     Guide curves, sections, and couplings
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeLoft
-                | object.
-                | 
-                | LICENSING INFORMATION: Creation of volume result requires GSO
-                | License
-                | if GSO License is not granted , setting of Volume context has not
-                | effect
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeLoft
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     MecModInterfaces.HybridShape
+            |                         HybridShapeLoft
+            |
+            | Represents the hybrid shape loft surface feature object.
+            | Role: To access the data of the hybrid shape loft surface feature
+            | object.
+            | This data includes:
+            |
+            |     The spine
+            |     The tangent surfaces to the start and end sections
+            |     Guide curves, sections, and couplings
+            |
+            | Use the CATIAHybridShapeFactory to create a HybridShapeLoft
+            | object.
+            |
+            | LICENSING INFORMATION: Creation of volume result requires GSO
+            | License
+            | if GSO License is not granted , setting of Volume context has not
+            | effect
+            |
+            | Use the CATIAHybridShapeFactory to create a HybridShapeLoft
+            | object.
+            |
+            | See also:
+            |     HybridShapeFactory
+
     """
 
     def __init__(self, com_object):
@@ -69,7 +69,7 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AreaLaw() As Reference
-                | 
+                |
                 |     Gets or sets the optional area law for multi-sections element definition.
                 |     The law is a length law.
 
@@ -94,7 +94,7 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AreaLawTolerance() As double
-                | 
+                |
                 |     Gets or sets the tolerance applied to area law. The value is in mm.
 
         :rtype: float
@@ -118,12 +118,12 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BooleanOperation() As long
-                | 
+                |
                 |     Gets or sets the boolean operation for closed lofted surface. TO BE USED ONLY for Part Loft
                 |     (closed loft). BooleanOperation = 1 : No boolean operation. = 2 : Union boolean operation. =
                 |     3 : Removal boolean operation. This example retrieves in BoolOp the type of boolean operation
                 |     for the Loft hybrid shape feature.
-                | 
+                |
                 |      Dim BoolOp
                 |      BoolOp = Loft.BooleanOperation
 
@@ -148,11 +148,11 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CanonicalDetection() As long
-                | 
+                |
                 |     Returns or sets whether canonical surfaces of the lofted surface are
                 |     detected.
                 |     Legal values:
-                | 
+                |
                 |     0
                 |         No detection of canonical surface is performed
                 |     1
@@ -181,11 +181,11 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CompEndSectionTangent() As long
-                | 
+                |
                 |     Returns or sets whether the tangent surface to the end section of the
                 |     lofted surface is computed.
                 |     Legal values:
-                | 
+                |
                 |     1
                 |         The tangent to the end section is computed
                 |     2
@@ -212,11 +212,11 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CompStartSectionTangent() As long
-                | 
+                |
                 |     Returns or sets whether the tangent surface to the start section of the
                 |     lofted surface is computed.
                 |     Legal values:
-                | 
+                |
                 |     1
                 |         The tangent to the start section is computed
                 |     2
@@ -243,20 +243,20 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Context() As long
-                | 
+                |
                 |     Returns or sets the context on Loft feature.
                 |     Legal values:
-                | 
+                |
                 |         0 This option creates Lofted surface.
                 |         1 This option creates Lofted volume.
-                | 
-                | 
+                |
+                |
                 |     Note: Setting volume result requires GSO License.
-                | 
+                |
                 |     Example:
                 |         This example retrieves in oContext the context for the Loft hybrid
                 |         shape feature.
-                | 
+                |
                 |          Dim oContext
                 |          Set oContext = Loft.Context
 
@@ -281,18 +281,18 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Relimitation() As long
-                | 
+                |
                 |     Returns or sets the relimitation type between sections of the
                 |     loft.
                 |     NOT YET IMPLEMENTED.
                 |     Legal values:
-                | 
+                |
                 |     1
                 |         The loft will be swept along the spine, then relimited by the start
                 |         section and the end section
                 |     2
                 |         The loft will be swept along the spine.
-                | 
+                |
                 |             If the spine is a user spine, then the loft is limited by the spine
                 |             extremities
                 |             If the spine is a computed spine, then the loft is
@@ -300,11 +300,11 @@ class HybridShapeLoft(HybridShape):
                 |                 By the start section and the end section, if there is no
                 |                 guide
                 |                 By the guides extremities, if there are guides
-                | 
+                |
                 |     3
                 |         The loft will be swept along the spine, then relimited by the first
                 |         section,
-                | 
+                |
                 |             If the spine is a user spine, then the loft is limited by the spine
                 |             extremity opposite to the first section
                 |             If the spine is a computed spine, then the loft is
@@ -312,11 +312,11 @@ class HybridShapeLoft(HybridShape):
                 |                 By the last section, if there is no guide
                 |                 By the guides extremities opposite to the first section, if
                 |                 there are guides
-                | 
+                |
                 |     4
                 |         The loft will be swept along the spine, then relimited by the last
                 |         section,
-                | 
+                |
                 |             If the spine is a user spine, then the loft is limited by the spine
                 |             extremity opposite to the last section
                 |             If the spine is a computed spine, then the loft is
@@ -346,11 +346,11 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SectionCoupling() As long
-                | 
+                |
                 |     Returns or sets the type of coupling between sections of the
                 |     loft.
                 |     Legal values:
-                | 
+                |
                 |     1
                 |         The curves will be coupled according to the curvilinear abscissa
                 |         ratio
@@ -388,7 +388,7 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothAngleThreshold() As double
-                | 
+                |
                 |     Returns or sets the angular threshold under which discontinuities (moving
                 |     frame, tangency net on reference surface) will be smoothed.
 
@@ -413,11 +413,11 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothAngleThresholdActivity() As boolean
-                | 
+                |
                 |     Returns or sets whether a angular threshold is allowed or not during
                 |     lofting operation in order to smooth it.
                 |     Legal values:
-                | 
+                |
                 |     TRUE
                 |         The angular threshold value is used during the lofting
                 |         operation
@@ -446,7 +446,7 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothDeviation() As double
-                | 
+                |
                 |     Returns or sets the deviation value (length) allowed during lofting
                 |     operation in order to smooth it.
 
@@ -471,11 +471,11 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothDeviationActivity() As boolean
-                | 
+                |
                 |     Returns or sets whether a deviation is allowed or not during lofting
                 |     operation in order to smooth it.
                 |     Legal values:
-                | 
+                |
                 |     TRUE
                 |         The deviation value is used during the lofting
                 |         operation
@@ -503,23 +503,23 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddGuide(Reference iGuide)
-                | 
+                |
                 |     Adds a guide curve to the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iGuide
                 |             The guide curve to be added
-                | 
-                |             Sub-element(s) supported (see 
-                | 
+                |
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
 
         :param Reference i_guide:
         :rtype: None
         """
         return self.hybrid_shape_loft.AddGuide(i_guide.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -543,30 +543,32 @@ class HybridShapeLoft(HybridShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddGuideWithTangent(Reference iGuide,
                 | Reference iTangent)
-                | 
+                |
                 |     Adds a guide curve and a tangent surface to the lofted
                 |     surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iGuide
                 |             The guide curve to be added
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): TriDimFeatEdge and BiDimFeatEdge. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
                 |     iTangent
                 |         The tangent surface to be added. The guide curve must be layed on the
                 |         tangent
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): Face.
 
         :param Reference i_guide:
         :param Reference i_tangent:
         :rtype: None
         """
-        return self.hybrid_shape_loft.AddGuideWithTangent(i_guide.com_object, i_tangent.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.AddGuideWithTangent(
+            i_guide.com_object, i_tangent.com_object
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -583,10 +585,7 @@ class HybridShapeLoft(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_section_to_loft(
-            self,
-            i_crv: Reference,
-            i_ori: int,
-            i_point: Union[Reference, VBANothing]
+        self, i_crv: Reference, i_ori: int, i_point: Union[Reference, VBANothing]
     ) -> None:
         """
         .. note::
@@ -596,15 +595,15 @@ class HybridShapeLoft(HybridShape):
                 | o Sub AddSectionToLoft(Reference iCrv,
                 | long iOri,
                 | Reference iPoint)
-                | 
+                |
                 |     Retrieves a loft section.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCrv
-                |             Reference to the curve 
+                |             Reference to the curve
                 |         iOri
-                |             Orientation 
+                |             Orientation
                 |         iPoint
                 |             Reference to the Closing Point
 
@@ -615,12 +614,12 @@ class HybridShapeLoft(HybridShape):
         """
 
         if i_point:
-            i_point = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+            i_point = self.application.system_service.evaluate(vba_nothing, 0, "N", [])
         else:
             i_point = i_point.com_object
 
         return self.hybrid_shape_loft.AddSectionToLoft(i_crv.com_object, i_ori, i_point)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -643,14 +642,16 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAreaLawToleranceParameter() As Length
-                | 
+                |
                 |     Gets the tolerance parameter applied to area law.
 
         :rtype: Length
         """
         return Length(self.hybrid_shape_loft.GetAreaLawToleranceParameter())
 
-    def get_faces_for_closing(self, o_start_face: Reference, o_end_face: Reference) -> None:
+    def get_faces_for_closing(
+        self, o_start_face: Reference, o_end_face: Reference
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -658,15 +659,15 @@ class HybridShapeLoft(HybridShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFacesForClosing(Reference oStartFace,
                 | Reference oEndFace)
-                | 
+                |
                 |     Gets start and end faces if the tangent is a computed tangent surface to
                 |     the start section or end section, from the lofted surface. The section must
                 |     have been set as a face.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oStartFace
-                |             start face used to close the loft. 
+                |             start face used to close the loft.
                 |         oEndFace
                 |             end face used to close the loft.
 
@@ -674,8 +675,10 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_end_face:
         :rtype: None
         """
-        return self.hybrid_shape_loft.GetFacesForClosing(o_start_face.com_object, o_end_face.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.GetFacesForClosing(
+            o_start_face.com_object, o_end_face.com_object
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -691,7 +694,9 @@ class HybridShapeLoft(HybridShape):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_guide(self, i_pos: int, o_guide: Reference, o_guide_tangent: Reference) -> None:
+    def get_guide(
+        self, i_pos: int, o_guide: Reference, o_guide_tangent: Reference
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -700,17 +705,17 @@ class HybridShapeLoft(HybridShape):
                 | o Sub GetGuide(long iPos,
                 | Reference oGuide,
                 | Reference oGuideTangent)
-                | 
+                |
                 |     Gets informations about the guide at a specified position in the list of
                 |     the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPos
                 |             position of the guide in the list where the information is
-                |             retrieved. 
+                |             retrieved.
                 |         oGuide
-                |             the guide curve. 
+                |             the guide curve.
                 |         oGuideTangent
                 |             the tangent corresponding to the guide curve.
 
@@ -719,8 +724,10 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_guide_tangent:
         :rtype: None
         """
-        return self.hybrid_shape_loft.GetGuide(i_pos, o_guide.com_object, o_guide_tangent.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.GetGuide(
+            i_pos, o_guide.com_object, o_guide_tangent.com_object
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -743,18 +750,18 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbOfGuides() As long
-                | 
+                |
                 |     Returns the number of guides in the loft object.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oSize
                 |             Number of guides in the loft.
-                | 
+                |
                 |             Example:
                 |                 This example retrieves the number of guides in the hybShpLoft
                 |                 hybrid shape Loft.
-                | 
+                |
                 |                  Dim oSize As  long
                 |                  oSize = hybShpLoft.GetNbOfGuides
 
@@ -762,7 +769,9 @@ class HybridShapeLoft(HybridShape):
         """
         return self.hybrid_shape_loft.GetNbOfGuides()
 
-    def get_section_from_loft(self, i_rank: int, o_crv: Reference, o_ori: int, o_point: Reference) -> None:
+    def get_section_from_loft(
+        self, i_rank: int, o_crv: Reference, o_ori: int, o_point: Reference
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -772,17 +781,17 @@ class HybridShapeLoft(HybridShape):
                 | Reference oCrv,
                 | long oOri,
                 | Reference oPoint)
-                | 
+                |
                 |     Retrieves a loft section information.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iRank
-                |             The index of the section 
+                |             The index of the section
                 |         oCrv
-                |             The reference to the curve 
+                |             The reference to the curve
                 |         oOri
-                |             The orientation value 
+                |             The orientation value
                 |         oPoint
                 |             The reference to the point
 
@@ -792,8 +801,10 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_point:
         :rtype: None
         """
-        return self.hybrid_shape_loft.GetSectionFromLoft(i_rank, o_crv.com_object, o_ori, o_point.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.GetSectionFromLoft(
+            i_rank, o_crv.com_object, o_ori, o_point.com_object
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -817,13 +828,13 @@ class HybridShapeLoft(HybridShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSpine(long oSpineType,
                 | Reference oSpine)
-                | 
+                |
                 |     Gets the spine of the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oSpineType
-                |             type of spine = 1 : User defined spine. = 2 : Automatically computed spine. 
+                |             type of spine = 1 : User defined spine. = 2 : Automatically computed spine.
                 |         oSpine
                 |             curve used as a spine, if the spine is user defined
                 |             one.
@@ -833,7 +844,7 @@ class HybridShapeLoft(HybridShape):
         :rtype: None
         """
         return self.hybrid_shape_loft.GetSpine(o_spine_type, o_spine.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -849,8 +860,9 @@ class HybridShapeLoft(HybridShape):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_start_and_end_section_tangent(self, o_start_section_tangent: Reference,
-                                          o_end_section_tangent: Reference) -> None:
+    def get_start_and_end_section_tangent(
+        self, o_start_section_tangent: Reference, o_end_section_tangent: Reference
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -859,14 +871,14 @@ class HybridShapeLoft(HybridShape):
                 | o Sub GetStartAndEndSectionTangent(Reference
                 | oStartSectionTangent,
                 | Reference oEndSectionTangent)
-                | 
+                |
                 |     Gets the start and end section tangents of the lofted
                 |     surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oStartSectionTangent
-                |             tangent surface at start section. 
+                |             tangent surface at start section.
                 |         oEndSectionTangent
                 |             tangent surface at end section.
 
@@ -874,9 +886,10 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_end_section_tangent:
         :rtype: None
         """
-        return self.hybrid_shape_loft.GetStartAndEndSectionTangent(o_start_section_tangent.com_object,
-                                                                   o_end_section_tangent.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.GetStartAndEndSectionTangent(
+            o_start_section_tangent.com_object, o_end_section_tangent.com_object
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -899,17 +912,17 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertCoupling(long iPosition)
-                | 
+                |
                 |     Inserts a coupling to the loft.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPosition
                 |             The position of the coupling in the list of couplings. If 0 is
                 |             specified, the coupling is inserted at the end of the
                 |             list.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): Vertex.
 
         :param int i_position:
@@ -917,7 +930,9 @@ class HybridShapeLoft(HybridShape):
         """
         return self.hybrid_shape_loft.InsertCoupling(i_position)
 
-    def insert_coupling_point(self, i_coupling_index: int, i_position: int, i_point: Reference) -> None:
+    def insert_coupling_point(
+        self, i_coupling_index: int, i_position: int, i_point: Reference
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -926,24 +941,24 @@ class HybridShapeLoft(HybridShape):
                 | o Sub InsertCouplingPoint(long iCouplingIndex,
                 | long iPosition,
                 | Reference iPoint)
-                | 
+                |
                 |     Inserts a coupling point to a coupling of the lofted
                 |     surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCouplingIndex
                 |             The index of the coupling in the list of coupling where the point
-                |             wil be inserted. 
+                |             wil be inserted.
                 |         iPosition
                 |             The position of the coupling point in the list of coupling points.
                 |             If 0 is specified, the coupling point is inserted at the end of the list.
-                |             
+                |
                 |         iPoint
                 |             The point to be inserted. The point must be layed on the section
                 |             with the same position.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): ScVertex.
 
         :param int i_coupling_index:
@@ -951,8 +966,10 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_point:
         :rtype: None
         """
-        return self.hybrid_shape_loft.InsertCouplingPoint(i_coupling_index, i_position, i_point.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.InsertCouplingPoint(
+            i_coupling_index, i_position, i_point.com_object
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -968,8 +985,14 @@ class HybridShapeLoft(HybridShape):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def insert_section_to_loft(self, i_type: bool, i_crv: Reference, i_ori: int, i_point: Reference,
-                               i_section_ref: Reference) -> None:
+    def insert_section_to_loft(
+        self,
+        i_type: bool,
+        i_crv: Reference,
+        i_ori: int,
+        i_point: Reference,
+        i_section_ref: Reference,
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -980,20 +1003,20 @@ class HybridShapeLoft(HybridShape):
                 | long iOri,
                 | Reference iPoint,
                 | Reference iSectionRef)
-                | 
+                |
                 |     Inserts a loft section.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iType
                 |             iType if set to true section is added After and iType if set to
-                |             false section is added Before iSectionRef 
+                |             false section is added Before iSectionRef
                 |         iCrv
-                |             Reference to the curve 
+                |             Reference to the curve
                 |         iOri
-                |             Orientation 
+                |             Orientation
                 |         iPoint
-                |             Reference to the Closing Point 
+                |             Reference to the Closing Point
                 |         iSectionRef
                 |             iSectionRef is the section before and after which section is
                 |             added.
@@ -1005,9 +1028,14 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_section_ref:
         :rtype: None
         """
-        return self.hybrid_shape_loft.InsertSectionToLoft(i_type, i_crv.com_object, i_ori, i_point.com_object,
-                                                          i_section_ref.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.InsertSectionToLoft(
+            i_type,
+            i_crv.com_object,
+            i_ori,
+            i_point.com_object,
+            i_section_ref.com_object,
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1031,13 +1059,13 @@ class HybridShapeLoft(HybridShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ModifyGuideCurve(Reference iGuide,
                 | Reference iNewGuide)
-                | 
+                |
                 |     Modifies the curve of a guide from the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iGuide
-                |             guide curve to be replaced. 
+                |             guide curve to be replaced.
                 |         iNewGuide
                 |             new guide curve, will replace iGuide.
 
@@ -1045,8 +1073,10 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_new_guide:
         :rtype: None
         """
-        return self.hybrid_shape_loft.ModifyGuideCurve(i_guide.com_object, i_new_guide.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.ModifyGuideCurve(
+            i_guide.com_object, i_new_guide.com_object
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1062,8 +1092,14 @@ class HybridShapeLoft(HybridShape):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def modify_section_curve(self, i_section: Reference, i_new_section: Reference, o_curve_section: Reference,
-                             o_closing_point: Reference, o_pt_diag: int) -> None:
+    def modify_section_curve(
+        self,
+        i_section: Reference,
+        i_new_section: Reference,
+        o_curve_section: Reference,
+        o_closing_point: Reference,
+        o_pt_diag: int,
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1074,24 +1110,24 @@ class HybridShapeLoft(HybridShape):
                 | Reference oCurveSection,
                 | Reference oClosingPoint,
                 | long oPtDiag)
-                | 
+                |
                 |     Modifies the curve of section from the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSection
-                |             section curve to be replaced. 
+                |             section curve to be replaced.
                 |         iNewSection
                 |             section will replace iSection, can be a curve or a face
-                |             
+                |
                 |         oCurveSection
                 |             if iSection is a face, oCurveSection is the boundary of the face.
                 |             oCurveSection is used as section curve. if Part design, the face is used to
-                |             close the Loft. 
+                |             close the Loft.
                 |         oClosingPoint
                 |             if iSection is a closed curve, oClosingPoint is a new closing point
                 |             of iSection. if iSection is a face, oClosingPoint is a new closing point the
-                |             boundary of iSection. 
+                |             boundary of iSection.
                 |         oPtDiag
                 |             Information on closing point =
                 |             0 : No closing point has been created nor retrieved.
@@ -1106,10 +1142,14 @@ class HybridShapeLoft(HybridShape):
         :param int o_pt_diag:
         :rtype: None
         """
-        return self.hybrid_shape_loft.ModifySectionCurve(i_section.com_object, i_new_section.com_object,
-                                                         o_curve_section.com_object, o_closing_point.com_object,
-                                                         o_pt_diag)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.ModifySectionCurve(
+            i_section.com_object,
+            i_new_section.com_object,
+            o_curve_section.com_object,
+            o_closing_point.com_object,
+            o_pt_diag,
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1133,14 +1173,14 @@ class HybridShapeLoft(HybridShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ModifySectionOrient(Reference iSection,
                 | long iOrient)
-                | 
+                |
                 |     Modifies the orientation of the curve of a section from the lofted
                 |     surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSection
-                |             section curve to be modified. 
+                |             section curve to be modified.
                 |         iOrient
                 |             orientation of the section curve =
                 |             1 : same orientation.
@@ -1151,8 +1191,10 @@ class HybridShapeLoft(HybridShape):
         :param int i_orient:
         :rtype: None
         """
-        return self.hybrid_shape_loft.ModifySectionOrient(i_section.com_object, i_orient)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.ModifySectionOrient(
+            i_section.com_object, i_orient
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1175,11 +1217,11 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFaceForClosing(Reference iSection)
-                | 
+                |
                 |     Removes face used to close the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSection
                 |             section curve.
 
@@ -1187,7 +1229,7 @@ class HybridShapeLoft(HybridShape):
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveFaceForClosing(i_section.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1210,23 +1252,23 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveGuide(Reference iGuide)
-                | 
+                |
                 |     Removes a guide curve from the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iGuide
                 |             The guide curve to be removed
-                | 
-                |             Sub-element(s) supported (see 
-                | 
+                |
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
 
         :param Reference i_guide:
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveGuide(i_guide.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1249,12 +1291,12 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveGuideTangent(Reference iGuide)
-                | 
+                |
                 |     Removes a tangent surface of a guide from the lofted
                 |     surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iGuide
                 |             guide curve of the guide from which the tangent will be
                 |             removed.
@@ -1263,7 +1305,7 @@ class HybridShapeLoft(HybridShape):
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveGuideTangent(i_guide.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1286,23 +1328,23 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSection(Reference iSection)
-                | 
+                |
                 |     Removes a loft section from the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSection
                 |             The loft section to remove
-                | 
-                |             Sub-element(s) supported (see 
-                | 
+                |
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
 
         :param Reference i_section:
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveSection(i_section.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1325,12 +1367,12 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSectionPoint(Reference iSection)
-                | 
+                |
                 |     Removes a closing point of a section from the lofted surface. The curve
                 |     section must be closed curve.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSection
                 |             section curve of the section from which the point will be
                 |             removed.
@@ -1339,7 +1381,7 @@ class HybridShapeLoft(HybridShape):
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveSectionPoint(i_section.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1362,13 +1404,13 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSectionTangent(Reference iSection)
-                | 
+                |
                 |     Removes the tangent surface of a section from the lofted surface. The
                 |     section must be the start section or the end section of the
                 |     loft.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSection
                 |             section curve of the section from which the tangent will be
                 |             removed.
@@ -1377,7 +1419,7 @@ class HybridShapeLoft(HybridShape):
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveSectionTangent(i_section.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1400,22 +1442,22 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndFaceForClosing(Reference iFace)
-                | 
+                |
                 |     Sets a face to the end section from the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iFace
                 |             The face to close the loft (Part design only).
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): Face.
 
         :param Reference i_face:
         :rtype: None
         """
         return self.hybrid_shape_loft.SetEndFaceForClosing(i_face.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1438,24 +1480,24 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndSectionTangent(Reference iTangentSection)
-                | 
+                |
                 |     Sets a tangent surface to the end section from the lofted
                 |     surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iTangentSection
                 |             The tangent surface to be added. The end curve section must lay on
                 |             the surface.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): Face.
 
         :param Reference i_tangent_section:
         :rtype: None
         """
         return self.hybrid_shape_loft.SetEndSectionTangent(i_tangent_section.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1478,22 +1520,22 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSpine(Reference iSpine)
-                | 
+                |
                 |     Sets the spine to the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSpine
                 |             The curve to be added as a spine.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
 
         :param Reference i_spine:
         :rtype: None
         """
         return self.hybrid_shape_loft.SetSpine(i_spine.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1516,22 +1558,22 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartFaceForClosing(Reference iFace)
-                | 
+                |
                 |     Sets a face to the start section from the lofted surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iFace
                 |             The face to close the loft (Part design only).
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): Face.
 
         :param Reference i_face:
         :rtype: None
         """
         return self.hybrid_shape_loft.SetStartFaceForClosing(i_face.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1554,24 +1596,26 @@ class HybridShapeLoft(HybridShape):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartSectionTangent(Reference iTangentSection)
-                | 
+                |
                 |     Sets a tangent surface to the start section from the lofted
                 |     surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iTangentSection
                 |             The tangent surface to be added. The start curve section must lay
                 |             on the surface.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): Face.
 
         :param Reference i_tangent_section:
         :rtype: None
         """
-        return self.hybrid_shape_loft.SetStartSectionTangent(i_tangent_section.com_object)
-        # # # # Autogenerated comment: 
+        return self.hybrid_shape_loft.SetStartSectionTangent(
+            i_tangent_section.com_object
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1586,5 +1630,3 @@ class HybridShapeLoft(HybridShape):
 
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-

@@ -72,11 +72,11 @@ class SWKHmiWorkbench(AnyObject):
         return self.com_object.CreateColorFromRGB(pi_red, pi_green, pi_blue)
 
     def create_left_forearm(
-            self,
-            pi_manikin_name: str,
-            pi_sex: int,
-            pi_percentile: float,
-            pi_population: int
+        self,
+        pi_manikin_name: str,
+        pi_sex: int,
+        pi_percentile: float,
+        pi_population: int,
     ) -> SWKManikin:
         """
         .. note::
@@ -96,14 +96,18 @@ class SWKHmiWorkbench(AnyObject):
         :rtype: SWKHumanCatalog
         """
 
-        return SWKManikin(self.com_object.CreateLeftForearm(pi_manikin_name, pi_sex, pi_percentile, pi_population))
+        return SWKManikin(
+            self.com_object.CreateLeftForearm(
+                pi_manikin_name, pi_sex, pi_percentile, pi_population
+            )
+        )
 
     def create_manikin(
-            self,
-            pi_manikin_name: str,
-            pi_sex: int,
-            pi_percentile: float,
-            pi_population: int
+        self,
+        pi_manikin_name: str,
+        pi_sex: int,
+        pi_percentile: float,
+        pi_population: int,
     ) -> SWKManikin:
         """
         .. note::
@@ -123,14 +127,19 @@ class SWKHmiWorkbench(AnyObject):
         :rtype: SWKHumanCatalog
         """
 
-        return SWKManikin(self.com_object.CreateManikin(pi_manikin_name, pi_sex, pi_percentile, pi_population))
+        return SWKManikin(
+            self.com_object.CreateManikin(
+                pi_manikin_name, pi_sex, pi_percentile, pi_population
+            )
+        )
 
     def create_right_forearm(
-            self,
-            pi_manikin_name: str,
-            pi_sex: int,
-            pi_percentile: float,
-            pi_population: int) -> SWKManikin:
+        self,
+        pi_manikin_name: str,
+        pi_sex: int,
+        pi_percentile: float,
+        pi_population: int,
+    ) -> SWKManikin:
         """
         .. note::
             :class: toggle
@@ -149,7 +158,11 @@ class SWKHmiWorkbench(AnyObject):
         :rtype: SWKHumanCatalog
         """
 
-        return SWKManikin(self.com_object.CreateRightForearm(pi_manikin_name, pi_sex, pi_percentile, pi_population))
+        return SWKManikin(
+            self.com_object.CreateRightForearm(
+                pi_manikin_name, pi_sex, pi_percentile, pi_population
+            )
+        )
 
     def new_human_catalog(self) -> SWKHumanCatalog:
         """
@@ -166,7 +179,9 @@ class SWKHmiWorkbench(AnyObject):
 
         return SWKHumanCatalog(self.com_object.NewHumanCatalog())
 
-    def open_human_catalog(self, pi_path_file: Path, pi_doc_env: str) -> SWKHumanCatalog:
+    def open_human_catalog(
+        self, pi_path_file: Path, pi_doc_env: str
+    ) -> SWKHumanCatalog:
         """
         .. note::
             :class: toggle
@@ -180,9 +195,13 @@ class SWKHmiWorkbench(AnyObject):
         :rtype: SWKHumanCatalog
         """
 
-        return SWKHumanCatalog(self.com_object.OpenHumanCatalog(pi_path_file, pi_doc_env))
+        return SWKHumanCatalog(
+            self.com_object.OpenHumanCatalog(pi_path_file, pi_doc_env)
+        )
 
-    def open_writable_human_catalog(self, pi_path_file: Path, pi_doc_env: str) -> SWKHumanCatalog:
+    def open_writable_human_catalog(
+        self, pi_path_file: Path, pi_doc_env: str
+    ) -> SWKHumanCatalog:
         """
         .. note::
             :class: toggle
@@ -196,7 +215,9 @@ class SWKHmiWorkbench(AnyObject):
         :rtype: SWKHumanCatalog
         """
 
-        return SWKHumanCatalog(self.com_object.OpenWritableHumanCatalog(pi_path_file, pi_doc_env))
+        return SWKHumanCatalog(
+            self.com_object.OpenWritableHumanCatalog(pi_path_file, pi_doc_env)
+        )
 
     def reset_clash_list(self) -> None:
         """

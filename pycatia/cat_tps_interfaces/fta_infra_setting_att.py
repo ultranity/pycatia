@@ -1,12 +1,12 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
 
 from pycatia.system_interfaces.setting_controller import SettingController
@@ -14,73 +14,73 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 class FtaInfraSettingAtt(SettingController):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     System.SettingController
-                |                         FTAInfraSettingAtt
-                | 
-                | Represents the FT&A (Functional Tolerancing & Annotation) infrastructure
-                | setting controller object.
-                | Role: The FT&A infrastructure setting controller object deals with the setting
-                | parameters displayed in:
-                | 
-                |     The Tolerancing property page for the Tolerancing Standard and the Leader
-                |     Associativity setting parameters.
-                |     To access this property page:
-                |         Click the Options command in the Tools menu
-                |         Click + left of Mechanical Design to unfold the workbench
-                |         list
-                |         Click Functional Tolerancing & Annotation
-                |         Click Tolerancing
-                |     The Display property page for the Grid Display, the Grid Snap Point, the
-                |     Allow Distorsions, the Grid Primary Spacing, the Grid Secondary Step, the GridV
-                |     Primary Spacing, the GridV Secondary Step, the Under Set Tree Visu, the Under
-                |     View Tree Visu, and the Under Feature Tree Visu setting
-                |     parameters.
-                |     To access this property page:
-                |         Click the Options command in the Tools menu
-                |         Click + left of Mechanical Design to unfold the workbench
-                |         list
-                |         Click Functional Tolerancing & Annotation
-                |         Click Display
-                |     The Manipulators property page for the Manipulator Reference Size, the
-                |     Manipulator Zoom Capability, and the Move After Creation, setting
-                |     parameters.
-                |     To access this property page:
-                |         Click the Options command in the Tools menu
-                |         Click + left of Mechanical Design to unfold the workbench
-                |         list
-                |         Click Functional Tolerancing & Annotation
-                |         Click Manipulators
-                |     The View/Annotation Plane property page for the View Associativity, the
-                |     View Referential, the View Referential Zoomable, and the View Profile setting
-                |     parameters.
-                |     To access this property page:
-                |         Click the Options command in the Tools menu
-                |         Click + left of Mechanical Design to unfold the workbench
-                |         list
-                |         Click Functional Tolerancing & Annotation
-                |         Click View/Annotation Plane
-                |     The Cgr Management property page for the Save in CGR setting
-                |     parameter.
-                |     To access this property page:
-                |         Click the Options command in the Tools menu
-                |         Click + left of Infrastructure to unfold the workbench
-                |         list
-                |         Click Product Structure
-                |         Click Cgr Management
-                | 
-                |     The Save in CGR setting parameter represents the state of the check button
-                |     named: Save FTA 3D Annotation representation in CGR.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     System.SettingController
+            |                         FTAInfraSettingAtt
+            |
+            | Represents the FT&A (Functional Tolerancing & Annotation) infrastructure
+            | setting controller object.
+            | Role: The FT&A infrastructure setting controller object deals with the setting
+            | parameters displayed in:
+            |
+            |     The Tolerancing property page for the Tolerancing Standard and the Leader
+            |     Associativity setting parameters.
+            |     To access this property page:
+            |         Click the Options command in the Tools menu
+            |         Click + left of Mechanical Design to unfold the workbench
+            |         list
+            |         Click Functional Tolerancing & Annotation
+            |         Click Tolerancing
+            |     The Display property page for the Grid Display, the Grid Snap Point, the
+            |     Allow Distorsions, the Grid Primary Spacing, the Grid Secondary Step, the GridV
+            |     Primary Spacing, the GridV Secondary Step, the Under Set Tree Visu, the Under
+            |     View Tree Visu, and the Under Feature Tree Visu setting
+            |     parameters.
+            |     To access this property page:
+            |         Click the Options command in the Tools menu
+            |         Click + left of Mechanical Design to unfold the workbench
+            |         list
+            |         Click Functional Tolerancing & Annotation
+            |         Click Display
+            |     The Manipulators property page for the Manipulator Reference Size, the
+            |     Manipulator Zoom Capability, and the Move After Creation, setting
+            |     parameters.
+            |     To access this property page:
+            |         Click the Options command in the Tools menu
+            |         Click + left of Mechanical Design to unfold the workbench
+            |         list
+            |         Click Functional Tolerancing & Annotation
+            |         Click Manipulators
+            |     The View/Annotation Plane property page for the View Associativity, the
+            |     View Referential, the View Referential Zoomable, and the View Profile setting
+            |     parameters.
+            |     To access this property page:
+            |         Click the Options command in the Tools menu
+            |         Click + left of Mechanical Design to unfold the workbench
+            |         list
+            |         Click Functional Tolerancing & Annotation
+            |         Click View/Annotation Plane
+            |     The Cgr Management property page for the Save in CGR setting
+            |     parameter.
+            |     To access this property page:
+            |         Click the Options command in the Tools menu
+            |         Click + left of Infrastructure to unfold the workbench
+            |         list
+            |         Click Product Structure
+            |         Click Cgr Management
+            |
+            |     The Save in CGR setting parameter represents the state of the check button
+            |     named: Save FTA 3D Annotation representation in CGR.
+
     """
 
     def __init__(self, com_object):
@@ -95,7 +95,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AllowDistortions() As boolean
-                | 
+                |
                 |     Returns or sets the Allow Distortions setting parameter
                 |     value.
                 |     True if the Allow Distortions setting parameter is checked and thus enables
@@ -125,7 +125,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property GridDisplay() As boolean
-                | 
+                |
                 |     Returns or sets the Grid Display setting parameter value.
                 |     True if the Grid Display setting parameter is checked and thus enables the
                 |     grid to be displayed.
@@ -153,7 +153,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property GridPrimarySpacing() As double
-                | 
+                |
                 |     Returns or sets the Grid Primary Spacing setting parameter
                 |     value.
                 |     Role: The Grid Primary Spacing setting parameter defines the horizontal
@@ -180,7 +180,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property GridSecondaryStep() As long
-                | 
+                |
                 |     Returns or sets the Grid Secondary Step setting parameter
                 |     value.
                 |     Role: The Grid Secondary Step setting parameter defines the grid's
@@ -207,7 +207,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property GridSnapPoint() As boolean
-                | 
+                |
                 |     Returns or sets the Grid Snap Point setting parameter
                 |     value.
                 |     True if the Grid Snap Point setting parameter is checked and thus enables
@@ -235,7 +235,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property GridVPrimarySpacing() As double
-                | 
+                |
                 |     Returns or sets the GridV Primary Spacing setting parameter
                 |     value.
                 |     Role: The GridV Primary Spacing setting parameter defines the vertical
@@ -266,7 +266,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property GridVSecondaryStep() As long
-                | 
+                |
                 |     Returns or sets the GridV Secondary Step setting parameter
                 |     value.
                 |     Role: The GridV Secondary Step setting parameter defines the grid's
@@ -297,7 +297,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property LeaderAssociativity() As CATFTALeaderAssociativity
-                | 
+                |
                 |     Returns or sets the Leader Associativity setting parameter
                 |     value.
                 |     Role: The Leader Associativity setting parameter defines the associativity
@@ -325,7 +325,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ManRefSiz() As double
-                | 
+                |
                 |     Returns or sets the Manipulator Reference Size setting parameter
                 |     value.
                 |     Role: The Manipulator Reference Size setting parameter defines the size of
@@ -353,7 +353,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ManZooCap() As boolean
-                | 
+                |
                 |     Returns or sets the Manipulator Zoom Capability setting parameter
                 |     value.
                 |     True if the Manipulator Zoom Capability setting parameter is checked and
@@ -381,7 +381,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property MoveAfterCreation() As boolean
-                | 
+                |
                 |     Returns or sets the Move After Creation setting parameter
                 |     value.
                 |     True if the Move After Creation setting parameter is checked and thus
@@ -411,7 +411,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property SaveInCGR() As boolean
-                | 
+                |
                 |     Returns or sets the Save In CGR setting parameter value.
                 |     True if the Save In CGR setting parameter is checked.
                 |     Role: When set to True, the FT&A 3D Annotation representations are saved in
@@ -438,13 +438,13 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Standard() As CATBSTR
-                | 
+                |
                 |     Returns or sets the Tolerancing Standard setting parameter
                 |     value.
                 |     Role: The Tolerancing Standard setting parameter defines the standard of
                 |     the annotation's set.
                 |     Legal values: five conventional standards are available:
-                | 
+                |
                 |         ASME: American Society for Mechanical Engineers
                 |         ASME_3D: American Society for Mechanical Engineers
                 |         ANSI: American National Standards Institute
@@ -472,7 +472,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property UnderFeature() As boolean
-                | 
+                |
                 |     Returns or sets the Under Geometric Feature Nodes setting parameter
                 |     value.
                 |     True if the Under Geometric Feature Nodes setting parameter is checked and
@@ -501,7 +501,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property UnderSet() As boolean
-                | 
+                |
                 |     Returns or sets the Under Annotation Set Node setting parameter
                 |     value.
                 |     True if the Under Annotation Set Node setting parameter is checked and thus
@@ -531,7 +531,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property UnderView() As boolean
-                | 
+                |
                 |     Returns or sets the Under View/Annotation Plane Nodes setting parameter
                 |     value.
                 |     True if the Under View/Annotation Plane Nodes setting parameter is checked
@@ -560,7 +560,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ViewAssociativity() As boolean
-                | 
+                |
                 |     Returns or sets the View Associativity setting parameter
                 |     value.
                 |     True if the View Associativity setting parameter is checked and thus
@@ -592,7 +592,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ViewProfile() As boolean
-                | 
+                |
                 |     Returns or sets the View Profile setting parameter value.
                 |     True if the View Profile setting parameter is checked and thus enables the
                 |     view/annotation plane profile on the part/product to be displayed.
@@ -618,7 +618,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ViewReferential() As boolean
-                | 
+                |
                 |     Returns or sets the View Referential setting parameter
                 |     value.
                 |     True if the View Referential setting parameter is checked and thus enables
@@ -645,7 +645,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ViewReferentialZoomable() As boolean
-                | 
+                |
                 |     Returns or sets the View Referential Zoomable setting parameter
                 |     value.
                 |     True if the View Referential Zoomable setting parameter is checked and thus
@@ -672,7 +672,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAllowDistortionsInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Allow Distorsions setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -691,7 +691,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetGridDisplayInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Grid Display setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -710,7 +710,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetGridPrimarySpacingInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Grid Primary Spacing setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -719,7 +719,9 @@ class FtaInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridPrimarySpacingInfo(admin_level, o_locked)
+        return self.fta_infra_setting_att.GetGridPrimarySpacingInfo(
+            admin_level, o_locked
+        )
 
     def get_grid_secondary_step_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -729,7 +731,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetGridSecondaryStepInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Grid Secondary Step setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -738,7 +740,9 @@ class FtaInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridSecondaryStepInfo(admin_level, o_locked)
+        return self.fta_infra_setting_att.GetGridSecondaryStepInfo(
+            admin_level, o_locked
+        )
 
     def get_grid_snap_point_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -748,7 +752,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetGridSnapPointInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Grid Snap Point setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -767,7 +771,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetGridVPrimarySpacingInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the GridV Primary Spacing setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -776,7 +780,9 @@ class FtaInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridVPrimarySpacingInfo(admin_level, o_locked)
+        return self.fta_infra_setting_att.GetGridVPrimarySpacingInfo(
+            admin_level, o_locked
+        )
 
     def get_grid_v_secondary_step_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -786,7 +792,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetGridVSecondaryStepInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the GridV Secondary Step setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -795,7 +801,9 @@ class FtaInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridVSecondaryStepInfo(admin_level, o_locked)
+        return self.fta_infra_setting_att.GetGridVSecondaryStepInfo(
+            admin_level, o_locked
+        )
 
     def get_leader_associativity_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -805,7 +813,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetLeaderAssociativityInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Leader Associativity setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -814,7 +822,9 @@ class FtaInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetLeaderAssociativityInfo(admin_level, o_locked)
+        return self.fta_infra_setting_att.GetLeaderAssociativityInfo(
+            admin_level, o_locked
+        )
 
     def get_man_ref_size_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -824,7 +834,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetManRefSizInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Manipulator Reference Size setting
                 |     parameter value.
                 |     Refer to SettingController for a detailed description.
@@ -843,7 +853,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetManZooCapInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Manipulator Zoom Capability setting
                 |     parameter value.
                 |     Refer to SettingController for a detailed description.
@@ -862,7 +872,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetMoveAfterCreationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Move After Creation setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -871,7 +881,9 @@ class FtaInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetMoveAfterCreationInfo(admin_level, o_locked)
+        return self.fta_infra_setting_att.GetMoveAfterCreationInfo(
+            admin_level, o_locked
+        )
 
     def get_save_in_cgr_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -881,7 +893,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetSaveInCGRInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Save In CGR setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -900,7 +912,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetStandardInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Tolerancing Standard setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -919,7 +931,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetUnderFeatureInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Under Geometric Feature Nodes setting
                 |     parameter value.
                 |     Refer to SettingController for a detailed description.
@@ -938,7 +950,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetUnderSetInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Under Annotation Set Node setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -957,7 +969,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetUnderViewInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the Under View/Annotation Plane Nodes setting
                 |     parameter value.
                 |     Refer to SettingController for a detailed description.
@@ -976,7 +988,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetViewAssociativityInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the View Associativity setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -985,7 +997,9 @@ class FtaInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetViewAssociativityInfo(admin_level, o_locked)
+        return self.fta_infra_setting_att.GetViewAssociativityInfo(
+            admin_level, o_locked
+        )
 
     def get_view_profile_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -995,7 +1009,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetViewProfileInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the View Profile setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1014,7 +1028,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetViewReferentialInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the View Referential setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1025,7 +1039,9 @@ class FtaInfraSettingAtt(SettingController):
         """
         return self.fta_infra_setting_att.GetViewReferentialInfo(admin_level, o_locked)
 
-    def get_view_referential_zoomable_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_view_referential_zoomable_info(
+        self, admin_level: str, o_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1033,7 +1049,7 @@ class FtaInfraSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetViewReferentialZoomableInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
-                | 
+                |
                 |     Retrieves information about the View Referential Zoomable setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1042,7 +1058,9 @@ class FtaInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetViewReferentialZoomableInfo(admin_level, o_locked)
+        return self.fta_infra_setting_att.GetViewReferentialZoomableInfo(
+            admin_level, o_locked
+        )
 
     def set_allow_distortions_lock(self, i_locked: bool) -> None:
         """
@@ -1051,7 +1069,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAllowDistortionsLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Allow Distorsions setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1060,7 +1078,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetAllowDistortionsLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1083,7 +1101,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetGridDisplayLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Grid Display setting parameter value.
                 |     Refer to SettingController for a detailed description.
 
@@ -1091,7 +1109,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridDisplayLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1114,7 +1132,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetGridPrimarySpacingLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Grid Primary Spacing setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1123,7 +1141,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridPrimarySpacingLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1146,7 +1164,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetGridSecondaryStepLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Grid Secondary Step setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1155,7 +1173,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridSecondaryStepLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1178,7 +1196,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetGridSnapPointLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Grid Snap Point setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1187,7 +1205,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridSnapPointLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1210,7 +1228,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetGridVPrimarySpacingLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the GridV Primary Spacing setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1219,7 +1237,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridVPrimarySpacingLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1242,7 +1260,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetGridVSecondaryStepLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the GridV Secondary Step setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1251,7 +1269,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridVSecondaryStepLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1274,7 +1292,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetLeaderAssociativityLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Leader Associativity setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1283,7 +1301,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetLeaderAssociativityLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1306,7 +1324,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetManRefSizLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Manipulator Reference Size setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1315,7 +1333,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetManRefSizLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1338,7 +1356,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetManZooCapLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Manipulator Zoom Capability setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1347,7 +1365,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetManZooCapLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1370,7 +1388,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetMoveAfterCreationLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Move After Creation setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1379,7 +1397,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetMoveAfterCreationLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1402,7 +1420,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetSaveInCGRLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Save In CGR setting parameter value.
                 |     Refer to SettingController for a detailed description.
 
@@ -1410,7 +1428,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetSaveInCGRLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1433,7 +1451,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetStandardLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Tolerancing Standard setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1442,7 +1460,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetStandardLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1465,7 +1483,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetUnderFeatureLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Under Geometric Feature Nodes setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1474,7 +1492,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetUnderFeatureLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1497,7 +1515,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetUnderSetLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Under Annotation Set Node setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1506,7 +1524,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetUnderSetLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1529,7 +1547,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetUnderViewLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Under View/Annotation Plane Nodes setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1538,7 +1556,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetUnderViewLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1561,7 +1579,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetViewAssociativityLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the View Associativity setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1570,7 +1588,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetViewAssociativityLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1593,7 +1611,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetViewProfileLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the View Profile setting parameter value.
                 |     Refer to SettingController for a detailed description.
 
@@ -1601,7 +1619,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetViewProfileLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1624,7 +1642,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetViewReferentialLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the View Referential setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1633,7 +1651,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetViewReferentialLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1656,7 +1674,7 @@ class FtaInfraSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetViewReferentialZoomableLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the View Referential Zoomable setting parameter
                 |     value.
                 |     Refer to SettingController for a detailed description.
@@ -1665,7 +1683,7 @@ class FtaInfraSettingAtt(SettingController):
         :rtype: None
         """
         return self.fta_infra_setting_att.SetViewReferentialZoomableLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1680,5 +1698,3 @@ class FtaInfraSettingAtt(SettingController):
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-

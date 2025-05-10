@@ -1,13 +1,14 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
+
 import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
@@ -15,21 +16,21 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 class StepSettingAtt(SettingController):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     System.SettingController
-                |                         StepSettingAtt
-                | 
-                | The interface to access a CATIAStepSettingAtt.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     System.SettingController
+            |                         StepSettingAtt
+            |
+            | The interface to access a CATIAStepSettingAtt.
+
     """
 
     def __init__(self, com_object):
@@ -44,9 +45,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttAP() As short
-                | 
+                |
                 |     Returns or sets the AttAP parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -70,9 +71,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttASM() As short
-                | 
+                |
                 |     Returns or sets the AttASM parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -96,9 +97,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttASMGVP() As short
-                | 
+                |
                 |     Returns or sets the AttASMGVP parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -122,9 +123,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttAngleDefFiting() As float
-                | 
+                |
                 |     Returns or sets the AttAngleDefFiting parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: float
@@ -148,9 +149,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttAnnotation() As short
-                | 
+                |
                 |     Returns or sets the AttAnnotation parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -187,7 +188,7 @@ class StepSettingAtt(SettingController):
         self.release_check(
             self.application.system_configuration.release,
             30,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
         return self.step_setting_att.AttAnnotationExport
@@ -208,9 +209,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttComposites() As short
-                | 
+                |
                 |     Returns or sets the AttComposites parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -234,9 +235,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttExportRepMode() As short
-                | 
+                |
                 |     Returns or sets the AttExportRepMode parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -260,9 +261,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttFitting() As short
-                | 
+                |
                 |     Returns or sets the AttFitting parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -286,9 +287,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttGVP() As short
-                | 
+                |
                 |     Returns or sets the AttGVP parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -312,9 +313,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttGVPCOPS() As short
-                | 
+                |
                 |     Returns or sets the AttGVPCOPS parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -338,9 +339,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttGVPCOPSSAG() As double
-                | 
+                |
                 |     Returns or sets the AttGVPCOPSSAG parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: float
@@ -364,9 +365,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttGVPCOPSTol() As double
-                | 
+                |
                 |     Returns or sets the AttGVPCOPSSAG parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: float
@@ -390,9 +391,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttGVPCdG() As double
-                | 
+                |
                 |     Returns or sets the AttGVPCdG parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: float
@@ -416,9 +417,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttGVPVA() As double
-                | 
+                |
                 |     Returns or sets the AttGVPVA parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: float
@@ -442,9 +443,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttGroupMode() As short
-                | 
+                |
                 |     Returns or sets the AttGroupMode parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -468,9 +469,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttHeaderAuthor() As CATBSTR
-                | 
+                |
                 |     Returns or sets the AttHeaderAuthor parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: str
@@ -494,9 +495,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttHeaderAuthorisation() As CATBSTR
-                | 
+                |
                 |     Returns or sets the AttHeaderAuthorisation parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: str
@@ -520,9 +521,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttHeaderDescription() As CATBSTR
-                | 
+                |
                 |     Returns or sets the AttHeaderDescription parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: str
@@ -546,9 +547,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttHeaderOrganisation() As CATBSTR
-                | 
+                |
                 |     Returns or sets the AttHeaderOrganisation parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: str
@@ -572,9 +573,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttIASM() As short
-                | 
+                |
                 |     Returns or sets the AttIASM parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -598,9 +599,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttLayersFilters() As short
-                | 
+                |
                 |     Returns or sets the AttLayersFilters parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -624,9 +625,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttMultiCAD() As short
-                | 
+                |
                 |     Returns or sets the AttMultiCAD parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -650,9 +651,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttOptimizeC2() As short
-                | 
+                |
                 |     Returns or sets the AttOptimizeC2 parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -676,9 +677,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttReport() As short
-                | 
+                |
                 |     Returns or sets the AttReport parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -702,9 +703,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttShow() As short
-                | 
+                |
                 |     Returns or sets the AttShow parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -728,9 +729,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttTessPrefered() As short
-                | 
+                |
                 |     Returns or sets the AttTessPrefered parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -754,9 +755,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttTolDefOptFit() As float
-                | 
+                |
                 |     Returns or sets the AttTolDefOptFit parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: float
@@ -780,9 +781,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttUDA() As short
-                | 
+                |
                 |     Returns or sets the AttUDA parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -806,9 +807,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AttUnits() As short
-                | 
+                |
                 |     Returns or sets the AttUnits parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -832,9 +833,9 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EdgeInTessMode() As short
-                | 
+                |
                 |     Returns or sets the EdgeTessMode parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: int
@@ -858,24 +859,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttAPInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttAP
                 |     parameter.
                 |     Role:Retrieves the state of the AttAP parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -894,24 +895,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttASMGVPInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttASMGVP
                 |     parameter.
                 |     Role:Retrieves the state of the AttASMGVP parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -930,24 +931,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttASMInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttASM
                 |     parameter.
                 |     Role:Retrieves the state of the AttASM parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -958,7 +959,9 @@ class StepSettingAtt(SettingController):
         """
         return self.step_setting_att.GetAttASMInfo(io_admin_level, io_locked)
 
-    def get_att_angle_def_fiting_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_att_angle_def_fiting_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -966,24 +969,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttAngleDefFitingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttAngleDefFiting
                 |     parameter.
                 |     Role:Retrieves the state of the AttAngleDefFiting parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -994,7 +997,9 @@ class StepSettingAtt(SettingController):
         """
         return self.step_setting_att.GetAttAngleDefFitingInfo(io_admin_level, io_locked)
 
-    def get_att_annotation_export_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_att_annotation_export_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
 
@@ -1034,10 +1039,12 @@ class StepSettingAtt(SettingController):
         self.release_check(
             self.application.system_configuration.release,
             30,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
-        return self.step_setting_att.GetAttAnnotationExportInfo(io_admin_level, io_locked)
+        return self.step_setting_att.GetAttAnnotationExportInfo(
+            io_admin_level, io_locked
+        )
 
     def get_att_annotation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -1047,24 +1054,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttAnnotationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttAnnotation
                 |     parameter.
                 |     Role:Retrieves the state of the AttAnnotation parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1083,24 +1090,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttCompositesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttComposites
                 |     parameter.
                 |     Role:Retrieves the state of the AttComposites parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1119,24 +1126,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttExportRepModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttExportRepMode
                 |     parameter.
                 |     Role:Retrieves the state of the AttExportRepMode parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1155,24 +1162,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttFittingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttFitting
                 |     parameter.
                 |     Role:Retrieves the state of the AttFitting parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1191,24 +1198,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttGVPCOPSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttGVP
                 |     parameter.
                 |     Role:Retrieves the state of the AttGVP parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1227,24 +1234,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttGVPCOPSSAGInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttGVPVA
                 |     parameter.
                 |     Role:Retrieves the state of the AttGVPVA parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1263,24 +1270,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttGVPCOPSTolInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttGVPVA
                 |     parameter.
                 |     Role:Retrieves the state of the AttGVPVA parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1299,24 +1306,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttGVPCdGInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttGVPCdG
                 |     parameter.
                 |     Role:Retrieves the state of the AttGVPCdG parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1335,24 +1342,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttGVPInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttGVP
                 |     parameter.
                 |     Role:Retrieves the state of the AttGVP parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1371,24 +1378,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttGVPVAInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttGVPVA
                 |     parameter.
                 |     Role:Retrieves the state of the AttGVPVA parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1407,24 +1414,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttGroupModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttGroupMode
                 |     parameter.
                 |     Role:Retrieves the state of the AttGroupMode parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1443,24 +1450,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttHeaderAuthorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttHeaderAuthor
                 |     parameter.
                 |     Role:Retrieves the state of the AttHeaderAuthor parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1471,7 +1478,9 @@ class StepSettingAtt(SettingController):
         """
         return self.step_setting_att.GetAttHeaderAuthorInfo(io_admin_level, io_locked)
 
-    def get_att_header_authorisation_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_att_header_authorisation_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1479,24 +1488,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttHeaderAuthorisationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttHeaderAuthorisation
                 |     parameter.
                 |     Role:Retrieves the state of the AttHeaderAuthorisation parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1505,9 +1514,13 @@ class StepSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.step_setting_att.GetAttHeaderAuthorisationInfo(io_admin_level, io_locked)
+        return self.step_setting_att.GetAttHeaderAuthorisationInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_att_header_description_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_att_header_description_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1515,24 +1528,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttHeaderDescriptionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttHeaderDescription
                 |     parameter.
                 |     Role:Retrieves the state of the AttHeaderDescription parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1541,9 +1554,13 @@ class StepSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.step_setting_att.GetAttHeaderDescriptionInfo(io_admin_level, io_locked)
+        return self.step_setting_att.GetAttHeaderDescriptionInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_att_header_organisation_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_att_header_organisation_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1551,24 +1568,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttHeaderOrganisationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttHeaderOrganisation
                 |     parameter.
                 |     Role:Retrieves the state of the AttHeaderOrganisation parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1577,7 +1594,9 @@ class StepSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.step_setting_att.GetAttHeaderOrganisationInfo(io_admin_level, io_locked)
+        return self.step_setting_att.GetAttHeaderOrganisationInfo(
+            io_admin_level, io_locked
+        )
 
     def get_att_iasm_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -1587,24 +1606,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttIASMInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttIASM
                 |     parameter.
                 |     Role:Retrieves the state of the AttIASM parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1623,24 +1642,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttLayersFiltersInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttLayersFilters
                 |     parameter.
                 |     Role:Retrieves the state of the AttLayersFilters parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1659,24 +1678,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttMultiCADInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttMultiCAD
                 |     parameter.
                 |     Role:Retrieves the state of the AttMultiCAD parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1695,24 +1714,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttOptimizeC2Info(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttOptimizeC2
                 |     parameter.
                 |     Role:Retrieves the state of the AttOptimizeC2 parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1731,24 +1750,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttReportInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttReport
                 |     parameter.
                 |     Role:Retrieves the state of the AttReport parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1767,24 +1786,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttShowInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttShow
                 |     parameter.
                 |     Role:Retrieves the state of the AttShow parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1803,24 +1822,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttTessPreferedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttTessPrefered
                 |     parameter.
                 |     Role:Retrieves the state of the AttTessPrefered parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1839,24 +1858,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttTolDefOptFitInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttTolDefOptFit
                 |     parameter.
                 |     Role:Retrieves the state of the AttTolDefOptFit parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1875,24 +1894,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttUDAInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttUDA
                 |     parameter.
                 |     Role:Retrieves the state of the AttUDA parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1911,24 +1930,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetAttUnitsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the AttUnits
                 |     parameter.
                 |     Role:Retrieves the state of the AttUnits parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1947,24 +1966,24 @@ class StepSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetEdgeInTessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the EdgeTessMode
                 |     parameter.
                 |     Role:Retrieves the state of the EdgeTessMode parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1982,14 +2001,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttAPLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttAP parameter.
                 |     Role:Locks or unlocks the AttAP parameter if it is possible in the current
                 |     administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2000,7 +2019,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttAPLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2023,14 +2042,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttASMGVPLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttASMGVP parameter.
                 |     Role:Locks or unlocks the AttASMGVP parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2041,7 +2060,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttASMGVPLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2064,14 +2083,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttASMLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttASM parameter.
                 |     Role:Locks or unlocks the AttASM parameter if it is possible in the current
                 |     administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2082,7 +2101,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttASMLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2105,14 +2124,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttAngleDefFitingLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttAngleDefFiting parameter.
                 |     Role:Locks or unlocks the AttAngleDefFiting parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2123,7 +2142,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttAngleDefFitingLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2169,7 +2188,7 @@ class StepSettingAtt(SettingController):
         self.release_check(
             self.application.system_configuration.release,
             30,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
         return self.step_setting_att.SetAttAnnotationExportLock(i_locked)
@@ -2181,14 +2200,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttAnnotationLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttAnnotation parameter.
                 |     Role:Locks or unlocks the AttAnnotation parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2199,7 +2218,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttAnnotationLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2222,14 +2241,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttCompositesLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttComposites parameter.
                 |     Role:Locks or unlocks the AttComposites parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2240,7 +2259,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttCompositesLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2263,14 +2282,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttExportRepModeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttExportRepMode parameter.
                 |     Role:Locks or unlocks the AttExportRepMode parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2281,7 +2300,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttExportRepModeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2304,14 +2323,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttFittingLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttFitting parameter.
                 |     Role:Locks or unlocks the AttFitting parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2322,7 +2341,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttFittingLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2345,14 +2364,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttGVPCOPSLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttGVP parameter.
                 |     Role:Locks or unlocks the AttGVP parameter if it is possible in the current
                 |     administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2363,7 +2382,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPCOPSLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2386,14 +2405,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttGVPCOPSSAGLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttGVPVA parameter.
                 |     Role:Locks or unlocks the AttGVPVA parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2404,7 +2423,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPCOPSSAGLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2427,14 +2446,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttGVPCOPSTolLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttGVPVA parameter.
                 |     Role:Locks or unlocks the AttGVPVA parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2445,7 +2464,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPCOPSTolLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2468,14 +2487,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttGVPCdGLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttGVPCdG parameter.
                 |     Role:Locks or unlocks the AttGVPCdG parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2486,7 +2505,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPCdGLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2509,14 +2528,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttGVPLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttGVP parameter.
                 |     Role:Locks or unlocks the AttGVP parameter if it is possible in the current
                 |     administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2527,7 +2546,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2550,14 +2569,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttGVPVALock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttGVPVA parameter.
                 |     Role:Locks or unlocks the AttGVPVA parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2568,7 +2587,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPVALock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2591,14 +2610,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttGroupModeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttGroupMode parameter.
                 |     Role:Locks or unlocks the AttGroupMode parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2609,7 +2628,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttGroupModeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2632,14 +2651,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttHeaderAuthorLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttHeaderAuthor parameter.
                 |     Role:Locks or unlocks the AttHeaderAuthor parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2650,7 +2669,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttHeaderAuthorLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2673,14 +2692,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttHeaderAuthorisationLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttHeaderAuthorisation parameter.
                 |     Role:Locks or unlocks the AttHeaderAuthorisation parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2691,7 +2710,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttHeaderAuthorisationLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2714,14 +2733,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttHeaderDescriptionLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttHeaderDescription parameter.
                 |     Role:Locks or unlocks the AttHeaderDescription parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2732,7 +2751,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttHeaderDescriptionLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2755,14 +2774,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttHeaderOrganisationLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttHeaderOrganisation parameter.
                 |     Role:Locks or unlocks the AttHeaderOrganisation parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2773,7 +2792,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttHeaderOrganisationLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2796,14 +2815,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttIASMLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttIASM parameter.
                 |     Role:Locks or unlocks the AttIASM parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2814,7 +2833,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttIASMLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2837,14 +2856,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttLayersFiltersLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttLayersFilters parameter.
                 |     Role:Locks or unlocks the AttLayersFilters parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2855,7 +2874,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttLayersFiltersLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2878,14 +2897,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttMultiCADLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttMultiCAD parameter.
                 |     Role:Locks or unlocks the AttMultiCAD parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2896,7 +2915,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttMultiCADLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2919,14 +2938,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttOptimizeC2Lock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttOptimizeC2 parameter.
                 |     Role:Locks or unlocks the AttOptimizeC2 parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2937,7 +2956,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttOptimizeC2Lock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2960,14 +2979,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttReportLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttReport parameter.
                 |     Role:Locks or unlocks the AttReport parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2978,7 +2997,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttReportLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3001,14 +3020,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttShowLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttShow parameter.
                 |     Role:Locks or unlocks the AttShow parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3019,7 +3038,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttShowLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3042,14 +3061,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttTessPreferedLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttTessPrefered parameter.
                 |     Role:Locks or unlocks the AttTessPrefered parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3060,7 +3079,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttTessPreferedLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3083,14 +3102,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttTolDefOptFitLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttTolDefOptFit parameter.
                 |     Role:Locks or unlocks the AttTolDefOptFit parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3101,7 +3120,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttTolDefOptFitLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3124,14 +3143,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttUDALock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttUDA parameter.
                 |     Role:Locks or unlocks the AttUDA parameter if it is possible in the current
                 |     administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3142,7 +3161,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttUDALock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3165,14 +3184,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAttUnitsLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the AttUnits parameter.
                 |     Role:Locks or unlocks the AttUnits parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3183,7 +3202,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetAttUnitsLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3206,14 +3225,14 @@ class StepSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetEdgeInTessLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the EdgeTessMode parameter.
                 |     Role:Locks or unlocks the AttGroupMode parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3224,7 +3243,7 @@ class StepSettingAtt(SettingController):
         :rtype: None
         """
         return self.step_setting_att.SetEdgeInTessLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3239,5 +3258,3 @@ class StepSettingAtt(SettingController):
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-

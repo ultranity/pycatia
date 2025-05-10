@@ -1,38 +1,41 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
-from pycatia.abq_automation_interfaces.abq_boundary_conditions import ABQBoundaryConditions
+
+from pycatia.abq_automation_interfaces.abq_boundary_conditions import (
+    ABQBoundaryConditions,
+)
 from pycatia.abq_automation_interfaces.abq_loads import ABQLoads
 from pycatia.abq_automation_interfaces.abq_step import ABQStep
 
 
 class ABQHeatTransferStep(ABQStep):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ABQAutomationItf.ABQStep
-                |                         ABQHeatTransferStep
-                | 
-                | Represents an Abaqus heat transfer step (ABQHeatTransferStep)
-                | object.
-                | Role: Access an Abaqus heat transfer step object or determine its
-                | properties.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     ABQAutomationItf.ABQStep
+            |                         ABQHeatTransferStep
+            |
+            | Represents an Abaqus heat transfer step (ABQHeatTransferStep)
+            | object.
+            | Role: Access an Abaqus heat transfer step object or determine its
+            | properties.
+
     """
 
     def __init__(self, com_object):
@@ -48,15 +51,15 @@ class ABQHeatTransferStep(ABQStep):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property BoundaryConditions() As ABQBoundaryConditions (Read
                 | Only)
-                | 
+                |
                 |     Returns the ABQBoundaryConditions container associated with the
                 |     step.
-                | 
+                |
                 |     Example:
                 |         This example retrieves the ABQBoundaryConditions container
                 |         abqBCs.
-                | 
-                |          Dim abqHeatStep As ABQHeatTransferStep 
+                |
+                |          Dim abqHeatStep As ABQHeatTransferStep
                 |          Dim abqBCs As ABQBoundaryConditions
                 |          Set abqBCs = abqHeatStep.BoundaryConditions
 
@@ -73,10 +76,10 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Deltmx() As double
-                | 
+                |
                 |     Sets or returns the maximum temperature change to be allowed in an
                 |     increment during a transient heat transfer analysis.
-                | 
+                |
                 |     Returns:
                 |         Maximum temperature change to be allowed in an
                 |         increment
@@ -102,9 +105,9 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Description() As CATBSTR
-                | 
+                |
                 |     Sets or returns the description of the step.
-                | 
+                |
                 |     Returns:
                 |         The description of the step
 
@@ -129,10 +132,10 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EndStepOnTempChange() As boolean
-                | 
+                |
                 |     Sets or returns whether the step should end when steady state is reached. A
                 |     value of true indicates that the step will end.
-                | 
+                |
                 |     Returns:
                 |         A boolean indicating whether the step will end when steady state is
                 |         reached
@@ -158,9 +161,9 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property InitialInc() As double
-                | 
+                |
                 |     Sets or returns the initial increment size.
-                | 
+                |
                 |     Returns:
                 |         The initial increment size
 
@@ -185,13 +188,13 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Loads() As ABQLoads (Read Only)
-                | 
+                |
                 |     Returns the ABQLoads container associated with the step.
-                | 
+                |
                 |     Example:
                 |         The following example retrieves the ABQLoads container
                 |         abqLoads:
-                | 
+                |
                 |          Dim abqHeatStep As ABQHeatTransferStep
                 |          Dim abqLoads As ABQLoads
                 |          Set abqLoads = abqHeatStep.Loads
@@ -209,10 +212,10 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property MaxInc() As double
-                | 
+                |
                 |     Sets or returns the maximum increment size if
                 |     TimeIncrementationMethod=AUTO_INCREMENT.
-                | 
+                |
                 |     Returns:
                 |         The maximum increment size
 
@@ -237,10 +240,10 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property MaxNumInc() As short
-                | 
+                |
                 |     Sets or returns the maximum number of increments if
                 |     TimeIncrementationMethod=AUTO_INCREMENT.
-                | 
+                |
                 |     Returns:
                 |         The maximum number of increments
 
@@ -265,10 +268,10 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property MinInc() As double
-                | 
+                |
                 |     Sets or returns the minimum increment size if
                 |     TimeIncrementationMethod=AUTO_INCREMENT.
-                | 
+                |
                 |     Returns:
                 |         The minimum increment size
 
@@ -293,10 +296,10 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Mxdem() As double
-                | 
+                |
                 |     Sets or returns the maximum allowable emissivity change with temperature
                 |     and field variables during an increment.
-                | 
+                |
                 |     Returns:
                 |         The maximum allowable emissivity change
 
@@ -321,16 +324,16 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Response() As Response_Type
-                | 
+                |
                 |     Sets or returns the response type.
-                | 
+                |
                 |     Returns:
                 |         The response type
-                | 
-                |          
-                |          
+                |
+                |
+                |
                 |         Legal values:
-                |           STEADY_STATE  
+                |           STEADY_STATE
                 |           TRANSIENT
 
         :return: enum response_type
@@ -355,14 +358,14 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property TimeIncrementationMethod() As Incrementation_Type
-                | 
+                |
                 |     Sets or returns the incrementation type.
-                | 
+                |
                 |     Returns:
                 |         The incrementation type
-                | 
-                |          
-                |          
+                |
+                |
+                |
                 |         Legal values:
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
@@ -389,9 +392,9 @@ class ABQHeatTransferStep(ABQStep):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property TimePeriod() As double
-                | 
+                |
                 |     Sets or returns the step time.
-                | 
+                |
                 |     Returns:
                 |         The step time
 
@@ -407,5 +410,3 @@ class ABQHeatTransferStep(ABQStep):
         """
 
         self.abq_heat_transfer_step.TimePeriod = value
-
-

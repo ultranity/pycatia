@@ -1,33 +1,34 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
+
 from pycatia.dnb_human_sim_interfaces.worker_activity import WorkerActivity
 
 
 class WalkActivity(WorkerActivity):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DMAPSInterfaces.Activity
-                |                         DNBHumanSimInterfaces.WorkerActivity
-                |                             WalkActivity
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     DMAPSInterfaces.Activity
+            |                         DNBHumanSimInterfaces.WorkerActivity
+            |                             WalkActivity
 
-    
+
     """
 
     def __init__(self, com_object):
@@ -42,7 +43,7 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property BodyPose() As HTSBodyPoseOptions
-                | 
+                |
                 |     Returns or Sets Body Posture option (see HTSBodyPoseOptions for list of
                 |     possible values)
 
@@ -68,7 +69,7 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property MotionBasis() As HTSWalkMotionBasis
-                | 
+                |
                 |     Returns or Sets Motion-Basis (see HTSWalkMotionBasis for list of possible
                 |     values)
 
@@ -94,7 +95,7 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Stride() As HTSStrideOptions
-                | 
+                |
                 |     Returns or Sets Stride option (see HTSStrideOptions for list of possible
                 |     values)
 
@@ -120,7 +121,7 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Swing() As HTSSwingOptions
-                | 
+                |
                 |     Returns or Sets Swing option (see HTSSwingOptions for list of possible
                 |     values)
 
@@ -146,7 +147,7 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property UserSpeed() As double
-                | 
+                |
                 |     Returns or Sets Speed for Walk Activity
 
         :rtype: float
@@ -170,7 +171,7 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property UserTime() As double
-                | 
+                |
                 |     Returns or Sets Time for Walk Activity
 
         :rtype: float
@@ -194,7 +195,7 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property WalkLength() As double (Read Only)
-                | 
+                |
                 |     Returns WalkLength for Walk Activity
 
         :rtype: float
@@ -210,14 +211,14 @@ class WalkActivity(WorkerActivity):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub GetWalkCurveDefPoints(long iNumPoints,
                 | CATSafeArrayVariant adPoints)
-                | 
+                |
                 |     This gets the Walk Path definition Point
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iNumPoints
                 |             Number of Coplanar-Points defining the Walk Path in Plane
-                |             
+                |
                 |         adPoints
                 |             Point values x1,y1,z1 , x2,y2,z2, .... Area of Plane coordinates
                 |             User needs to pass in sufficiently large-sized
@@ -228,7 +229,7 @@ class WalkActivity(WorkerActivity):
         :rtype: None
         """
         return self.walk_activity.GetWalkCurveDefPoints(i_num_points, ad_points)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -251,9 +252,9 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func HasPartRelation() As boolean
-                | 
+                |
                 |     Returns if there is any PartRelation
-                | 
+                |
                 |     Returns:
                 |         bFlag TRUE, if there exist any Part-Relation
 
@@ -269,14 +270,14 @@ class WalkActivity(WorkerActivity):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetWalkCurveDefPoints(long iNumPoints,
                 | CATSafeArrayVariant adPoints)
-                | 
+                |
                 |     This sets the Walk Path definition Point
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iNumPoints
                 |             Number of Coplanar-Points defining the Walk Path in Plane
-                |             
+                |
                 |         adPoints
                 |             Point values x1,y1,z1 , x2,y2,z2, .... Area of Plane
                 |             coordinates
@@ -286,7 +287,7 @@ class WalkActivity(WorkerActivity):
         :rtype: None
         """
         return self.walk_activity.SetWalkCurveDefPoints(i_num_points, ad_points)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -309,7 +310,7 @@ class WalkActivity(WorkerActivity):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub Update()
-                | 
+                |
                 |     This method is the key-method to create children-MoveToPostures for a
                 |     created Walk.
                 |     This is must be called after setting appropriate values for Walk Activity.
@@ -317,5 +318,3 @@ class WalkActivity(WorkerActivity):
         :rtype: None
         """
         return self.walk_activity.Update()
-
-

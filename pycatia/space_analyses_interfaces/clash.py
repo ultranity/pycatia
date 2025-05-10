@@ -1,13 +1,14 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
+
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
 from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
@@ -17,22 +18,22 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 class Clash(AnyObject):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+        CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Clash
-                | 
-                | Represents the Clash object.
-                | The Clash object is a specification of a collision detection of
-                | products.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     Clash
+            |
+            | Represents the Clash object.
+            | The Clash object is a specification of a collision detection of
+            | products.
+
     """
 
     def __init__(self, com_object):
@@ -47,11 +48,11 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnnotatedViews() As AnnotatedViews (Read Only)
-                | 
+                |
                 |     Returns the AnnotatedViews collection of the clash.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the AnnotatedViews collection of NewClash
                 |              Clash.
                 |
@@ -71,14 +72,14 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Clearance() As double
-                | 
+                |
                 |     Returns or sets the clearance value for the computation.
-                | 
+                |
                 |     The clearance value must be greater than 0. Units are
                 |     Millimeter.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the clearance value of NewClash
                 |              Clash.
                 |
@@ -111,14 +112,14 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComputationType() As CatClashComputationType
-                | 
+                |
                 |     Returns or sets the computation type.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |             The first example retrieves the computation type of NewClash
                 |             Clash.
-                |             
+                |
                 |             Dim ComputationType As CatClashComputationType
                 |             ComputationType = NewClash.ComputationType
                 |
@@ -149,11 +150,11 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Conflicts() As Conflicts (Read Only)
-                | 
+                |
                 |     Returns the collection of computed Conflicts.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the conflicts of NewClash
                 |              Clash.
                 |
@@ -173,14 +174,14 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstGroup() As Group
-                | 
+                |
                 |     Returns or sets the first group used by the computation.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the first group of NewClash
                 |              Clash.
-                |             
+                |
                 |             Dim FirstGroup As Group
                 |             Set FirstGroup = NewClash.FirstGroup
                 |
@@ -211,15 +212,15 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InterferenceType() As CatClashInterferenceType
-                | 
+                |
                 |     Returns or sets the interference type for the computation.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the interference type of NewClash
                 |              Clash.
-                |             
-                | 
+                |
+                |
                 |             Dim InterferenceType As CatClashInterferenceType
                 |             InterferenceType = NewClash.InterferenceType
                 |
@@ -250,11 +251,11 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker3Ds() As Marker3Ds (Read Only)
-                | 
+                |
                 |     Returns the Marker3Ds collection of the clash.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the Marker3Ds collection of NewClash
                 |              Clash.
                 |
@@ -274,11 +275,11 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondGroup() As Group
-                | 
+                |
                 |     Returns or sets the second group used by the computation.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the second group of NewClash
                 |              Clash.
                 |
@@ -311,11 +312,11 @@ class Clash(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Compute()
-                | 
+                |
                 |     Computes the conflicts.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example computes the conflicts of NewClash
                 |              Clash.
                 |
@@ -333,18 +334,18 @@ class Clash(AnyObject):
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Export(CatClashExportType iType,
                 | CATBSTR iPath)
-                | 
+                |
                 |     Exports the results in a XML file.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iType
-                |             The type of export. 
+                |             The type of export.
                 |         iPath
-                |             The path of the file. 
-                | 
+                |             The path of the file.
+                |
                 |     Example:
-                | 
+                |
                 |              This example exports the results of NewClash
                 |              Clash.
                 |
@@ -357,5 +358,3 @@ class Clash(AnyObject):
         :rtype: None
         """
         return self.clash.Export(i_type, i_path)
-
-

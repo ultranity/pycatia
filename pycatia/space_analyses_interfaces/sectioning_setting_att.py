@@ -1,12 +1,12 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
 
 from pycatia.system_interfaces.setting_controller import SettingController
@@ -14,21 +14,21 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 class SectioningSettingAtt(SettingController):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+        CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     System.SettingController
-                |                         SectioningSettingAtt
-                | 
-                | The interface to access a CATIASectioningSettingAtt.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     System.SettingController
+            |                         SectioningSettingAtt
+            |
+            | The interface to access a CATIASectioningSettingAtt.
+
     """
 
     def __init__(self, com_object):
@@ -43,9 +43,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ClippingMode() As CatSectionClippingMode
-                | 
+                |
                 |     Returns or sets the ClippingMode parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: enum cat_section_clipping_mode
@@ -70,9 +70,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayCutInWireframe() As boolean
-                | 
+                |
                 |     Returns or sets the DisplayCutInWireframe parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -96,9 +96,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridAutoFiltering() As boolean
-                | 
+                |
                 |     Returns or sets the GridAutoFiltering parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -122,9 +122,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridAutoResize() As boolean
-                | 
+                |
                 |     Returns or sets the GridAutoResize parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -148,9 +148,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridHeightStep() As float
-                | 
+                |
                 |     Returns or sets the GridHeightStep parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: float
@@ -174,9 +174,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridPositionMode() As CatGridPositionMode
-                | 
+                |
                 |     Returns or sets the GridPositionMode parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: enum cat_grid_position_mode
@@ -201,9 +201,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridStyle() As CatSectionGridStyle
-                | 
+                |
                 |     Returns or sets the GridStyle parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: enum cat_section_grid_style
@@ -228,9 +228,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridWidthStep() As float
-                | 
+                |
                 |     Returns or sets the GridWidthStep parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: float
@@ -254,9 +254,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HidePlane() As boolean
-                | 
+                |
                 |     Returns or sets the HidePlane parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -280,9 +280,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HideResult() As boolean
-                | 
+                |
                 |     Returns or sets the HideResult parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -306,9 +306,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneNormal() As CatSectionPlaneNormal
-                | 
+                |
                 |     Returns or sets the PlaneNormal parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: enum cat_section_plane_normal
@@ -333,9 +333,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneOrigin() As CatSectionPlaneOrigin
-                | 
+                |
                 |     Returns or sets the PlaneOrigin parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: enum cat_section_plane_origin
@@ -360,9 +360,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SectionExportType() As boolean
-                | 
+                |
                 |     Returns or sets the SectionExportType parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -386,9 +386,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SectionFill() As boolean
-                | 
+                |
                 |     Returns or sets the SectionFill parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -412,9 +412,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UpdateResult() As boolean
-                | 
+                |
                 |     Returns or sets the UpdateResult parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -438,9 +438,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ViewerAutoOpen() As boolean
-                | 
+                |
                 |     Returns or sets the ViewerAutoOpen parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -464,9 +464,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ViewerAutoReframe() As boolean
-                | 
+                |
                 |     Returns or sets the ViewerAutoReframe parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :rtype: bool
@@ -490,9 +490,9 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ViewerLock2D() As boolean
-                | 
+                |
                 |     Returns or sets the ViewerLock2D parameter.
-                | 
+                |
                 |     Ensure consistency with the C++ interface to which the work
                 |     is delegated.
 
@@ -517,15 +517,15 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WindowDefaultHeight() As long
-                | 
-                | 
+                |
+                |
                 |     Role:Retrieve section window default height if the window open mode is
                 |     catSecWindow_DefaultSize
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oWindowDefaultHeight
-                | 
+                |
                 |     Returns:
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
@@ -551,15 +551,15 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WindowDefaultWidth() As long
-                | 
-                | 
+                |
+                |
                 |     Role:Retrieve section window default width if the window open mode is
                 |     catSecWindow_DefaultSize
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oWindowDefaultWidth
-                | 
+                |
                 |     Returns:
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
@@ -585,19 +585,19 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WindowOpenMode() As CatSecWindowOpenMode
-                | 
-                | 
+                |
+                |
                 |     Role:Retrieve section window open mode
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oWindowOpenMode
                 |             Legal values:
                 |             catSecWindow_DefaultSize :Opens the sectioning window(s) with the
                 |             default size specified in the Tools->Options.
                 |             catSecWindow_TileVertically :Tiles the sectioning window(s)
-                |             vertically in the viewer 
-                | 
+                |             vertically in the viewer
+                |
                 |     Returns:
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
@@ -624,24 +624,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetClippingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the ClippingMode
                 |     parameter.
                 |     Role:Retrieves the state of the ClippingMode parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -650,9 +650,13 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetClippingModeInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetClippingModeInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_display_cut_in_wireframe_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_display_cut_in_wireframe_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -660,24 +664,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayCutInWireframeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the DisplayCutInWireframe
                 |     parameter.
                 |     Role:Retrieves the state of the DisplayCutInWireframe parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -686,7 +690,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetDisplayCutInWireframeInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetDisplayCutInWireframeInfo(
+            io_admin_level, io_locked
+        )
 
     def get_grid_auto_filtering_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -696,24 +702,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridAutoFilteringInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the GridAutoFiltering
                 |     parameter.
                 |     Role:Retrieves the state of the GridAutoFiltering parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -722,7 +728,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetGridAutoFilteringInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetGridAutoFilteringInfo(
+            io_admin_level, io_locked
+        )
 
     def get_grid_auto_resize_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -732,24 +740,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridAutoResizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the GridAutoResize
                 |     parameter.
                 |     Role:Retrieves the state of the GridAutoResize parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -758,7 +766,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetGridAutoResizeInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetGridAutoResizeInfo(
+            io_admin_level, io_locked
+        )
 
     def get_grid_height_step_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -768,24 +778,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridHeightStepInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the GridHeightStep
                 |     parameter.
                 |     Role:Retrieves the state of the GridHeightStep parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -794,7 +804,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetGridHeightStepInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetGridHeightStepInfo(
+            io_admin_level, io_locked
+        )
 
     def get_grid_position_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -804,24 +816,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridPositionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the GridPositionMode
                 |     parameter.
                 |     Role:Retrieves the state of the GridPositionMode parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -830,7 +842,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetGridPositionModeInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetGridPositionModeInfo(
+            io_admin_level, io_locked
+        )
 
     def get_grid_style_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -840,24 +854,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridStyleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the GridStyle
                 |     parameter.
                 |     Role:Retrieves the state of the GridStyle parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -876,24 +890,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridWidthStepInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the GridWidthStep
                 |     parameter.
                 |     Role:Retrieves the state of the GridWidthStep parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -902,7 +916,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetGridWidthStepInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetGridWidthStepInfo(
+            io_admin_level, io_locked
+        )
 
     def get_hide_plane_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -912,24 +928,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHidePlaneInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the HidePlane
                 |     parameter.
                 |     Role:Retrieves the state of the HidePlane parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -948,24 +964,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHideResultInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the HideResult
                 |     parameter.
                 |     Role:Retrieves the state of the HideResult parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -985,18 +1001,18 @@ class SectioningSettingAtt(SettingController):
                 | o Sub GetPlaneColor(long oR,
                 | long oG,
                 | long oB)
-                | 
+                |
                 |     Returns the PlaneColor parameter.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oR
-                |             the red component of the color. 
+                |             the red component of the color.
                 |         oG
-                |             the green component of the color. 
+                |             the green component of the color.
                 |         oB
                 |             the blue component of the color.
-                | 
+                |
                 |             Ensure consistency with the C++ interface to which the work is
                 |             delegated.
 
@@ -1015,24 +1031,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the PlaneColor
                 |     parameter.
                 |     Role:Retrieves the state of the PlaneColor parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1051,24 +1067,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneNormalInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the PlaneNormal
                 |     parameter.
                 |     Role:Retrieves the state of the PlaneNormal parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1087,24 +1103,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneOriginInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the PlaneOrigin
                 |     parameter.
                 |     Role:Retrieves the state of the PlaneOrigin parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1123,24 +1139,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSectionExportTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the SectionExportType
                 |     parameter.
                 |     Role:Retrieves the state of the SectionExportType parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1149,7 +1165,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetSectionExportTypeInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetSectionExportTypeInfo(
+            io_admin_level, io_locked
+        )
 
     def get_section_fill_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -1159,24 +1177,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSectionFillInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the SectionFill
                 |     parameter.
                 |     Role:Retrieves the state of the SectionFill parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1195,24 +1213,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUpdateResultInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the UpdateResult
                 |     parameter.
                 |     Role:Retrieves the state of the UpdateResult parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1221,7 +1239,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetUpdateResultInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetUpdateResultInfo(
+            io_admin_level, io_locked
+        )
 
     def get_viewer_auto_open_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -1231,24 +1251,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViewerAutoOpenInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the ViewerAutoOpen
                 |     parameter.
                 |     Role:Retrieves the state of the ViewerAutoOpen parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1257,7 +1277,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetViewerAutoOpenInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetViewerAutoOpenInfo(
+            io_admin_level, io_locked
+        )
 
     def get_viewer_auto_reframe_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -1267,24 +1289,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViewerAutoReframeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the ViewerAutoReframe
                 |     parameter.
                 |     Role:Retrieves the state of the ViewerAutoReframe parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1293,7 +1315,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetViewerAutoReframeInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetViewerAutoReframeInfo(
+            io_admin_level, io_locked
+        )
 
     def get_viewer_lock2_d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -1303,24 +1327,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViewerLock2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the ViewerLock2D
                 |     parameter.
                 |     Role:Retrieves the state of the ViewerLock2D parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1329,9 +1353,13 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetViewerLock2DInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetViewerLock2DInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_window_default_height_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_window_default_height_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1339,24 +1367,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetWindowDefaultHeightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the WindowDefaultHeight
                 |     parameter.
                 |     Role:Retrieves the state of the WindowDefaultHeight parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1365,9 +1393,13 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetWindowDefaultHeightInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetWindowDefaultHeightInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_window_default_width_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_window_default_width_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1375,24 +1407,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetWindowDefaultWidthInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the WindowDefaultWidth
                 |     parameter.
                 |     Role:Retrieves the state of the WindowDefaultWidth parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1401,7 +1433,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetWindowDefaultWidthInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetWindowDefaultWidthInfo(
+            io_admin_level, io_locked
+        )
 
     def get_window_open_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -1411,24 +1445,24 @@ class SectioningSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetWindowOpenModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the WindowOpenMode
                 |     parameter.
                 |     Role:Retrieves the state of the WindowOpenMode parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1437,7 +1471,9 @@ class SectioningSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.sectioning_setting_att.GetWindowOpenModeInfo(io_admin_level, io_locked)
+        return self.sectioning_setting_att.GetWindowOpenModeInfo(
+            io_admin_level, io_locked
+        )
 
     def set_clipping_mode_lock(self, i_locked: bool) -> None:
         """
@@ -1446,14 +1482,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetClippingModeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ClippingMode parameter.
                 |     Role:Locks or unlocks the PlaneOrigin parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1472,14 +1508,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayCutInWireframeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the DisplayCutInWireframe parameter.
                 |     Role:Locks or unlocks the DisplayCutInWireframe parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1498,14 +1534,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridAutoFilteringLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the GridAutoFiltering parameter.
                 |     Role:Locks or unlocks the GridAutoFiltering parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1524,14 +1560,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridAutoResizeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the GridAutoResize parameter.
                 |     Role:Locks or unlocks the GridAutoResize parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1550,14 +1586,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridHeightStepLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the GridHeightStep parameter.
                 |     Role:Locks or unlocks the GridHeightStep parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1576,14 +1612,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridPositionModeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the GridPositionMode parameter.
                 |     Role:Locks or unlocks the GridPositionMode parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1602,14 +1638,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridStyleLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the GridStyle parameter.
                 |     Role:Locks or unlocks the GridStyle parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1628,14 +1664,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridWidthStepLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the GridWidthStep parameter.
                 |     Role:Locks or unlocks the GridWidthStep parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1654,14 +1690,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHidePlaneLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the HidePlane parameter.
                 |     Role:Locks or unlocks the HidePlane parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1680,14 +1716,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHideResultLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the HideResult parameter.
                 |     Role:Locks or unlocks the HideResult parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1708,18 +1744,18 @@ class SectioningSettingAtt(SettingController):
                 | o Sub SetPlaneColor(long iR,
                 | long iG,
                 | long iB)
-                | 
+                |
                 |     Sets the PlaneColor parameter.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oR
-                |             the red component of the color. 
+                |             the red component of the color.
                 |         oG
-                |             the green component of the color. 
+                |             the green component of the color.
                 |         oB
                 |             the blue component of the color.
-                | 
+                |
                 |             Ensure consistency with the C++ interface to which the work is
                 |             delegated.
 
@@ -1737,14 +1773,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneColorLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the PlaneColor parameter.
                 |     Role:Locks or unlocks the PlaneColor parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1763,14 +1799,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneNormalLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the PlaneNormal parameter.
                 |     Role:Locks or unlocks the PlaneNormal parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1789,14 +1825,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneOriginLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the PlaneOrigin parameter.
                 |     Role:Locks or unlocks the PlaneOrigin parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1815,14 +1851,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSectionExportTypeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the SectionExportType parameter.
                 |     Role:Locks or unlocks the SectionExportType parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1841,14 +1877,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSectionFillLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the SectionFill parameter.
                 |     Role:Locks or unlocks the SectionFill parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1867,14 +1903,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateResultLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the UpdateResult parameter.
                 |     Role:Locks or unlocks the UpdateResult parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1893,14 +1929,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViewerAutoOpenLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ViewerAutoOpen parameter.
                 |     Role:Locks or unlocks the ViewerAutoOpen parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1919,14 +1955,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViewerAutoReframeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ViewerAutoReframe parameter.
                 |     Role:Locks or unlocks the ViewerAutoReframe parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1945,14 +1981,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViewerLock2DLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ViewerLock2D parameter.
                 |     Role:Locks or unlocks the ViewerLock2D parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1971,14 +2007,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetWindowDefaultHeightLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the WindowDefaultHeight parameter.
                 |     Role:Locks or unlocks the WindowDefaultHeight parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -1997,14 +2033,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetWindowDefaultWidthLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the WindowDefaultWidth parameter.
                 |     Role:Locks or unlocks the WindowDefaultWidth parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2023,14 +2059,14 @@ class SectioningSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetWindowOpenModeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the WindowOpenMode parameter.
                 |     Role:Locks or unlocks the WindowOpenMode parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2041,5 +2077,3 @@ class SectioningSettingAtt(SettingController):
         :rtype: None
         """
         return self.sectioning_setting_att.SetWindowOpenModeLock(i_locked)
-
-

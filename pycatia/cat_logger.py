@@ -1,6 +1,5 @@
 import logging
 import sys
-
 from typing import Optional
 
 # the following code was shamefully pilfered from Flask's logging.
@@ -18,7 +17,7 @@ def has_level_handler(logger: Optional[logging.Logger]):
     """
         Check if there is a handler in the logging chain that will handle the
         given logger's :meth:`effective level <~logging.Logger.getEffectiveLevel>`.
-    
+
     """
     level = logger.getEffectiveLevel()
     current = logger
@@ -48,13 +47,13 @@ def create_logger() -> logging.Logger:
         logging.Formatter("[%(asctime)s] %(levelname)s in %(module)s: %(message)s")
     )
 
-    logger = logging.getLogger('pycatia')
+    logger = logging.getLogger("pycatia")
 
     logger.setLevel(logging.INFO)
-    
+
     # clear existed Handlers
     logger.handlers.clear()
-    
+
     logger.addHandler(default_handler)
 
     return logger

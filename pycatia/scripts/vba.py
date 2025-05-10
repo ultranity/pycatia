@@ -1,12 +1,11 @@
-_vba_nothing = '''
-Function N()        
-    set N = Nothing        
+_vba_nothing = """
+Function N()
+    set N = Nothing
 End Function
-'''
+"""
 
 
 class VBANothing(str):
-
     def __init__(self, vba_code):
         self.vba_code = vba_code
 

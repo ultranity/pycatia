@@ -1,12 +1,12 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
 
 from pycatia.system_interfaces.setting_controller import SettingController
@@ -14,21 +14,21 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 class Layout2DSettingAtt(SettingController):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     System.SettingController
-                |                         Layout2DSettingAtt
-                | 
-                | The interface to access a CATIA2DLSettingAtt.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     System.SettingController
+            |                         Layout2DSettingAtt
+            |
+            | The interface to access a CATIA2DLSettingAtt.
+
     """
 
     def __init__(self, com_object):
@@ -43,7 +43,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Activate2DMode() As boolean
-                | 
+                |
                 |     Returns the Activate2DMode parameter.
 
         :rtype: bool
@@ -67,7 +67,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property BackClippingPlane() As boolean
-                | 
+                |
                 |     Returns the BackClippingPlane parameter.
 
         :rtype: bool
@@ -91,7 +91,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Boundaries2DLDisplay() As boolean
-                | 
+                |
                 |     Returns the Boundaries2DLDisplay parameter.
 
         :rtype: bool
@@ -115,7 +115,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Boundaries2DLLineType() As long
-                | 
+                |
                 |     Returns the Boundaries2DLLineType parameter.
 
         :rtype: int
@@ -139,7 +139,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Boundaries2DLThickness() As long
-                | 
+                |
                 |     Returns the Boundaries2DLThickness parameter.
 
         :rtype: int
@@ -163,7 +163,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property CalloutCreationDialogBox() As boolean
-                | 
+                |
                 |     Returns the CalloutCreationDialogBox parameter.
 
         :rtype: bool
@@ -187,7 +187,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property CalloutCreationInActiveView() As boolean
-                | 
+                |
                 |     Returns the CalloutCreationInActiveView parameter.
 
         :rtype: bool
@@ -211,7 +211,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ClippingFrame() As boolean
-                | 
+                |
                 |     Returns the ClippingFrame parameter.
 
         :rtype: bool
@@ -236,9 +236,9 @@ class Layout2DSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ClippingFrameReframeOnMode() As
                 | CatClippingFrameReframeOnMode
-                | 
+                |
                 |     Returns the ClippingFrameReframeOnMode parameter.
-                | 
+                |
                 |     Deprecated:
                 |         V5R18
 
@@ -264,7 +264,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ClippingViewOutlineLinetype() As long
-                | 
+                |
                 |     Returns the ClippingViewOutlineLinetype parameter.
 
         :rtype: int
@@ -288,7 +288,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ClippingViewOutlineThickness() As long
-                | 
+                |
                 |     Returns the ClippingViewOutlineThickness parameter.
 
         :rtype: int
@@ -312,7 +312,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property CreateAssociativeUseEdges() As boolean
-                | 
+                |
                 |     Returns the CreateAssociativeUseEdges parameter.
 
         :rtype: bool
@@ -336,7 +336,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property DedicatedFilterType() As CatDedicatedFilterType
-                | 
+                |
                 |     Returns the DedicatedFilterType parameter.
 
         :return: enum cat_dedicated_filter_type
@@ -361,7 +361,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property DisplayBackAndCuttingPlane() As boolean
-                | 
+                |
                 |     Returns the DisplayBackAndCuttingPlane parameter.
 
         :rtype: bool
@@ -385,7 +385,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property DisplayClippingOutline() As boolean
-                | 
+                |
                 |     Returns the DisplayClippingOutline parameter.
 
         :rtype: bool
@@ -409,7 +409,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EditDedicatedFilterDialogBox() As boolean
-                | 
+                |
                 |     Returns the EditDedicatedFilterDialogBox parameter.
 
         :rtype: bool
@@ -433,7 +433,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property FitAllInSheetFormat() As boolean
-                | 
+                |
                 |     Returns the FitAllInSheetFormat parameter.
 
         :rtype: bool
@@ -457,7 +457,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property HideIn3D() As boolean
-                | 
+                |
                 |     Returns the HideIn3D parameter.
 
         :rtype: bool
@@ -481,7 +481,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property InsureFilterNamesUniqueness() As boolean
-                | 
+                |
                 |     Returns the InsureFilterNamesUniqueness attribute value to apply to a
                 |     Layout at its creation parameter.
 
@@ -506,7 +506,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property InsureSheetNamesUniqueness() As boolean
-                | 
+                |
                 |     Returns the InsureSheetNamesUniqueness attribute value to apply to a Layout
                 |     at its creation parameter.
 
@@ -531,7 +531,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property InsureViewNamesUniqueness() As boolean
-                | 
+                |
                 |     Returns the InsureViewNamesUniqueness attribute value to apply to a Layout
                 |     at its creation parameter.
 
@@ -557,7 +557,7 @@ class Layout2DSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property InsureViewNamesUniquenessScope() As
                 | CatInsureViewNamesUniquenessScope
-                | 
+                |
                 |     Returns the InsureViewNamesUniquenessScope parameter.
 
         :return: enum cat_insure_view_names_uniqueness_scope
@@ -582,7 +582,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property LayoutDefaultRenderStyle() As long
-                | 
+                |
                 |     Returns the default render style attribute value to apply to a Layout at
                 |     its creation parameter.
 
@@ -607,7 +607,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property PropagateHighlight() As boolean
-                | 
+                |
                 |     Returns the PropagateHighlight parameter.
 
         :rtype: bool
@@ -631,7 +631,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property TileLayoutWindow() As boolean
-                | 
+                |
                 |     Returns the tile of Layout window parameter.
 
         :rtype: bool
@@ -655,7 +655,7 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ViewBackgroundMode() As CatViewBackgroundMode
-                | 
+                |
                 |     Returns the ViewBackgroundMode parameter.
 
         :return: enum cat_view_background_mode
@@ -681,7 +681,7 @@ class Layout2DSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ViewFilterCreationMode() As
                 | CatViewFilterCreationMode
-                | 
+                |
                 |     Returns the ViewFilterCreationMode parameter.
 
         :return: enum cat_view_filter_creation_mode
@@ -698,7 +698,9 @@ class Layout2DSettingAtt(SettingController):
 
         self.layout_2d_setting_att.ViewFilterCreationMode = value
 
-    def get_activate_2d_mode_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_activate_2d_mode_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -707,24 +709,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetActivate2DModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the Activate2DMode
                 |     parameter.
                 |     Role:Retrieves the state of the Activate2DMode parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -734,8 +736,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetActivate2DModeInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetActivate2DModeInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -751,7 +755,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_back_clipping_plane_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_back_clipping_plane_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -760,24 +766,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetBackClippingPlaneInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the BackClippingPlane
                 |     parameter.
                 |     Role:Retrieves the state of the BackClippingPlane parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -787,8 +793,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetBackClippingPlaneInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetBackClippingPlaneInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -804,7 +812,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_boundaries_2dl_colour(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
+    def get_boundaries_2dl_colour(
+        self, o_value_r: int, o_value_g: int, o_value_b: int
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -813,7 +823,7 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetBoundaries2DLColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
-                | 
+                |
                 |     Returns the Boundaries2DLColor parameter.
 
         :param int o_value_r:
@@ -821,9 +831,13 @@ class Layout2DSettingAtt(SettingController):
         :param int o_value_b:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetBoundaries2DLColor(o_value_r, o_value_g, o_value_b)
+        return self.layout_2d_setting_att.GetBoundaries2DLColor(
+            o_value_r, o_value_g, o_value_b
+        )
 
-    def get_boundaries_2dl_colour_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_boundaries_2dl_colour_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -832,24 +846,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetBoundaries2DLColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the Boundaries2DLColor
                 |     parameter.
                 |     Role:Retrieves the state of the Boundaries2DLColor parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -859,8 +873,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetBoundaries2DLColorInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetBoundaries2DLColorInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -876,7 +892,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_boundaries_2dl_display_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_boundaries_2dl_display_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -885,24 +903,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetBoundaries2DLDisplayInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the Boundaries2DLDisplay
                 |     parameter.
                 |     Role:Retrieves the state of the Boundaries2DLDisplay parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -912,8 +930,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetBoundaries2DLDisplayInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetBoundaries2DLDisplayInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -929,7 +949,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_boundaries_2dl_line_type_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_boundaries_2dl_line_type_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -938,24 +960,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetBoundaries2DLLineTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the Boundaries2DLLineType
                 |     parameter.
                 |     Role:Retrieves the state of the Boundaries2DLLineType parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -965,8 +987,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetBoundaries2DLLineTypeInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetBoundaries2DLLineTypeInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -982,7 +1006,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_boundaries_2dl_thickness_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_boundaries_2dl_thickness_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -991,24 +1017,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetBoundaries2DLThicknessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the Boundaries2DLThickness
                 |     parameter.
                 |     Role:Retrieves the state of the Boundaries2DLThickness parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1018,8 +1044,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetBoundaries2DLThicknessInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetBoundaries2DLThicknessInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1035,7 +1063,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_callout_creation_dialog_box_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_callout_creation_dialog_box_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1044,24 +1074,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetCalloutCreationDialogBoxInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the CalloutCreationDialogBox
                 |     parameter.
                 |     Role:Retrieves the state of the CalloutCreationDialogBox parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1071,8 +1101,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetCalloutCreationDialogBoxInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetCalloutCreationDialogBoxInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1088,7 +1120,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_callout_creation_in_active_view_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_callout_creation_in_active_view_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1098,24 +1132,24 @@ class Layout2DSettingAtt(SettingController):
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the CalloutCreationInActiveView
                 |     parameter.
                 |     Role:Retrieves the state of the CalloutCreationInActiveView parameter in
                 |     the current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1125,8 +1159,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetCalloutCreationInActiveViewInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetCalloutCreationInActiveViewInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1142,7 +1178,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_clipping_frame_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_clipping_frame_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1151,24 +1189,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetClippingFrameInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the ClippingFrame
                 |     parameter.
                 |     Role:Retrieves the state of the ClippingFrame parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1178,8 +1216,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetClippingFrameInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetClippingFrameInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1195,7 +1235,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_clipping_frame_reframe_on_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_clipping_frame_reframe_on_mode_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1204,24 +1246,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Func GetClippingFrameReframeOnModeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Deprecated:
                 |         V5R18 Retrieves environment informations for the
                 |         ClippingFrameReframeOnMode parameter.
                 |         Role:Retrieves the state of the ClippingFrameReframeOnMode parameter in
-                |         the current environment. 
+                |         the current environment.
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1230,9 +1272,13 @@ class Layout2DSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.layout_2d_setting_att.GetClippingFrameReframeOnModeInfo(io_admin_level, io_locked)
+        return self.layout_2d_setting_att.GetClippingFrameReframeOnModeInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_clipping_view_outline_color(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
+    def get_clipping_view_outline_color(
+        self, o_value_r: int, o_value_g: int, o_value_b: int
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1241,7 +1287,7 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetClippingViewOutlineColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
-                | 
+                |
                 |     Returns the ClippingViewOutlineColor parameter.
 
         :param int o_value_r:
@@ -1249,9 +1295,13 @@ class Layout2DSettingAtt(SettingController):
         :param int o_value_b:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetClippingViewOutlineColor(o_value_r, o_value_g, o_value_b)
+        return self.layout_2d_setting_att.GetClippingViewOutlineColor(
+            o_value_r, o_value_g, o_value_b
+        )
 
-    def get_clipping_view_outline_color_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_clipping_view_outline_color_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1260,24 +1310,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetClippingViewOutlineColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the ClippingViewOutlineColor
                 |     parameter.
                 |     Role:Retrieves the state of the ClippingViewOutlineColor parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1287,8 +1337,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetClippingViewOutlineColorInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetClippingViewOutlineColorInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1304,7 +1356,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_clipping_view_outline_linetype_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_clipping_view_outline_linetype_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1314,24 +1368,24 @@ class Layout2DSettingAtt(SettingController):
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the ClippingViewOutlineLinetype
                 |     parameter.
                 |     Role:Retrieves the state of the ClippingViewOutlineLinetype parameter in
                 |     the current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1341,8 +1395,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetClippingViewOutlineLinetypeInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetClippingViewOutlineLinetypeInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1358,7 +1414,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_clipping_view_outline_thickness_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_clipping_view_outline_thickness_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1368,24 +1426,24 @@ class Layout2DSettingAtt(SettingController):
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the ClippingViewOutlineThickness
                 |     parameter.
                 |     Role:Retrieves the state of the ClippingViewOutlineThickness parameter in
                 |     the current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1395,8 +1453,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetClippingViewOutlineThicknessInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetClippingViewOutlineThicknessInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1412,7 +1472,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_create_associative_use_edges_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_create_associative_use_edges_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1421,24 +1483,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetCreateAssociativeUseEdgesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the CreateAssociativeUseEdges
                 |     parameter.
                 |     Role:Retrieves the state of the CreateAssociativeUseEdges parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1448,8 +1510,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetCreateAssociativeUseEdgesInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetCreateAssociativeUseEdgesInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1465,7 +1529,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_dedicated_filter_type_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_dedicated_filter_type_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1473,24 +1539,24 @@ class Layout2DSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetDedicatedFilterTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the DedicatedFilterType
                 |     parameter.
                 |     Role:Retrieves the state of the DedicatedFilterType parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1499,9 +1565,13 @@ class Layout2DSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.layout_2d_setting_att.GetDedicatedFilterTypeInfo(io_admin_level, io_locked)
+        return self.layout_2d_setting_att.GetDedicatedFilterTypeInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_display_back_and_cutting_plane_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_display_back_and_cutting_plane_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1511,24 +1581,24 @@ class Layout2DSettingAtt(SettingController):
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the DisplayBackAndCuttingPlane
                 |     parameter.
                 |     Role:Retrieves the state of the DisplayBackAndCuttingPlane parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1538,8 +1608,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetDisplayBackAndCuttingPlaneInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetDisplayBackAndCuttingPlaneInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1555,7 +1627,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_display_clipping_outline_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_display_clipping_outline_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1564,24 +1638,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetDisplayClippingOutlineInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the DisplayClippingOutline
                 |     parameter.
                 |     Role:Retrieves the state of the DisplayClippingOutline parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1591,8 +1665,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetDisplayClippingOutlineInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetDisplayClippingOutlineInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1608,7 +1684,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_edit_dedicated_filter_dialog_box_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_edit_dedicated_filter_dialog_box_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1618,24 +1696,24 @@ class Layout2DSettingAtt(SettingController):
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the EditDedicatedFilterDialogBox
                 |     parameter.
                 |     Role:Retrieves the state of the EditDedicatedFilterDialogBox parameter in
                 |     the current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1645,8 +1723,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetEditDedicatedFilterDialogBoxInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetEditDedicatedFilterDialogBoxInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1662,7 +1742,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_fit_all_in_sheet_format_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_fit_all_in_sheet_format_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1671,24 +1753,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetFitAllInSheetFormatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the FitAllInSheetFormat
                 |     parameter.
                 |     Role:Retrieves the state of the FitAllInSheetFormat parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1698,8 +1780,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetFitAllInSheetFormatInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetFitAllInSheetFormatInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1715,7 +1799,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_hide_in_3d_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_hide_in_3d_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1724,24 +1810,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetHideIn3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the HideIn3D
                 |     parameter.
                 |     Role:Retrieves the state of the HideIn3D parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1751,8 +1837,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetHideIn3DInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetHideIn3DInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1768,7 +1856,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_insure_filter_names_uniqueness_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_insure_filter_names_uniqueness_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1778,24 +1868,24 @@ class Layout2DSettingAtt(SettingController):
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the InsureFilterNamesUniqueness
                 |     parameter.
                 |     Role:Retrieves the state of the InsureFilterNamesUniqueness parameter in
                 |     the current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1805,8 +1895,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetInsureFilterNamesUniquenessInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetInsureFilterNamesUniquenessInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1822,7 +1914,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_insure_sheet_names_uniqueness_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_insure_sheet_names_uniqueness_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1832,24 +1926,24 @@ class Layout2DSettingAtt(SettingController):
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the InsureSheetNamesUniqueness
                 |     parameter.
                 |     Role:Retrieves the state of the InsureSheetNamesUniqueness parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1859,8 +1953,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetInsureSheetNamesUniquenessInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetInsureSheetNamesUniquenessInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1876,7 +1972,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_insure_view_names_uniqueness_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_insure_view_names_uniqueness_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1885,24 +1983,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetInsureViewNamesUniquenessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the InsureViewNamesUniqueness
                 |     parameter.
                 |     Role:Retrieves the state of the InsureViewNamesUniqueness parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1912,8 +2010,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetInsureViewNamesUniquenessInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetInsureViewNamesUniquenessInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -1929,7 +2029,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_insure_view_names_uniqueness_scope_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_insure_view_names_uniqueness_scope_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1938,24 +2040,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Func GetInsureViewNamesUniquenessScopeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the InsureViewNamesUniquenessScope
                 |     parameter.
                 |     Role:Retrieves the state of the InsureViewNamesUniquenessScope parameter in
                 |     the current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -1964,9 +2066,13 @@ class Layout2DSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.layout_2d_setting_att.GetInsureViewNamesUniquenessScopeInfo(io_admin_level, io_locked)
+        return self.layout_2d_setting_att.GetInsureViewNamesUniquenessScopeInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_layout_default_render_style_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_layout_default_render_style_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1975,24 +2081,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetLayoutDefaultRenderStyleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the default render style
                 |     parameter.
                 |     Role:Retrieves the state of the default render style parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -2002,8 +2108,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetLayoutDefaultRenderStyleInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetLayoutDefaultRenderStyleInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2019,7 +2127,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_propagate_highlight_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_propagate_highlight_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -2028,24 +2138,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetPropagateHighlightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the PropagateHighlight
                 |     parameter.
                 |     Role:Retrieves the state of the PropagateHighlight parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -2055,8 +2165,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetPropagateHighlightInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetPropagateHighlightInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2072,7 +2184,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_protected_elements_colour(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
+    def get_protected_elements_colour(
+        self, o_value_r: int, o_value_g: int, o_value_b: int
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -2081,7 +2195,7 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetProtectedElementsColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
-                | 
+                |
                 |     Returns the ProtectedElementsColor parameter.
 
         :param int o_value_r:
@@ -2089,9 +2203,13 @@ class Layout2DSettingAtt(SettingController):
         :param int o_value_b:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetProtectedElementsColor(o_value_r, o_value_g, o_value_b)
+        return self.layout_2d_setting_att.GetProtectedElementsColor(
+            o_value_r, o_value_g, o_value_b
+        )
 
-    def get_protected_elements_colour_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_protected_elements_colour_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -2100,24 +2218,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetProtectedElementsColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the ProtectedElementsColor
                 |     parameter.
                 |     Role:Retrieves the state of the ProtectedElementsColor parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -2127,8 +2245,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetProtectedElementsColorInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetProtectedElementsColorInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2144,7 +2264,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_tile_layout_window_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_tile_layout_window_info(
+        self, io_admin_level: str, io_locked: str, o_modified: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -2153,24 +2275,24 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub GetTileLayoutWindowInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
-                | 
+                |
                 |     Retrieves environment informations for the tile of Layout window
                 |     parameter.
                 |     Role:Retrieves the state of the tile of Layout window parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -2180,8 +2302,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool o_modified:
         :rtype: None
         """
-        return self.layout_2d_setting_att.GetTileLayoutWindowInfo(io_admin_level, io_locked, o_modified)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.GetTileLayoutWindowInfo(
+            io_admin_level, io_locked, o_modified
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2197,7 +2321,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_view_background_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_view_background_mode_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -2205,24 +2331,24 @@ class Layout2DSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetViewBackgroundModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the ViewBackgroundMode
                 |     parameter.
                 |     Role:Retrieves the state of the ViewBackgroundMode parameter in the current
                 |     environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -2231,9 +2357,13 @@ class Layout2DSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.layout_2d_setting_att.GetViewBackgroundModeInfo(io_admin_level, io_locked)
+        return self.layout_2d_setting_att.GetViewBackgroundModeInfo(
+            io_admin_level, io_locked
+        )
 
-    def get_view_filter_creation_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_view_filter_creation_mode_info(
+        self, io_admin_level: str, io_locked: str
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -2241,24 +2371,24 @@ class Layout2DSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetViewFilterCreationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
-                | 
+                |
                 |     Retrieves environment informations for the ViewFilterCreationMode
                 |     parameter.
                 |     Role:Retrieves the state of the ViewFilterCreationMode parameter in the
                 |     current environment.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         ioAdminLevel
-                | 
+                |
                 |             If the parameter is locked, AdminLevel gives the administration
                 |             level that imposes the value of the parameter.
                 |             If the parameter is not locked, AdminLevel gives the administration
                 |             level that will give the value of the parameter after a reset.
-                |             
+                |
                 |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
+                |             Indicates if the parameter has been locked.
+                |
                 |     Returns:
                 |         Indicates if the parameter has been explicitly modified or remain to
                 |         the administrated value.
@@ -2267,7 +2397,9 @@ class Layout2DSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
-        return self.layout_2d_setting_att.GetViewFilterCreationModeInfo(io_admin_level, io_locked)
+        return self.layout_2d_setting_att.GetViewFilterCreationModeInfo(
+            io_admin_level, io_locked
+        )
 
     def set_activate_2d_mode_lock(self, i_locked: bool) -> None:
         """
@@ -2276,14 +2408,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetActivate2DModeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Activate2DMode parameter.
                 |     Role:Locks or unlocks the Activate2DMode parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2294,7 +2426,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetActivate2DModeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2317,14 +2449,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetBackClippingPlaneLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the BackClippingPlane parameter.
                 |     Role:Locks or unlocks the BackClippingPlane parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2335,7 +2467,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBackClippingPlaneLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2351,7 +2483,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_boundaries_2dl_colour(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
+    def set_boundaries_2dl_colour(
+        self, i_value_r: int, i_value_g: int, i_value_b: int
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -2360,7 +2494,7 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub SetBoundaries2DLColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
-                | 
+                |
                 |     Sets the Boundaries2DLColor parameter.
 
         :param int i_value_r:
@@ -2368,7 +2502,9 @@ class Layout2DSettingAtt(SettingController):
         :param int i_value_b:
         :rtype: None
         """
-        return self.layout_2d_setting_att.SetBoundaries2DLColor(i_value_r, i_value_g, i_value_b)
+        return self.layout_2d_setting_att.SetBoundaries2DLColor(
+            i_value_r, i_value_g, i_value_b
+        )
 
     def set_boundaries_2dl_colour_lock(self, i_locked: bool) -> None:
         """
@@ -2377,14 +2513,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetBoundaries2DLColorLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Boundaries2DLColor parameter.
                 |     Role:Locks or unlocks the Boundaries2DLColor parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2395,7 +2531,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLColorLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2418,14 +2554,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetBoundaries2DLDisplayLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Boundaries2DLDisplay parameter.
                 |     Role:Locks or unlocks the Boundaries2DLDisplay parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2436,7 +2572,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLDisplayLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2459,14 +2595,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetBoundaries2DLLineTypeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Boundaries2DLLineType parameter.
                 |     Role:Locks or unlocks the Boundaries2DLLineType parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2477,7 +2613,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLLineTypeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2500,14 +2636,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetBoundaries2DLThicknessLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the Boundaries2DLThickness parameter.
                 |     Role:Locks or unlocks the Boundaries2DLThickness parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2518,7 +2654,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLThicknessLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2541,14 +2677,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetCalloutCreationDialogBoxLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the CalloutCreationDialogBox parameter.
                 |     Role:Locks or unlocks the CalloutCreationDialogBox parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2559,7 +2695,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetCalloutCreationDialogBoxLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2582,15 +2718,15 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetCalloutCreationInActiveViewLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the CalloutCreationInActiveView
                 |     parameter.
                 |     Role:Locks or unlocks the CalloutCreationInActiveView parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2601,7 +2737,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetCalloutCreationInActiveViewLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2624,14 +2760,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetClippingFrameLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ClippingFrame parameter.
                 |     Role:Locks or unlocks the ClippingFrame parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2642,7 +2778,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingFrameLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2665,15 +2801,15 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetClippingFrameReframeOnModeLock(boolean iLocked)
-                | 
+                |
                 |     Deprecated:
                 |         V5R18 Locks or unlocks the ClippingFrameReframeOnMode
                 |         parameter.
                 |         Role:Locks or unlocks the ClippingFrameReframeOnMode parameter if it is
                 |         possible in the current administrative context. In user mode this method will
-                |         always return E_FAIL. 
+                |         always return E_FAIL.
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2684,7 +2820,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingFrameReframeOnModeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2700,7 +2836,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_clipping_view_outline_colour(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
+    def set_clipping_view_outline_colour(
+        self, i_value_r: int, i_value_g: int, i_value_b: int
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -2709,7 +2847,7 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub SetClippingViewOutlineColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
-                | 
+                |
                 |     Sets the ClippingViewOutlineColor parameter.
 
         :param int i_value_r:
@@ -2717,7 +2855,9 @@ class Layout2DSettingAtt(SettingController):
         :param int i_value_b:
         :rtype: None
         """
-        return self.layout_2d_setting_att.SetClippingViewOutlineColor(i_value_r, i_value_g, i_value_b)
+        return self.layout_2d_setting_att.SetClippingViewOutlineColor(
+            i_value_r, i_value_g, i_value_b
+        )
 
     def set_clipping_view_outline_colour_lock(self, i_locked: bool) -> None:
         """
@@ -2726,14 +2866,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetClippingViewOutlineColorLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ClippingViewOutlineColor parameter.
                 |     Role:Locks or unlocks the ClippingViewOutlineColor parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2744,7 +2884,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingViewOutlineColorLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2767,15 +2907,15 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetClippingViewOutlineLinetypeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ClippingViewOutlineLinetype
                 |     parameter.
                 |     Role:Locks or unlocks the ClippingViewOutlineLinetype parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2786,7 +2926,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingViewOutlineLinetypeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2809,15 +2949,15 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetClippingViewOutlineThicknessLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ClippingViewOutlineThickness
                 |     parameter.
                 |     Role:Locks or unlocks the ClippingViewOutlineThickness parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2828,7 +2968,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingViewOutlineThicknessLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2851,14 +2991,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetCreateAssociativeUseEdgesLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the CreateAssociativeUseEdges parameter.
                 |     Role:Locks or unlocks the CreateAssociativeUseEdges parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2869,7 +3009,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetCreateAssociativeUseEdgesLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2892,14 +3032,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetDedicatedFilterTypeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the DedicatedFilterType parameter.
                 |     Role:Locks or unlocks the DedicatedFilterType parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2910,7 +3050,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetDedicatedFilterTypeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2933,14 +3073,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetDisplayBackAndCuttingPlaneLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the DisplayBackAndCuttingPlane parameter.
                 |     Role:Locks or unlocks the DisplayBackAndCuttingPlane parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2951,7 +3091,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetDisplayBackAndCuttingPlaneLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -2974,14 +3114,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetDisplayClippingOutlineLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the DisplayClippingOutline parameter.
                 |     Role:Locks or unlocks the DisplayClippingOutline parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -2992,7 +3132,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetDisplayClippingOutlineLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3015,15 +3155,15 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetEditDedicatedFilterDialogBoxLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the EditDedicatedFilterDialogBox
                 |     parameter.
                 |     Role:Locks or unlocks the EditDedicatedFilterDialogBox parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3034,7 +3174,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetEditDedicatedFilterDialogBoxLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3057,14 +3197,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetFitAllInSheetFormatLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the FitAllInSheetFormat parameter.
                 |     Role:Locks or unlocks the FitAllInSheetFormat parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3075,7 +3215,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetFitAllInSheetFormatLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3098,14 +3238,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetHideIn3DLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the HideIn3D parameter.
                 |     Role:Locks or unlocks the HideIn3D parameter if it is possible in the
                 |     current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3116,7 +3256,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetHideIn3DLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3139,15 +3279,15 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetInsureFilterNamesUniquenessLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the InsureFilterNamesUniqueness
                 |     parameter.
                 |     Role:Locks or unlocks the InsureFilterNamesUniqueness if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3158,7 +3298,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetInsureFilterNamesUniquenessLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3181,14 +3321,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetInsureSheetNamesUniquenessLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the InsureSheetNamesUniqueness parameter.
                 |     Role:Locks or unlocks the InsureSheetNamesUniqueness parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3199,7 +3339,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetInsureSheetNamesUniquenessLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3222,14 +3362,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetInsureViewNamesUniquenessLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks InsureViewNamesUniqueness parameter.
                 |     Role:Locks or unlocks the InsureViewNamesUniqueness parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3240,7 +3380,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetInsureViewNamesUniquenessLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3263,15 +3403,15 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetInsureViewNamesUniquenessScopeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the InsureViewNamesUniquenessScope
                 |     parameter.
                 |     Role:Locks or unlocks the InsureViewNamesUniquenessScope parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3281,8 +3421,10 @@ class Layout2DSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.layout_2d_setting_att.SetInsureViewNamesUniquenessScopeLock(i_locked)
-        # # # # Autogenerated comment: 
+        return self.layout_2d_setting_att.SetInsureViewNamesUniquenessScopeLock(
+            i_locked
+        )
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3305,14 +3447,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetLayoutDefaultRenderStyleLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the default render style parameter.
                 |     Role:Locks or unlocks the default render style parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3323,7 +3465,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetLayoutDefaultRenderStyleLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3346,14 +3488,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetPropagateHighlightLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the PropagateHighlight parameter.
                 |     Role:Locks or unlocks the PropagateHighlight parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3364,7 +3506,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetPropagateHighlightLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3380,7 +3522,9 @@ class Layout2DSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_protected_elements_colour(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
+    def set_protected_elements_colour(
+        self, i_value_r: int, i_value_g: int, i_value_b: int
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -3389,7 +3533,7 @@ class Layout2DSettingAtt(SettingController):
                 | o Sub SetProtectedElementsColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
-                | 
+                |
                 |     Sets the ProtectedElementsColor parameter.
 
         :param int i_value_r:
@@ -3397,7 +3541,9 @@ class Layout2DSettingAtt(SettingController):
         :param int i_value_b:
         :rtype: None
         """
-        return self.layout_2d_setting_att.SetProtectedElementsColor(i_value_r, i_value_g, i_value_b)
+        return self.layout_2d_setting_att.SetProtectedElementsColor(
+            i_value_r, i_value_g, i_value_b
+        )
 
     def set_protected_elements_colour_lock(self, i_locked: bool) -> None:
         """
@@ -3406,14 +3552,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetProtectedElementsColorLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ProtectedElementsColor parameter.
                 |     Role:Locks or unlocks the ProtectedElementsColor parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3424,7 +3570,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetProtectedElementsColorLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3447,14 +3593,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetTileLayoutWindowLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the tile of Layout window parameter.
                 |     Role:Locks or unlocks the tile of Layout window parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3465,7 +3611,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetTileLayoutWindowLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3488,14 +3634,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetViewBackgroundModeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ViewBackgroundMode parameter.
                 |     Role:Locks or unlocks the ViewBackgroundMode parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3506,7 +3652,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetViewBackgroundModeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3529,14 +3675,14 @@ class Layout2DSettingAtt(SettingController):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetViewFilterCreationModeLock(boolean iLocked)
-                | 
+                |
                 |     Locks or unlocks the ViewFilterCreationMode parameter.
                 |     Role:Locks or unlocks the ViewFilterCreationMode parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLocked
                 |             the locking operation to be performed Legal
                 |             values:
@@ -3547,7 +3693,7 @@ class Layout2DSettingAtt(SettingController):
         :rtype: None
         """
         return self.layout_2d_setting_att.SetViewFilterCreationModeLock(i_locked)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -3562,5 +3708,3 @@ class Layout2DSettingAtt(SettingController):
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-

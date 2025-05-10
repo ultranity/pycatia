@@ -1,27 +1,24 @@
 #! /usr/bin/python3.9
 # module initially auto generated using V5Automation.chm from CATIA R25
 import inspect
+from pathlib import Path
 
 from pywintypes import com_error
-
-from pathlib import Path
 
 from pycatia.enumeration.enumeration_types import cat_script_language
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
-from pycatia.in_interfaces.documents import Documents
-from pycatia.in_interfaces.documents import get_document_object
+from pycatia.in_interfaces.documents import Documents, get_document_object
 from pycatia.in_interfaces.file_system import FileSystem
 from pycatia.in_interfaces.printer import Printer
 from pycatia.in_interfaces.printers import Printers
 from pycatia.in_interfaces.send_to_service import SendToService
+from pycatia.in_interfaces.setting_controllers import SettingControllers
 from pycatia.in_interfaces.system_configuration import SystemConfiguration
 from pycatia.in_interfaces.window import Window
 from pycatia.in_interfaces.windows import Windows
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
-from pycatia.in_interfaces.setting_controllers import SettingControllers
-from pycatia.types.document import document_types
 
 
 class Application(AnyObject):
@@ -63,7 +60,7 @@ class Application(AnyObject):
             |
             | When you create or use macros for in-process access, the application is always
             | referred to as CATIA.
-    
+
     """
 
     def __init__(self, com_object):
@@ -96,14 +93,14 @@ class Application(AnyObject):
             active_doc_com = self.com_object.ActiveDocument
             return get_document_object(active_doc_com)
         except com_error:
-            raise CATIAApplicationException('Is there an active document?')
+            raise CATIAApplicationException("Is there an active document?")
 
     @property
     def active_printer(self) -> Printer:
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property ActivePrinter() As Printer
@@ -136,7 +133,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property ActiveWindow() As Window (Read Only)
@@ -161,7 +158,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property CacheSize() As long
@@ -194,7 +191,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Caption() As CATBSTR
@@ -231,7 +228,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property DisplayFileAlerts() As boolean
@@ -269,7 +266,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Documents() As Documents (Read Only)
@@ -293,7 +290,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FileSearchOrder() As CATBSTR
@@ -336,7 +333,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FileSystem() As FileSystem (Read Only)
@@ -361,7 +358,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FullName() As CATBSTR (Read Only)
@@ -391,7 +388,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property HSOSynchronized() As boolean
@@ -451,7 +448,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Height() As float
@@ -483,7 +480,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Interactive() As boolean
@@ -516,7 +513,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Left() As float
@@ -550,7 +547,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property LocalCache() As CATBSTR
@@ -583,7 +580,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Path() As CATBSTR (Read Only)
@@ -611,7 +608,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Printers() As Printers (Read Only)
@@ -636,7 +633,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property RefreshDisplay() As boolean
@@ -673,7 +670,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property StatusBar() As CATBSTR
@@ -710,7 +707,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property SystemConfiguration() As SystemConfiguration (Read
@@ -734,7 +731,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property SystemService() As SystemService (Read Only)
@@ -758,7 +755,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Top() As float
@@ -791,7 +788,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property UndoRedoLock() As boolean
@@ -830,7 +827,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Visible() As boolean
@@ -863,7 +860,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Width() As float
@@ -895,7 +892,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Windows() As Windows (Read Only)
@@ -935,7 +932,7 @@ class Application(AnyObject):
         self.release_check(
             self.application.system_configuration.release,
             29,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
         return self.application.BeginURConcatenation()
@@ -944,7 +941,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
             | o Func CreateSendTo() As SendToService
@@ -964,7 +961,7 @@ class Application(AnyObject):
         """
         .. note::
             :class: toggle
-            
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
             | o Sub DisableNewUndoRedoTransaction()
@@ -1171,23 +1168,20 @@ class Application(AnyObject):
         :rtype: int
         """
         function_name = "message_box"
-        msg_box = f"Public Function {function_name}(message_text, buttons, title)\n" \
-                  f"    {function_name} = MsgBox(message_text, buttons, title)\n" \
-                  "End Function"
+        msg_box = (
+            f"Public Function {function_name}(message_text, buttons, title)\n"
+            f"    {function_name} = MsgBox(message_text, buttons, title)\n"
+            "End Function"
+        )
 
         return self.system_service.evaluate(
             msg_box,
-            cat_script_language.index('CATVBScriptLanguage'),
+            cat_script_language.index("CATVBScriptLanguage"),
             function_name,
-            [message_text, buttons, title]
+            [message_text, buttons, title],
         )
 
-    def input_box(
-            self,
-            prompt: str,
-            title: str = '',
-            default: str = ''
-    ) -> str:
+    def input_box(self, prompt: str, title: str = "", default: str = "") -> str:
         """
         Display InputBox in catia.
         Default position is in the center screen.
@@ -1203,14 +1197,12 @@ class Application(AnyObject):
         :returns: str
         """
         f_name = "input_box"
-        i_box = f"Public Function {f_name}(prompt,title,default)\n" \
-                f"    {f_name} = InputBox(prompt,title,default)\n" \
-                "End Function"
+        i_box = f"Public Function {f_name}(prompt,title,default)\n    {f_name} = InputBox(prompt,title,default)\nEnd Function"
         return self.system_service.evaluate(
             i_box,
-            cat_script_language.index('CATVBScriptLanguage'),
+            cat_script_language.index("CATVBScriptLanguage"),
             f_name,
-            [prompt, title, default]
+            [prompt, title, default],
         )
 
     def quit(self) -> None:
@@ -1313,9 +1305,7 @@ class Application(AnyObject):
         self.release_check(
             self.application.system_configuration.release,
             29,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
         return self.application.StopURConcatenation(i_undo_step_name_bstr)
-
-

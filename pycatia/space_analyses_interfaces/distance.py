@@ -1,12 +1,12 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
 
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
@@ -14,27 +14,26 @@ from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.system_service import SystemService
 
 
 class Distance(AnyObject):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+        CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Distance
-                | 
-                | Represents the Distance object.
-                | The Distance object is a specification of a distance computation between
-                | products or groups of products.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     Distance
+            |
+            | Represents the Distance object.
+            | The Distance object is a specification of a distance computation between
+            | products or groups of products.
+
     """
 
     def __init__(self, com_object):
@@ -49,13 +48,13 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Accuracy() As double
-                | 
+                |
                 |     Returns or sets the accuracy value for the computation.
-                | 
+                |
                 |     The accuracy value must be greater than 0.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the accuracy value of NewDistance
                 |              Distance.
                 |
@@ -88,11 +87,11 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnnotatedViews() As AnnotatedViews (Read Only)
-                | 
+                |
                 |     Returns the AnnotatedViews collection of the distance.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the AnnotatedViews collection of
                 |              NewDistance Distance.
                 |
@@ -112,11 +111,11 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComputationType() As CatDistanceComputationType
-                | 
+                |
                 |     Returns or sets the computation type for the computation.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the computation type of NewDistance
                 |              Distance.
                 |
@@ -149,11 +148,11 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstGroup() As Group
-                | 
+                |
                 |     Returns or sets the first group used by the computation.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the first group of NewDistance
                 |              Distance.
                 |
@@ -187,12 +186,12 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstProduct() As Product (Read Only)
-                | 
+                |
                 |     Returns the product belonging to the first group that realizes the minimum
                 |     distance.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the first product involved in the
                 |              NewDistance Distance.
                 |
@@ -212,16 +211,16 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsDefined() As long (Read Only)
-                | 
+                |
                 |     Returns a diagnosis on the distance.
-                | 
+                |
                 |     The diagnosis can take two values:
-                | 
+                |
                 |         = 0: the distance is undefined (for example only one product) and the results are invalid.
-                |         = 1: the distance is defined and all results are valid. 
-                | 
+                |         = 1: the distance is defined and all results are valid.
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the diagnosis on NewDistance
                 |              Distance.
                 |
@@ -240,11 +239,11 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker3Ds() As Marker3Ds (Read Only)
-                | 
+                |
                 |     Returns the Marker3Ds collection of the distance.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the Marker3Ds collection of NewDistance
                 |              Distance.
                 |
@@ -264,14 +263,14 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaximumDistance() As double
-                | 
+                |
                 |     Returns or sets the maximum distance value for the computation (valid only
                 |     for band analysis).
-                | 
+                |
                 |     The maximum distance value must be greater than 0.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the maximum distance value of
                 |              NewDistance Distance.
                 |
@@ -304,12 +303,12 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MeasureType() As CatDistanceMeasureType
-                | 
+                |
                 |     Returns or sets the type of distance that will be
                 |     calculated.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |             The first example retrieves the type of NewDistance
                 |             Distance.
                 |
@@ -343,14 +342,14 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MinimumDistance() As double
-                | 
+                |
                 |     Returns or sets the minimum distance value for the computation (valid only
                 |     for band analysis).
-                | 
+                |
                 |     The minimum distance value must be greater than 0.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the minimum distance value of
                 |              NewDistance Distance.
                 |
@@ -383,11 +382,11 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondGroup() As Group
-                | 
+                |
                 |     Returns or sets the second group used by the computation.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              The first example retrieves the second group of NewDistance
                 |              Distance.
                 |
@@ -421,12 +420,12 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondProduct() As Product (Read Only)
-                | 
+                |
                 |     Returns the product belonging to the second group that realizes the minimum
                 |     distance.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the coordinates in the NewDistance
                 |              Distance.
                 |
@@ -446,11 +445,11 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Value() As double (Read Only)
-                | 
+                |
                 |     Returns the distance value.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the value of NewDistance
                 |              Distance.
                 |
@@ -469,11 +468,11 @@ class Distance(AnyObject):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Compute()
-                | 
+                |
                 |     Computes the distance.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |              This example computes the distance of NewDistance
                 |              Distance.
                 |
@@ -491,21 +490,21 @@ class Distance(AnyObject):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
-                | 
+                |
                 |     Retrieves the coordinates of the point belonging to the first product,
                 |     which realizes the distance.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oCoordinates
                 |             The coordinates of the point
-                | 
+                |
                 |                 oCoordinates(0) is the X coordinate
                 |                 oCoordinates(1) is the Y coordinate
-                |                 oCoordinates(2) is the Z coordinate 
-                | 
+                |                 oCoordinates(2) is the Z coordinate
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the coordinates of the first point in
                 |              NewDistance Distance.
                 |
@@ -515,7 +514,7 @@ class Distance(AnyObject):
         :rtype: tuple
         """
 
-        vba_function_name = 'get_first_point_coordinates'
+        vba_function_name = "get_first_point_coordinates"
         vba_code = """
         Public Function get_first_point_coordinates(distance)
             Dim oCoordinates (2)
@@ -525,7 +524,9 @@ class Distance(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )
 
     def get_second_point_coordinates(self) -> tuple:
         """
@@ -535,21 +536,21 @@ class Distance(AnyObject):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
-                | 
+                |
                 |     Retrieves the coordinates of the point belonging to the second product,
                 |     which realizes the distance.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oCoordinates
                 |             The coordinates of the point
-                | 
+                |
                 |                 oCoordinates(0) is the X coordinate
                 |                 oCoordinates(1) is the Y coordinate
-                |                 oCoordinates(2) is the Z coordinate 
-                | 
+                |                 oCoordinates(2) is the Z coordinate
+                |
                 |     Example:
-                | 
+                |
                 |              This example retrieves the coordinates of the first point in
                 |              NewDistance Distance.
                 |
@@ -559,7 +560,7 @@ class Distance(AnyObject):
         :rtype: None
         """
 
-        vba_function_name = 'get_second_point_coordinates'
+        vba_function_name = "get_second_point_coordinates"
         vba_code = """
         Public Function get_second_point_coordinates(distance)
             Dim oCoordinates (2)
@@ -569,6 +570,6 @@ class Distance(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-
+        return system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )

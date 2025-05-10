@@ -1,8 +1,8 @@
 #! /usr/bin/python3.9
 
 import os
-from pathlib import Path
 import warnings
+from pathlib import Path
 
 from pycatia.base_interfaces.base_application import catia_application as catia
 from pycatia.exception_handling.exceptions import CATIAApplicationException
@@ -55,7 +55,7 @@ class CATIADocHandler:
         self.new_document = new_document
 
         if self.file_name and not os.path.isfile(self.file_name):
-            raise CATIAApplicationException(f'Could not find file: {file_name}')
+            raise CATIAApplicationException(f"Could not find file: {file_name}")
         else:
             if self.file_name:
                 self.file_name = Path(self.file_name)
@@ -65,7 +65,9 @@ class CATIADocHandler:
         self.document = None
 
         if self.file_name and self.new_document:
-            raise CATIAApplicationException('Only new_document or file_name arguments should be used. Not both.')
+            raise CATIAApplicationException(
+                "Only new_document or file_name arguments should be used. Not both."
+            )
 
         if self.file_name:
             self.document = self.documents.open(self.file_name)
@@ -75,8 +77,7 @@ class CATIADocHandler:
         return self
 
     def __exit__(self, *args):
-
         if self.document:
             self.document.close()
         else:
-            warnings.warn('The document handler could not detect a document to close.')
+            warnings.warn("The document handler could not detect a document to close.")

@@ -1,17 +1,16 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
 
 """
 
 from pathlib import Path
 from typing import TYPE_CHECKING
-import warnings
 
 from pywintypes import com_error
 
@@ -27,36 +26,36 @@ from pycatia.product_structure_interfaces.publications import Publications
 from pycatia.system_interfaces.any_object import AnyObject
 
 if TYPE_CHECKING:
-    from pycatia.product_structure_interfaces.products import Products
     from pycatia.in_interfaces.document import Document
+    from pycatia.product_structure_interfaces.products import Products
 
 
 class Product(AnyObject):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+        CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Product
-                |
-                | Represents the product.
-                | The product is the object that helps you model your real products by building a
-                | tree structure whose nodes are product objects. Each of them may contain other
-                | product objects gathered in a product collection. The terminal product objects
-                | in the tree structure have no aggregated product collection. Even if all
-                | products are located somewhere in the product tree structure, some of them can
-                | be used as reference products to create other products named components, which
-                | are instances of the reference product. For example, the left front wheel in a
-                | car can be used as reference to create the other wheels. Be careful: some
-                | properties and methods are dedicated to reference objects only, and some others
-                | are for components only. This is clearly stated for each property or method
-                | concerned.
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     Product
+            |
+            | Represents the product.
+            | The product is the object that helps you model your real products by building a
+            | tree structure whose nodes are product objects. Each of them may contain other
+            | product objects gathered in a product collection. The terminal product objects
+            | in the tree structure have no aggregated product collection. Even if all
+            | products are located somewhere in the product tree structure, some of them can
+            | be used as reference products to create other products named components, which
+            | are instances of the reference product. For example, the left front wheel in a
+            | car can be used as reference to create the other wheels. Be careful: some
+            | properties and methods are dedicated to reference objects only, and some others
+            | are for components only. This is clearly stated for each property or method
+            | concerned.
 
     """
 
@@ -329,7 +328,8 @@ class Product(AnyObject):
             return self.product.PartNumber
         except com_error:
             raise CATIAApplicationException(
-                f'Prodcut "{self.name}" could not do get Product.PartNumber. Check Product for broken links.')
+                f'Prodcut "{self.name}" could not do get Product.PartNumber. Check Product for broken links.'
+            )
 
     @part_number.setter
     def part_number(self, value: str):
@@ -341,7 +341,8 @@ class Product(AnyObject):
             self.product.PartNumber = value
         except com_error:
             raise CATIAApplicationException(
-                f'Prodcut "{self.name}" could not do set Product.PartNumber. Check Product for broken links.')
+                f'Prodcut "{self.name}" could not do set Product.PartNumber. Check Product for broken links.'
+            )
 
     @property
     def position(self) -> Position:
@@ -371,7 +372,7 @@ class Product(AnyObject):
         return Position(self.product.Position)
 
     @property
-    def products(self) -> 'Products':
+    def products(self) -> "Products":
         """
         .. note::
             :class: toggle
@@ -395,6 +396,7 @@ class Product(AnyObject):
         :rtype: Products
         """
         from pycatia.product_structure_interfaces.products import Products
+
         return Products(self.product.Products)
 
     @property
@@ -414,7 +416,7 @@ class Product(AnyObject):
         return Publications(self.product.Publications)
 
     @property
-    def reference_product(self) -> 'Product':
+    def reference_product(self) -> "Product":
         """
         .. note::
             :class: toggle
@@ -430,7 +432,8 @@ class Product(AnyObject):
             return Product(self.product.ReferenceProduct)
         except com_error:
             raise CATIAApplicationException(
-                f'Product "{self.name}" could not do get Reference Product. Check Product for broken links.')
+                f'Product "{self.name}" could not do get Reference Product. Check Product for broken links.'
+            )
 
     @property
     def relations(self) -> Relations:
@@ -523,7 +526,8 @@ class Product(AnyObject):
             return self.product.Source
         except com_error:
             raise CATIAApplicationException(
-                f'Prodcut "{self.name}" could not do get Product.Source. Check Product for broken links.')
+                f'Prodcut "{self.name}" could not do get Product.Source. Check Product for broken links.'
+            )
 
     @source.setter
     def source(self, value: int):
@@ -535,7 +539,8 @@ class Product(AnyObject):
             self.product.Source = value
         except com_error:
             raise CATIAApplicationException(
-                f'Prodcut "{self.name}" could not do set Product.Source. Check Product for broken links.')
+                f'Prodcut "{self.name}" could not do set Product.Source. Check Product for broken links.'
+            )
 
     @property
     def type(self) -> str:
@@ -548,7 +553,7 @@ class Product(AnyObject):
         root_product_name = self.reference_product.com_object.Parent.Product.Name
         self_product_name = self.reference_product.name
         if root_product_name == self_product_name:
-            return self.reference_product.com_object.Parent.Name.split('.')[-1]
+            return self.reference_product.com_object.Parent.Name.split(".")[-1]
         else:
             return "Component"
 
@@ -614,19 +619,21 @@ class Product(AnyObject):
         return self.product.ActivateShape(shape_name)
 
     @staticmethod
-    def activate_terminal_node(products: 'Products') -> None:
+    def activate_terminal_node(products: "Products") -> None:
         """
         Method to 'Activate Terminal Node'.
         Loops through ALL products in product and activates_default_shape().
         :param list(Product) products:
         """
 
-        def product_looper(_products: 'Products'):
+        def product_looper(_products: "Products"):
             for current_product in _products:
                 try:
                     current_product.activate_default_shape()
                 except CATIAApplicationException:
-                    current_product.logger.info(f'Could not activate default shape for {current_product.name}.')
+                    current_product.logger.info(
+                        f"Could not activate default shape for {current_product.name}."
+                    )
 
                 product_looper(current_product.products)
 
@@ -671,11 +678,11 @@ class Product(AnyObject):
         return self.product.AddMasterShapeRepresentation(i_shape_path_name)
 
     def add_shape_representation(
-            self,
-            i_shape_path_name: str,
-            i_shape_name: str,
-            i_rep_behavior: int,
-            i_context: bool
+        self,
+        i_shape_path_name: str,
+        i_shape_name: str,
+        i_rep_behavior: int,
+        i_context: bool,
     ) -> None:
         """
         .. note::
@@ -730,10 +737,7 @@ class Product(AnyObject):
         :rtype: None
         """
         return self.product.AddShapeRepresentation(
-            i_shape_path_name,
-            i_shape_name,
-            i_rep_behavior,
-            i_context
+            i_shape_path_name, i_shape_name, i_rep_behavior, i_context
         )
         # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
@@ -945,13 +949,13 @@ class Product(AnyObject):
 
     def count_children(self):
         """
-       :return: int()
-       """
+        :return: int()
+        """
 
         return self.product.Products.Count
 
     @staticmethod
-    def generate_ALLCATPart(product: 'Product') -> 'Document':
+    def generate_ALLCATPart(product: "Product") -> "Document":
         """
 
         Generate an ALLCATPart (CATPart) from CATProduct.
@@ -1019,7 +1023,7 @@ class Product(AnyObject):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_child(self, index) -> 'Product':
+    def get_child(self, index) -> "Product":
         """
         :return: Product()
         """
@@ -1150,11 +1154,11 @@ class Product(AnyObject):
         return self.product.GetShapePathName(i_shape_name)
 
     def get_shape_representation(
-            self,
-            i_load_if_necessary: bool,
-            i_shape_name: str,
-            i_rep_behavior: int,
-            i_context: bool
+        self,
+        i_load_if_necessary: bool,
+        i_shape_name: str,
+        i_rep_behavior: int,
+        i_context: bool,
     ) -> AnyObject:
         """
         .. note::
@@ -1201,10 +1205,7 @@ class Product(AnyObject):
         :return: AnyObject
         """
         return self.product.GetShapeRepresentation(
-            i_load_if_necessary,
-            i_shape_name,
-            i_rep_behavior,
-            i_context
+            i_load_if_necessary, i_shape_name, i_rep_behavior, i_context
         )
 
     def get_technological_object(self, i_application_type: str) -> AnyObject:
@@ -1272,7 +1273,9 @@ class Product(AnyObject):
 
         return False
 
-    def has_shape_representation(self, i_shape_name: str, i_rep_behavior: int, i_context: bool) -> bool:
+    def has_shape_representation(
+        self, i_shape_name: str, i_rep_behavior: int, i_context: bool
+    ) -> bool:
         """
         .. note::
             :class: toggle
@@ -1311,7 +1314,9 @@ class Product(AnyObject):
         :param bool i_context:
         :rtype: bool
         """
-        return self.product.HasShapeRepresentation(i_shape_name, i_rep_behavior, i_context)
+        return self.product.HasShapeRepresentation(
+            i_shape_name, i_rep_behavior, i_context
+        )
 
     def is_catproduct(self) -> bool:
         """
@@ -1380,7 +1385,9 @@ class Product(AnyObject):
         """
         return self.product.RemoveMasterShapeRepresentation()
 
-    def remove_shape_representation(self, i_shape_name: str, i_rep_behavior: int, i_context: bool) -> None:
+    def remove_shape_representation(
+        self, i_shape_name: str, i_rep_behavior: int, i_context: bool
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1423,7 +1430,9 @@ class Product(AnyObject):
         :param bool i_context:
         :rtype: None
         """
-        return self.product.RemoveShapeRepresentation(i_shape_name, i_rep_behavior, i_context)
+        return self.product.RemoveShapeRepresentation(
+            i_shape_name, i_rep_behavior, i_context
+        )
         # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1464,5 +1473,3 @@ class Product(AnyObject):
         :rtype: None
         """
         return self.product.Update()
-
-

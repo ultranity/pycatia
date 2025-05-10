@@ -1,13 +1,14 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R31 on 2024-08-20 16:04:57.203445
+Module initially auto generated using V5Automation files from CATIA V5 R31 on 2024-08-20 16:04:57.203445
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
 
 """
+
 import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
@@ -88,7 +89,9 @@ class CompositesServices(AnyObject):
         super().__init__(com_object)
         self.composites_services = com_object
 
-    def get_composites_type(self, i_object: cat_variant, i_composites_type: int) -> None:
+    def get_composites_type(
+        self, i_object: cat_variant, i_composites_type: int
+    ) -> None:
         """
 
         Introduced in V5-6R2020.
@@ -119,9 +122,9 @@ class CompositesServices(AnyObject):
         self.release_check(
             self.application.system_configuration.release,
             30,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
-        return self.composites_services.GetCompositesType(i_object.com_object, i_composites_type)
-
-
+        return self.composites_services.GetCompositesType(
+            i_object.com_object, i_composites_type
+        )
