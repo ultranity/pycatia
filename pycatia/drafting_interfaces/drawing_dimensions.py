@@ -1,46 +1,52 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
-from typing import Iterator, Union
+
+from typing import Union
 
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
+from pycatia.scripts.vba import VBANothing, vba_nothing
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
-from pycatia.scripts.vba import VBANothing
-from pycatia.scripts.vba import vba_nothing
 
 
-class DrawingDimensions(Collection):
+class DrawingDimensions(Collection[DrawingDimension]):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+        CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     DrawingDimensions
-                | 
-                | A collection of all the drawing dimensions currently managed by a drawing view
-                | of drawing sheet in a drawing document.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.Collection
+            |                     DrawingDimensions
+            |
+            | A collection of all the drawing dimensions currently managed by a drawing view
+            | of drawing sheet in a drawing document.
+
     """
 
     def __init__(self, com_object):
         super().__init__(com_object, child_object=DrawingDimension)
         self.drawing_dimensions = com_object
 
-    def add(self, i_type_dim: int, i_geom_elem: tuple, i_pt_coord_elem: tuple, i_line_rep: int) -> DrawingDimension:
+    def add(
+        self,
+        i_type_dim: int,
+        i_geom_elem: tuple,
+        i_pt_coord_elem: tuple,
+        i_line_rep: int,
+    ) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -50,32 +56,32 @@ class DrawingDimensions(Collection):
                 | CATSafeArrayVariant iGeomElem,
                 | CATSafeArrayVariant iPtCoordElem,
                 | CatDimLineRep iLineRep) As DrawingDimension
-                | 
+                |
                 |     Creates a drawing dimension and adds it to the DrawingDimensions
                 |     collection.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iTypeDim
-                |             Dimension type 
+                |             Dimension type
                 |         iGeomElem
-                |             Parent geometrical element(s) of dimension 
+                |             Parent geometrical element(s) of dimension
                 |         iPtCoordElem
                 |             Array of pointers on the selection points of each element of
-                |             iGeomElem 
+                |             iGeomElem
                 |         iLineRep
-                |             Basic representation mode 
-                | 
+                |             Basic representation mode
+                |
                 |     Returns:
-                |         The created drawing dimension 
-                | 
+                |         The created drawing dimension
+                |
                 | Example:
                 |     The following example creates a drawing angle dimension between two lines
                 |     and a partial curvilinear length dimension on an ellipse and retrieved in
                 |     MyDimension1 and MyDimension2 in the drawing view collection of the MyView
                 |     drawing view. This view belongs to the drawing view collection of the drawing
                 |     sheet
-                | 
+                |
                 |      Dim MyView As DrawingView
                 |      Set MyView = MySheet.Views.ActiveView
                 |      Dim Fact2D  As Factory2D
@@ -116,18 +122,18 @@ class DrawingDimensions(Collection):
 
         return DrawingDimension(
             self.drawing_dimensions.Add(
-                i_type_dim,
-                i_geom_elem,
-                i_pt_coord_elem,
-                i_line_rep)
+                i_type_dim, i_geom_elem, i_pt_coord_elem, i_line_rep
+            )
         )
 
-    def add2(self,
-             i_type_dim: int,
-             i_geom_elem: tuple,
-             i_pt_coord_elem: tuple,
-             i_ldc_ref_elem: Union[cat_variant, VBANothing],
-             i_ldc_ref_angle: int) -> DrawingDimension:
+    def add2(
+        self,
+        i_type_dim: int,
+        i_geom_elem: tuple,
+        i_pt_coord_elem: tuple,
+        i_ldc_ref_elem: Union[cat_variant, VBANothing],
+        i_ldc_ref_angle: int,
+    ) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -138,12 +144,12 @@ class DrawingDimensions(Collection):
                 | CATSafeArrayVariant iPtCoordElem,
                 | CATVariant iLDCRefElem,
                 | long iLDCRefAngle) As DrawingDimension
-                | 
+                |
                 |     Creates a drawing dimension along a direction and adds it to the
                 |     DrawingDimensions collection.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iTypeDim
                 |             Dimension type (available types : catDimDistance, catDimLength, catDimRadiusTangent and
                 |             catDimDiameterTangent)
@@ -151,25 +157,25 @@ class DrawingDimensions(Collection):
                 |             Parent geometrical element(s) of dimension
                 |         iPtCoordElem
                 |             Array of pointers on the selection points of each element of
-                |             iGeomElem 
+                |             iGeomElem
                 |         iLDCRefElem
                 |             Reference geometrical element for the direction of the dimension
                 |             line .iLDCRefElem can be null: in this case, the view is the reference element
                 |         iLDCRefAngle
                 |             Angle between the reference element and the direction of the
-                |             dimension line 
-                | 
+                |             dimension line
+                |
                 |     Returns:
                 |         The created drawing dimension (The property CATDimLineRep of the
                 |         dimension line of the created dimension is set to catDimUserDefined)
-                |         
-                | 
+                |
+                |
                 | Example:
                 |     The following example creates a drawing distance dimension between two
                 |     points along the direction of a line and retrieved in MyDimension in the
                 |     drawing view collection of the MyView drawing view. This view belongs to the
                 |     drawing view collection of the drawing sheet
-                | 
+                |
                 |      Dim MyView As DrawingView
                 |      Set MyView = MySheet.Views.ActiveView
                 |      Dim Fact2D  As Factory2D
@@ -200,7 +206,9 @@ class DrawingDimensions(Collection):
         i_geom_elem = [elem.com_object for elem in i_geom_elem]
 
         if i_ldc_ref_elem == vba_nothing:
-            i_ldc_ref_elem = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+            i_ldc_ref_elem = self.application.system_service.evaluate(
+                vba_nothing, 0, "N", []
+            )
         else:
             i_ldc_ref_elem = i_ldc_ref_elem.com_object
 
@@ -210,7 +218,8 @@ class DrawingDimensions(Collection):
                 i_geom_elem,
                 i_pt_coord_elem,
                 i_ldc_ref_elem,
-                i_ldc_ref_angle)
+                i_ldc_ref_angle,
+            )
         )
 
     def item(self, i_index: cat_variant) -> DrawingDimension:
@@ -220,34 +229,34 @@ class DrawingDimensions(Collection):
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingDimension
-                | 
+                |
                 |     Returns a drawing dimension using its index or its name from the
                 |     DrawingDimensions collection.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iIndex
                 |             The index or the name of the drawing dimension to retrieve from the
                 |             collection of drawing dimensions. As a numerics, this index is the rank of the
                 |             drawing dimension in the collection. The index of the first drawing dimension
                 |             in the collection is 1, and the index of the last drawing dimension is Count.
                 |             As a string, it is the name you assigned to the drawing dimension using the
-                |             
-                | 
+                |
+                |
                 |         AnyObject.Name property or when creating it using the Add method.
-                |         
+                |
                 |     Returns:
-                |         The retrieved drawing dimension 
+                |         The retrieved drawing dimension
                 |     Example:
-                | 
+                |
                 |           This example retrieves in ThisDrawingDimension the second drawing
                 |           dimension,
                 |          and in ThatDrawingDimension the drawing dimension
                 |          named
                 |          MyDimension in the drawing dimension collection of the active
                 |          view.
-                |          
-                | 
+                |
+                |
                 |          Dim MyView As DrawingView
                 |          Set MyView  = MySheet.Views.ActiveView
                 |          Dim ThisDrawingDimension As DrawingDimension
@@ -267,24 +276,24 @@ class DrawingDimensions(Collection):
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
-                | 
+                |
                 |     Removes a drawing dimension from the DrawingDimensions
                 |     collection.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iIndex
                 |             The index of the drawing dimension to remove from the collection of
                 |             drawing dimensions. As a numerics, this index is the rank of the drawing
                 |             dimension in the collection. The index of the first drawing dimension in the
                 |             collection is 1, and the index of the last drawing dimension is Count.
-                |             
-                | 
+                |
+                |
                 |     Example:
                 |         The following example removes the third drawing dimension in the
                 |         drawing dimension collection of the active view of the active document,
                 |         supposed to be a drawing document.
-                | 
+                |
                 |          Dim MyView As DrawingView
                 |          Set MyView  = MySheet.Views.ActiveView
                 |          MyView.Dimensions.Remove(3)
@@ -293,18 +302,3 @@ class DrawingDimensions(Collection):
         :rtype: None
         """
         return self.drawing_dimensions.Remove(i_index)
-
-    def __getitem__(self, n: int) -> DrawingDimension:
-        if n <0:
-            n += self.count
-            if n < 0:
-                raise StopIteration
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return DrawingDimension(self.drawing_dimensions.Item(n + 1))
-
-    def __iter__(self) -> Iterator[DrawingDimension]:
-        for i in range(self.count):
-            yield self.child_object(self.com_object.Item(i + 1))
-

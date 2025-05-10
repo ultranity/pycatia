@@ -1,34 +1,35 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
+
 from pycatia.dmaps_interfaces.item import Item
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
 
 
-class Items(Collection):
+class Items(Collection[Item]):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Items
-                | 
-                | The collection of items related to the current activity.
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.Collection
+            |                     Items
+            |
+            | The collection of items related to the current activity.
+
     """
 
     def __init__(self, com_object):
@@ -42,14 +43,14 @@ class Items(Collection):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func Add(Item iProduct) As Item
-                | 
+                |
                 |     This method adds the specified item in the current list
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iItem
-                |             The item to add 
-                | 
+                |             The item to add
+                |
                 |     Returns:
                 |         oitem The item
 
@@ -66,17 +67,17 @@ class Items(Collection):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func AddByAssignmentType(Item iItem,
                 | ItemAssignmentType iAssignmentType) As Item
-                | 
+                |
                 |     This method Assigns the specified item with the specified assignment
                 |     type
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iItem
-                |             The item to be assigned 
+                |             The item to be assigned
                 |         iAssignmentType
-                |             Type of the Assignment (Item to the Process) 
-                | 
+                |             Type of the Assignment (Item to the Process)
+                |
                 |     Returns:
                 |         oitem The item
 
@@ -84,7 +85,9 @@ class Items(Collection):
         :param int i_assignment_type: enum item_assignment_type
         :rtype: Item
         """
-        return Item(self.items_.AddByAssignmentType(i_item.com_object, i_assignment_type))
+        return Item(
+            self.items_.AddByAssignmentType(i_item.com_object, i_assignment_type)
+        )
 
     def count_by_assignment_type(self, i_assignment_type: int) -> int:
         """
@@ -94,16 +97,16 @@ class Items(Collection):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func CountByAssignmentType(ItemAssignmentType iAssignmentType) As
                 | long
-                | 
+                |
                 |     This method returns the Number of items that assocated with the activity
                 |     with given Assignment Type.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAssignmentType
                 |             Type of the Assignment between items & the activity
-                |             
-                | 
+                |
+                |
                 |     Returns:
                 |         oNbItems No. of Items that are assigned to the activity with the given
                 |         assignment type.
@@ -120,15 +123,15 @@ class Items(Collection):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func Item(CATVariant iIndex) As Item
-                | 
+                |
                 |     This method returns the idl object Item for the specified item
                 |     identifier.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iIndex
-                |             The item identifier 
-                | 
+                |             The item identifier
+                |
                 |     Returns:
                 |         oItem The idl item
 
@@ -137,7 +140,9 @@ class Items(Collection):
         """
         return Item(self.items_.Item(i_index))
 
-    def item_by_assignment_type(self, i_index: cat_variant, i_assignment_type: int) -> Item:
+    def item_by_assignment_type(
+        self, i_index: cat_variant, i_assignment_type: int
+    ) -> Item:
         """
         .. note::
             :class: toggle
@@ -145,16 +150,16 @@ class Items(Collection):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func ItemByAssignmentType(CATVariant iIndex,
                 | ItemAssignmentType iAssignmentType) As Item
-                | 
+                |
                 |     This method returns the item assocated with the activity with given
                 |     Assignment Type.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAssignmentType
                 |             Type of the Assignment between item & the activity
-                |             
-                | 
+                |
+                |
                 |     Returns:
                 |         oItem idl item to be returned
 
@@ -172,18 +177,18 @@ class Items(Collection):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func RemoveByAssignmentType(Item iItem,
                 | ItemAssignmentType iAssignmentType) As Item
-                | 
+                |
                 |     This method used to unassign the specified item (with the given assignment
                 |     type)
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iItem
-                |             The item to be Unassigned 
+                |             The item to be Unassigned
                 |         iAssignmentType
                 |             Type of the Assignment (Item to the Process) to be removed
-                |             
-                | 
+                |
+                |
                 |     Returns:
                 |         oitem The item
 
@@ -191,5 +196,6 @@ class Items(Collection):
         :param int i_assignment_type: enum item_assignment_type
         :rtype: Item
         """
-        return Item(self.items_.RemoveByAssignmentType(i_item.com_object, i_assignment_type))
-
+        return Item(
+            self.items_.RemoveByAssignmentType(i_item.com_object, i_assignment_type)
+        )

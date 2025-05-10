@@ -1,79 +1,47 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-10 10:58:07.270911
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-10 10:58:07.270911
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
 
 """
-from typing import Iterator
-from typing import TYPE_CHECKING
 
-from pycatia.base_interfaces.pycatia import PyCATIA
+from typing import Generic, Iterator, TypeVar
+
 from pycatia.system_interfaces.any_object import AnyObject
 
 # from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
-if TYPE_CHECKING:
-    from pycatia.in_interfaces.application import Application
+T = TypeVar("T", bound=AnyObject)
 
 
-class Collection(PyCATIA):
+#TODO: can use Generic after py312
+class Collection(AnyObject, Generic[T]):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
+        CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 Collection
-                |
-                | Represents the base object for collections.
-                | As a base object, it provides properties and methods shared by any other
-                | object.
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 Collection
+            |
+            | Represents the base object for collections.
+            | As a base object, it provides properties and methods shared by any other
+            | object.
 
     """
-    #_inner_class = AnyObject TODO: can use Generic after py312
 
-    def __init__(self, com_object, child_object=AnyObject):
-        super().__init__()
-        self.com_object = com_object
+
+    def __init__(self, com_object, child_object=T):
+        super().__init__(com_object)
         self.child_object = child_object
-
-    @property
-    def application(self) -> 'Application':
-        """
-        .. note::
-            :class: toggle
-
-            CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
-                | o Property Application() As Application (Read Only)
-                |
-                |     Returns the application. The application is the root object in the object
-                |     structure and can be retrieved from any object in the object structure using
-                |     the Application property. The Application property is the way to jump from any
-                |     object up to the root of the object data structure, allowing then to navigate
-                |     downwards. For in-process scripting, the application is always referred to as
-                |     CATIA. Note that the Application property of the Application object returns the
-                |     Application object itself.
-                |
-                |     Example:
-                |         This example retrieves in CurrentApplication the application object,
-                |         root of the object structure, from a given object of this structure: a document
-                |         refered to using the MyDocCollecion variable.
-                |
-                |          Dim CurrentApplication As Application
-                |          Set CurrentApplication = MyDocCollecion.Application
-
-        :rtype: Application
-        """
-        from pycatia.in_interfaces.application import Application
-        return Application(self.com_object.Application)
 
     @property
     def count(self) -> int:
@@ -95,66 +63,11 @@ class Collection(PyCATIA):
 
         :rtype: int
         """
-
+        # if self.com_object is None:
+        #     return 0
         return self.com_object.Count
 
-    @property
-    def name(self) -> str:
-        """
-        .. note::
-            :class: toggle
-
-            CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
-                | o Property Name() As CATBSTR (Read Only)
-                |
-                |     Returns or sets the name of the object. The name is a character string you
-                |     can assign to any object to handle it easier. In the case of an object part of
-                |     a collection, the name can often be used in place of the object rank to
-                |     retrieve or remove the object, providing the Item and Remove methods of the
-                |     collection feature an argument with the Variant type. If the object has no name
-                |     set, the name returned is the one of its parent.
-                |
-                |     Example:
-                |         This example sets to MyObject the name Nice and Handy Object
-                |         Name.
-                |
-                |          MyObject.Name("Nice and Handy Object Name")
-
-        :rtype: str
-        """
-
-        return self.com_object.Name
-
-    @property
-    def parent(self) -> AnyObject:
-        """
-        .. note::
-            :class: toggle
-
-            CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
-                | o Property Parent() As CATBaseDispatch (Read Only)
-                |
-                |     Returns the parent object. The parent object of a given object is the
-                |     object that created this object, usually the object just above in the object
-                |     tree structure and that aggregates it. In the case of an object part of a
-                |     collection, the parent object is not the collection object itself, but the
-                |     object that aggregates the collection object. The Parent property is the way to
-                |     step upwards in the object data structure. Note that the Parent property of the
-                |     Application object returns the Application object itself.
-                |
-                |     Example:
-                |         This example retrieves in ParentObject the parent object of the
-                |         GivenObject object.
-                |
-                |          Dim ParentObject As AnyObject
-                |          Set ParentObject = GivenObject.Parent
-
-        :rtype: AnyObject
-        """
-
-        return AnyObject(self.com_object.Parent)
-
-    def get_item(self, id_name: str) -> AnyObject:
+    def get_item(self, id_name: str) -> T:
         """
 
         .. note::
@@ -209,30 +122,33 @@ class Collection(PyCATIA):
         """
         :return: [self.child_object()]
         """
-        items_list = []
-
-        for i in range(self.com_object.Count):
-            item = self.child_object(self.com_object.Item(i + 1))
-            items_list.append(item)
-
-        return items_list
+        return list(self)
 
     def __len__(self):
         return self.count
 
-    def __getitem__(self, n: int) -> AnyObject:
-        if n <0:
+    def __getitem__(self, n: int) -> T:
+        if n < 0:
             n += self.count
             if n < 0:
                 raise StopIteration
         if (n + 1) > self.count:
             raise StopIteration
 
-        return self.child_object(self.com_object.Item(n + 1))
+        return self.child_object.new(self.com_object.Item(n + 1))
 
-    def __iter__(self) -> Iterator[AnyObject]:
+    def __iter__(self) -> Iterator[T]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.Item(i + 1))
+            yield self.child_object.new(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'{self.__class__.__name__}(name="{self.name}", n={self.count})'
+
+    def to_dict(self):
+        return [item.to_dict() for item in self]
+        # return {
+        #     'count': self.count,
+        #     'type': self.__class__.__name__,
+        #     'name': self.name,
+        #     'items': [item.to_dict() for item in self],
+        # }

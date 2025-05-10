@@ -1,20 +1,21 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R31 on 2024-08-20 16:04:57.203445
+Module initially auto generated using V5Automation files from CATIA V5 R31 on 2024-08-20 16:04:57.203445
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
 
 """
+
 import inspect
 
 from pycatia.drafting_interfaces.drawing_gdt import DrawingGDT
 from pycatia.system_interfaces.collection import Collection
 
 
-class DrawingGDTs(Collection):
+class DrawingGDTs(Collection[DrawingGDT]):
     """
 
     Introduced in V5-6R2018.
@@ -37,17 +38,17 @@ class DrawingGDTs(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingGDT)
         self.drawing_gd_ts = com_object
 
     def add(
-            self,
-            i_position_leader_x: float,
-            i_position_leader_y: float,
-            i_position_x: float,
-            i_position_y: float,
-            i_gdt_symbol: int,
-            i_text: str
+        self,
+        i_position_leader_x: float,
+        i_position_leader_y: float,
+        i_position_x: float,
+        i_position_y: float,
+        i_gdt_symbol: int,
+        i_text: str,
     ) -> DrawingGDT:
         """
 
@@ -95,7 +96,7 @@ class DrawingGDTs(Collection):
         self.release_check(
             self.application.system_configuration.release,
             28,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
         return DrawingGDT(
@@ -105,7 +106,7 @@ class DrawingGDTs(Collection):
                 i_position_x,
                 i_position_y,
                 i_gdt_symbol,
-                i_text
+                i_text,
             )
         )
 
@@ -150,7 +151,7 @@ class DrawingGDTs(Collection):
         self.release_check(
             self.application.system_configuration.release,
             28,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
         return DrawingGDT(self.drawing_gd_ts.Item(i_index))
@@ -191,8 +192,7 @@ class DrawingGDTs(Collection):
         self.release_check(
             self.application.system_configuration.release,
             28,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+            f"{self.__class__.__name__}.{inspect.stack()[0][3]}",
         )
 
         return self.drawing_gd_ts.Remove(i_index)
-

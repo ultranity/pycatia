@@ -1,49 +1,50 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
+
 from pycatia.eno_cd5_interfaces.cd5_save_item import CD5SaveItem
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
 
 
-class CD5SaveItems(Collection):
+class CD5SaveItems(Collection[CD5SaveItem]):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     CD5SaveItems
-                | 
-                | Represents a Collection of items which user is trying to save.
-                | 
-                | Example:
-                | 
-                |       The following example indicates how to retrieve the Collection of items
-                |       to Save.
-                |
-                |      Dim oCD5Engine As CD5EngineV6R2014x
-                |      Set oCD5Engine = CATIA.GetItem("CD5EngineV6R2014x")
-                |      Dim oSaveOperation As CD5SaveOperation
-                |      Set oSaveOperation = oCD5Engine.CreateSaveOperation(CD5SaveOperation_Session)
-                |      Dim oSaveItems As CD5SaveItems
-                |      Set oSaveItems = oSaveOperation.Items()
-                |
-                | See also:
-                |     CD5SaveOperation
-    
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.Collection
+            |                     CD5SaveItems
+            |
+            | Represents a Collection of items which user is trying to save.
+            |
+            | Example:
+            |
+            |       The following example indicates how to retrieve the Collection of items
+            |       to Save.
+            |
+            |      Dim oCD5Engine As CD5EngineV6R2014x
+            |      Set oCD5Engine = CATIA.GetItem("CD5EngineV6R2014x")
+            |      Dim oSaveOperation As CD5SaveOperation
+            |      Set oSaveOperation = oCD5Engine.CreateSaveOperation(CD5SaveOperation_Session)
+            |      Dim oSaveItems As CD5SaveItems
+            |      Set oSaveItems = oSaveOperation.Items()
+            |
+            | See also:
+            |     CD5SaveOperation
+
     """
 
     def __init__(self, com_object):
@@ -73,4 +74,3 @@ class CD5SaveItems(Collection):
         :rtype: CD5SaveItem
         """
         return CD5SaveItem(self.cd5_save_items.Item(i_index).com_object)
-

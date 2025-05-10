@@ -1,12 +1,12 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
-        
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
+
 """
 
 from pycatia.cat_mat_interfaces.material_family import MaterialFamily
@@ -14,7 +14,7 @@ from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
 
 
-class MaterialFamilies(Collection):
+class MaterialFamilies(Collection[MaterialFamily]):
     """
     .. note::
         :class: toggle
@@ -35,7 +35,7 @@ class MaterialFamilies(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=MaterialFamily)
         self.material_families = com_object
 
     def add(self) -> MaterialFamily:
@@ -133,4 +133,3 @@ class MaterialFamilies(Collection):
         :rtype: None
         """
         self.material_families.Remove(i_index)
-

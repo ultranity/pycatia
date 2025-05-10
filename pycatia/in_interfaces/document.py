@@ -1,17 +1,16 @@
 #! usr/bin/python3.9
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-    .. warning::
-        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
-        They are there as a guide as to how the visual basic / catscript functions work
-        and thus help debugging in pycatia.
+.. warning::
+    The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+    They are there as a guide as to how the visual basic / catscript functions work
+    and thus help debugging in pycatia.
 
 """
 
-from typing import TYPE_CHECKING
-
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.cameras import Cameras
@@ -27,30 +26,30 @@ if TYPE_CHECKING:
 
 class Document(AnyObject):
     """
-        .. note::
-            :class: toggle pytoggle
+    .. note::
+        :class: toggle pytoggle
 
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+        CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Document
-                |
-                | Represents the document.
-                | The document is the object handled by the operating system as a whole that
-                | stores your data in files and databases. It is assigned a type determined by
-                | its contents. It may contain other documents with a different type. For
-                | example, a PartDocument contains a part and can be contained in a
-                | ProductDocument. A workshop is associated with a document to gather all the
-                | commands that can be used to create, modify, and edit the objects making up the
-                | the document. These commands are arranged in menus and
-                | toolbars.
-                |
-                | See also:
-                |     PartDocument, ProductDocument, DrawingDocument
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     Document
+            |
+            | Represents the document.
+            | The document is the object handled by the operating system as a whole that
+            | stores your data in files and databases. It is assigned a type determined by
+            | its contents. It may contain other documents with a different type. For
+            | example, a PartDocument contains a part and can be contained in a
+            | ProductDocument. A workshop is associated with a document to gather all the
+            | commands that can be used to create, modify, and edit the objects making up the
+            | the document. These commands are arranged in menus and
+            | toolbars.
+            |
+            | See also:
+            |     PartDocument, ProductDocument, DrawingDocument
 
     """
 
@@ -145,6 +144,15 @@ class Document(AnyObject):
         """
 
         self.document.CurrentLayer = value
+
+    @property
+    def type(self) -> str:
+        """
+        Determine document type.
+
+        :return: Drawing|Part|Product|Functional
+        """
+        return type(self).__name__.rsplit(".", 1)[-1].removesuffix("Document")
 
     @property
     def is_part(self) -> bool:
@@ -278,7 +286,7 @@ class Document(AnyObject):
         self.document.SeeHiddenElements = value
 
     @property
-    def selection(self) -> 'Selection':
+    def selection(self) -> "Selection":
         """
         .. note::
             :class: toggle
@@ -300,6 +308,7 @@ class Document(AnyObject):
         :rtype: Selection
         """
         from pycatia.in_interfaces.selection import Selection
+
         return Selection(self.document.Selection)
 
     def activate(self) -> None:
@@ -462,27 +471,33 @@ class Document(AnyObject):
         if not isinstance(file_name, Path):
             file_name = Path(file_name)
 
-        if file_name.suffix.lower() != '.' + file_type.lower():
+        if file_name.suffix.lower() != "." + file_type.lower():
             raise CATIAApplicationException(
-                f'Filename "{file_name}" must have the same suffix as filetype "{file_type}".')
+                f'Filename "{file_name}" must have the same suffix as filetype "{file_type}".'
+            )
 
         # add filetype to filename if it hasn't been added correctly.
         if not str(file_name).endswith(file_type):
             file_name = Path(f"{file_name}.{file_type}")
 
         if not file_name.parent.is_dir():
-            raise NotADirectoryError(f'Directory: {file_name.parent} is not a directory.')
+            raise NotADirectoryError(
+                f"Directory: {file_name.parent} is not a directory."
+            )
 
         if overwrite is False:
             if file_name.is_file():
-                raise FileExistsError(f'File: {file_name} already exists. '
-                                      f'Set overwrite=True if you want to overwrite.')
+                raise FileExistsError(
+                    f"File: {file_name} already exists. Set overwrite=True if you want to overwrite."
+                )
         else:
             self.application.display_file_alerts = False
 
         # pycatia prefers full path names :-)
         if not file_name.is_absolute():
-            self.logger.warning('To prevent unexpected behaviour, be explicit and use absolute filenames.')
+            self.logger.warning(
+                "To prevent unexpected behaviour, be explicit and use absolute filenames."
+            )
 
         self.document.ExportData(file_name, file_type)
 
@@ -567,8 +582,8 @@ class Document(AnyObject):
         :return: tuple
         """
 
-        vba_function_name = 'indicate_2d'
-        vba_code = f'''
+        vba_function_name = "indicate_2d"
+        vba_code = f"""
         Public Function {vba_function_name}(document, i_message)
         Dim DrawingWindowLocation (1)
         Dim o_output(1)
@@ -576,23 +591,17 @@ class Document(AnyObject):
         o_output(1) = DrawingWindowLocation
         {vba_function_name} = o_output
         End Function
-        '''
+        """
 
         system_service = self.application.system_service
         return system_service.evaluate(
-            vba_code,
-            0,
-            vba_function_name,
-            [
-                self.document,
-                i_message
-            ]
+            vba_code, 0, vba_function_name, [self.document, i_message]
         )
 
     def indicate_3d(
-            self,
-            i_planar_geometric_object: AnyObject,
-            i_message: str,
+        self,
+        i_planar_geometric_object: AnyObject,
+        i_message: str,
     ) -> str:
         """
 
@@ -689,8 +698,8 @@ class Document(AnyObject):
         :param str i_message:
         :return: str
         """
-        vba_function_name = 'indicate_3d'
-        vba_code = f'''
+        vba_function_name = "indicate_3d"
+        vba_code = f"""
         Public Function {vba_function_name}(document, i_planar_geometric_object, i_message)
         Dim WindowLocation2D (1)
         Dim WindowLocation3D (2)
@@ -700,18 +709,14 @@ class Document(AnyObject):
         o_output(2) = WindowLocation3D
         {vba_function_name} = o_output
         End Function
-        '''
+        """
 
         system_service = self.application.system_service
         return system_service.evaluate(
             vba_code,
             0,
             vba_function_name,
-            [
-                self.document,
-                i_planar_geometric_object.com_object,
-                i_message
-            ]
+            [self.document, i_planar_geometric_object.com_object, i_message],
         )
 
     def new_window(self) -> Window:
@@ -799,7 +804,7 @@ class Document(AnyObject):
 
         :rtype: None
         """
-        self.logger.info(f'Saving the current document.')
+        self.logger.info("Saving the current document.")
         self.document.Save()
 
     def save_as(self, file_name: Path, overwrite: bool = False) -> None:
@@ -837,12 +842,15 @@ class Document(AnyObject):
 
         # pycatia prefers full path names :-)
         if not path_file_name.is_absolute():
-            self.logger.warning('To prevent unexpected behaviour, be explicit and use absolute filenames.')
+            self.logger.warning(
+                "To prevent unexpected behaviour, be explicit and use absolute filenames."
+            )
 
         if overwrite is False:
             if path_file_name.is_file():
-                raise FileExistsError(f'File: {path_file_name} already exists. '
-                                      f'Set overwrite=True if you want to overwrite.')
+                raise FileExistsError(
+                    f"File: {path_file_name} already exists. Set overwrite=True if you want to overwrite."
+                )
         else:
             self.application.display_file_alerts = False
             # if path_file_name.is_file():
@@ -852,7 +860,7 @@ class Document(AnyObject):
 
         self.application.display_file_alerts = current_dfa_setting
 
-    def search_for_items(self, selection_objects):
+    def search_for_items(self, selection_objects: list[str]) -> list[AnyObject]:
         """
         # todo: This search is currently restricted to GSD objects only.
         Selection objects is a list of items to search for.
@@ -863,12 +871,10 @@ class Document(AnyObject):
         :return Selected Automation Object:
         """
 
-        self.logger.warning('This method may be deprecated in future versions.')
+        self.logger.warning("This method may be deprecated in future versions.")
 
-        gsd_items = [
-            'Point',
-            'Line'
-        ]
+        gsd_items = ["Point", "Line"]
+        topology_items = ["Face", "Edge", "Vertex"]
 
         query_string = str()
         # build query string
@@ -876,12 +882,15 @@ class Document(AnyObject):
         for counter, item in enumerate(selection_objects):
             boolean = str()
             if counter > 0 and not counter == len(selection_objects):
-                boolean = ' + '
+                boolean = " + "
             if item in gsd_items:
-                query_string = f"{query_string}{boolean}'Generative Shape Design'.{item}"
-
+                query_string = (
+                    f"{query_string}{boolean}'Generative Shape Design'.{item}"
+                )
+            elif item in topology_items:
+                query_string = f"{query_string}{boolean}Topology.{item}"
         query_string = f"({query_string}),in"
-
+        print(query_string)
         selection = self.document.Selection
         selection.Search(query_string)
 
@@ -898,6 +907,3 @@ class Document(AnyObject):
         """
 
         return SPAWorkbench(self.com_object)
-
-    def __repr__(self):
-        return f'Document(name="{self.name}")'
